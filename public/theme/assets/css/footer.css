@@ -1,5 +1,5 @@
 
-/*** 
+/***
 
 ====================================================================
 	Main Footer
@@ -15,7 +15,7 @@
 
 .footer-vector_one{
 	position:absolute;
-	left:20px;
+	left:-40px;
 	bottom:50px;
 	z-index:1;
 }
@@ -278,7 +278,7 @@
 	background-color:var(--color-four);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Footer Style Two

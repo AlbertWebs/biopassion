@@ -139,7 +139,7 @@
                   <div class="inner-container d-flex justify-content-between align-items-center flex-wrap">
                      <!-- Logo -->
                      <div class="logo">
-                        <a href="{{url('/')}}" title=""><img width="80" src="{{asset('uploads/logo/logo.png')}}" alt="" title=""></a>
+                        <a href="{{url('/')}}" title=""><img style="width:80px; height:100%" src="{{asset('uploads/logo/logo.png')}}" alt="" title=""></a>
                      </div>
                      <!-- Right Box -->
                      <div class="right-box">
@@ -260,7 +260,7 @@
          </div>
 
          @yield('content')
-
+{{--
          <section class="footer-style-two">
             <div class="auto-container">
                <div class="widget-content">
@@ -279,7 +279,84 @@
                </div>
                <div class="footer-three_copyright">Copyright 2024 merit All Rights Reserved</div>
             </div>
-         </section>
+         </section> --}}
+         <footer class="main-footer" style="background-image: url('{{asset('theme/assets/images/background/pattern-8.png')}}')">
+            <!-- Vector One -->
+            <span class="footer-vector_one">
+            <img style="max-width:300px" src="{{url('/')}}/uploads/microscope.png" alt="" />
+            </span>
+            <!-- Vector Two -->
+            <span class="footer-vector_two">
+            <img src="{{asset('theme/assets/images/resource/footer-vector-2.png')}}" alt="" />
+            </span>
+            <div class="auto-container">
+               <!--Widgets Section-->
+               <div class="main-footer_widgets">
+                  <div class="row clearfix">
+                     <!--big column-->
+                     <div class="big-column col-lg-6 col-md-12 col-sm-12">
+                        <div class="row clearfix">
+                           <!--Footer Column-->
+                           <div class="main-footer_column col-lg-12 col-md-6 col-sm-12">
+                              <div class="footer-widget logo-widget">
+                                <h4 class="main-footer_title">About Us</h4>
+                                 <div class="main-footer_text">
+                                    We believe our passion for surpassing expectations by putting the patient/clients first in everything we do and commitment to providing high quality, utmost accurate and timely medical laboratory services is one of the key reasons in our diagnostic excellence and reliability.
+                                 </div>
+                                 <!-- Social Box -->
+                                 <ul class="footer-social_box">
+                                    <li><a href="https://www.twitter.com/" class="fa-brands fa-twitter fa-fw"></a></li>
+                                    <li><a href="https://www.facebook.com/" class="fa-brands fa-facebook-f fa-fw"></a></li>
+                                    <li><a href="https://dribbble.com/" class="fa-brands fa-dribbble fa-fw"></a></li>
+                                    <li><a href="https://www.linkedin.com/" class="fa-brands fa-linkedin fa-fw"></a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <!--Footer Column-->
+                        </div>
+                     </div>
+                     <!--big column-->
+                     <div class="big-column col-lg-6 col-md-12 col-sm-12">
+                        <div class="row clearfix">
+                           <!--Footer Column-->
+                           <div class="main-footer_column col-lg-5 col-md-6 col-sm-12">
+                            <div class="footer-widget links-widget">
+                               <h4 class="main-footer_title">Service</h4>
+                               <ul class="main-footer_list">
+                                  <li><a href="#">Emergency</a></li>
+                                  <li><a href="#">Psychotherapy</a></li>
+                                  <li><a href="#">Hourly Care</a></li>
+                                  <li><a href="#">Respite Home</a></li>
+                                  <li><a href="#">Advanced Care</a></li>
+                                  <li><a href="#">Laboratory</a></li>
+                               </ul>
+                            </div>
+                         </div>
+                           <!--Footer Column-->
+                           <div class="main-footer_column col-lg-7 col-md-6 col-sm-12">
+                              <div class="footer-widget contact-widget">
+                                 <h4 class="main-footer_title">Contact Info</h4>
+                                 <ul class="main-footer_contact-list">
+                                    <li><span class="icon fa-solid fa-phone fa-fw"></span><a href="https://maps.app.goo.gl/c8aBRXgMcjZepZeB9">Medical Laboratory Center, Nairobi Kenya, Lower Kabete, At Gacio Stage </a> </li>
+                                    <li><span class="icon fa-solid fa-envelope fa-fw"></span> <a href="mailto:info@biopassiondiagnostics.com">info@biopassiondiagnostics.com</a></li>
+                                    <li><span class="icon fa-solid fa-clock fa-fw"></span>Mon - Sat 8:00 - 6:30, <br> Sunday - CLOSED</li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Footer Bottom -->
+               <div class="main-footer_bottom">
+                  <div class="d-flex justify-content-between align-items-center flex-wrap">
+                     <div class="footer_copyright">Copyright &copy; {{date('Y')}} Biopassion Diagnostics Company | All Rights Reserved | Powered By <a href="https://designekta.com">Designekta Studios</a> </div>
+                     <!-- Scroll To Top -->
+                     <div class="footer-scroll_top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
+                  </div>
+               </div>
+            </div>
+         </footer>
          <!-- Search Popup -->
          <div class="search-popup">
             <div class="color-layer"></div>
