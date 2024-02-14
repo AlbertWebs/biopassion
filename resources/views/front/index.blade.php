@@ -86,9 +86,9 @@
          <section class="livechat">
             <div class="auto-container">
                <div class="inner-container d-flex align-items-center flex-wrap justify-content-between">
-                  <div class="text"><span>SPRAINS, STRAINS AND PAINS?</span> Find an Orthopedic Specialist in Our Clinic</div>
+                  <div class="text"><span>Honesty is our moral compass. Integrity is in our DNA.</span> </div>
                   <div class="livechat_button">
-                     <a href="about.html" class="theme-btn btn-style-one">
+                     <a href="{{url('/')}}/make-an-appointment" class="theme-btn btn-style-one">
                      <span class="btn-wrap">
                      <span class="text-one">make an appointment</span>
                      <span class="text-two">make an appointment</span>
@@ -109,17 +109,32 @@
                      <div class="modern-one_content-inner">
                         <!-- Sec Title -->
                         <div class="sec-title">
-                           <div class="sec-title_title">Welcome to Our Orthopedics Clinic</div>
-                           <h2 class="sec-title_heading">We offer specialized orthopedics to meet your needs</h2>
-                           <div class="sec-title_text">Ut enim ad minim. facilisis suspendisseipsum dolor sit amet dolore consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et  magna aliqua enim ad minim veniam, quis nostrud.</div>
+                           <div class="sec-title_title">Welcome to Our Labs</div>
+                           {{-- <h2 class="sec-title_heading">We offer specialized orthopedics to meet your needs</h2> --}}
+                           <div class="sec-title_text">
+                            At Biopassion Diagnostics, we are loyal, enthusiastic and integral in all our dealings with our customers and with each other; therefore we uphold honesty and integrity above all else.
+                            <br><br>
+                            We believe our passion for surpassing expectations by putting the patient/clients first in everything we do and commitment to providing high quality, utmost accurate and timely medical laboratory services is one of the key reasons in our diagnostic excellence and reliability.
+                           </div>
                         </div>
                         <div class="modern-one_block">
                            <div class="modern-one_block-inner">
-                              <span class="modern-one_icon flaticon-stethoscope"></span>
-                              <strong class="modern-one_bold">Orthopedics Cares</strong>
-                              There are many variations of passages of <br> Lorem Ipsum available majority.
+                              <span class="modern-one_icon flaticon-check"><i class="fa fa-check"></i></span>
+                              <strong class="modern-one_bold">Our Mission</strong>
+                              To provide high quality, utmost accurate and timely medical laboratory services.
                            </div>
                         </div>
+                        <br><br>
+                        <div class="modern-one_block">
+                            <div class="modern-one_block-inner">
+                               <span class="modern-one_icon flaticon-binoculus"><i class="fa fa-briefcase"></i></span>
+                               <strong class="modern-one_bold">Our Vision</strong>
+                               To be a preferred medical diagnostic center delivering the best possible customer service, high quality, utmost accurate and timely medical diagnostic laboratory services all under one roof at cost effective pricing in Kenya and beyond.
+                            </div>
+                         </div>
+                         <div class="modern-one_block">
+                         </div>
+
                         <div class="modern-one_button">
                            <a href="about.html" class="theme-btn btn-style-two">
                            <span class="btn-wrap">
@@ -131,10 +146,11 @@
                      </div>
                   </div>
                   <!-- Image Column -->
+
                   <div class="modern-one_image-column col-lg-6 col-md-12 col-sm-12">
                      <div class="modern-one_image-inner">
                         <div class="modern-one_image">
-                           <img src="{{asset('theme/assets/images/resource/orthopedics.jpg')}}" alt="" />
+                           <img src="{{asset('uploads/about-5.jpg')}}" alt="" />
                         </div>
                         <div class="counter-one" style="background-image:url('{{('theme/assets/images/background/pattern-5.png')}}')">
                            <div class="row clearfix">
@@ -142,24 +158,24 @@
                               <div class="counter-one_block col-lg-4 col-md-6 col-sm-6">
                                  <div class="counter-one_inner">
                                     <span class="counter-one_icon flaticon-doctor"></span>
-                                    <div class="counter-one_counter d-flex">+<span class="odometer" data-count="350"></span></div>
-                                    <div class="counter-one_text">Doctor’s Team</div>
+                                    <div class="counter-one_counter d-flex">+<span class="odometer" data-count="10"></span></div>
+                                    <div class="counter-one_text">Mobile Team</div>
                                  </div>
                               </div>
                               <!-- Counter Column -->
                               <div class="counter-one_block col-lg-4 col-md-6 col-sm-6">
                                  <div class="counter-one_inner">
-                                    <span class="counter-one_icon flaticon-surgery-room"></span>
-                                    <div class="counter-one_counter d-flex"><span class="odometer" data-count="2150"></span></div>
-                                    <div class="counter-one_text">Success Mission</div>
+                                    <span class="counter-one_icon fa fa-smile"></span>
+                                    <div class="counter-one_counter d-flex"><span class="odometer" data-count="1890"></span></div>
+                                    <div class="counter-one_text">Hapy Customers</div>
                                  </div>
                               </div>
                               <!-- Counter Column -->
                               <div class="counter-one_block col-lg-4 col-md-6 col-sm-6">
                                  <div class="counter-one_inner">
                                     <span class="counter-one_icon flaticon-medical-team"></span>
-                                    <div class="counter-one_counter d-flex">+<span class="odometer" data-count="225"></span></div>
-                                    <div class="counter-one_text">Successfull orthopedics</div>
+                                    <div class="counter-one_counter d-flex">+<span class="odometer" data-count="2225"></span></div>
+                                    <div class="counter-one_text">Successfull Diagnostics</div>
                                  </div>
                               </div>
                            </div>
@@ -177,107 +193,64 @@
                   <!-- Service Block Five -->
                   <div class="service-block_five col-lg-4 col-md-6 col-sm-12">
                      <div class="service-block_five-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="service-block_five-icon flaticon-medical-team"></div>
-                        <h4><a href="intensive-care.html">Find a physician</a></h4>
-                        <div class="text">Orthopedists use surgical and nonsurgical approaches to treat musculoskeletal issues, such as sports injuries, joint pain, and back problems.</div>
+                        <div class="service-block_five-icon flaticon-medical-report"></div>
+                        <h4 style="height:66px;"><a href="#">Hematology</a></h4>
+                        <div class="text">
+                            Hematology services at our company encompass comprehensive diagnostic assessments, personalized treatment plans, and expert care for blood-related disorders and conditions, ensuring optimal health outcomes for our clients.
+                        </div>
                      </div>
                   </div>
                   <!-- Service Block Five -->
                   <div class="service-block_five col-lg-4 col-md-6 col-sm-12">
                      <div class="service-block_five-inner wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="service-block_five-icon flaticon-file"></div>
-                        <h4><a href="intensive-care.html">Request an appointment</a></h4>
-                        <div class="text">Orthopedists use surgical and nonsurgical approaches to treat musculoskeletal issues, such as sports injuries, joint pain, and back problems.</div>
+                        <div class="service-block_five-icon flaticon-medical-report"></div>
+                        <h4 style="height:66px;"><a href="#">Microbiology & parasitology</a></h4>
+                        <div class="text">
+                            We excel in Microbiology and Parasitology services, delivering precise diagnostic analyses, innovative solutions, and tailored treatments for infections and diseases caused by microorganisms and parasites.
+                        </div>
                      </div>
                   </div>
                   <!-- Service Block Five -->
                   <div class="service-block_five col-lg-4 col-md-6 col-sm-12">
                      <div class="service-block_five-inner wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="service-block_five-icon flaticon-stethoscope"></div>
-                        <h4><a href="intensive-care.html">Prepare for surgery</a></h4>
-                        <div class="text">Orthopedists use surgical and nonsurgical approaches to treat musculoskeletal issues, such as sports injuries, joint pain, and back problems.</div>
+                        <div class="service-block_five-icon flaticon-medical-report"></div>
+                        <h4 style="height:66px;"><a href="#">Clinical Biochemistry</a></h4>
+                        <div class="text">
+                            Our Clinical Biochemistry services focus on advanced diagnostic testing and analysis of biochemical markers, providing crucial insights for disease detection, management, and personalized healthcare solutions
+                        </div>
                      </div>
                   </div>
                   <!-- Service Block Five -->
                   <div class="service-block_five col-lg-4 col-md-6 col-sm-12">
                      <div class="service-block_five-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <div class="service-block_five-icon flaticon-medical-report"></div>
-                        <h4><a href="intensive-care.html">Payment information</a></h4>
-                        <div class="text">Orthopedists use surgical and nonsurgical approaches to treat musculoskeletal issues, such as sports injuries, joint pain, and back problems.</div>
+                        <h4 style="height:66px;"><a href="#">Serology</a></h4>
+                        <div class="text">
+                            We specialize in the precise detection of antibodies and antigens, offering advanced diagnostics crucial for infectious disease assessment and immune system evaluation
+                        </div>
                      </div>
                   </div>
                   <!-- Service Block Five -->
                   <div class="service-block_five col-lg-4 col-md-6 col-sm-12">
                      <div class="service-block_five-inner wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="service-block_five-icon flaticon-placeholder"></div>
-                        <h4><a href="intensive-care.html">See our locations</a></h4>
-                        <div class="text">Orthopedists use surgical and nonsurgical approaches to treat musculoskeletal issues, such as sports injuries, joint pain, and back problems.</div>
+                        <div class="service-block_five-icon flaticon-medical-report"></div>
+                        <h4 style="height:66px;"><a href="#">Histopathology & Cytopathology</a></h4>
+                        <div class="text">Experience excellence in Histopathology & Cytopathology services at our company, where meticulous examination of tissues and cells ensures accurate diagnostics, guiding effective treatment plans for optimal patient care</div>
                      </div>
                   </div>
                   <!-- Service Block Five -->
                   <div class="service-block_five col-lg-4 col-md-6 col-sm-12">
                      <div class="service-block_five-inner wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="service-block_five-icon flaticon-telephone"></div>
-                        <h4><a href="intensive-care.html">contact now</a></h4>
-                        <div class="text">Orthopedists use surgical and nonsurgical approaches to treat musculoskeletal issues, such as sports injuries, joint pain, and back problems.</div>
+                        <div class="service-block_five-icon flaticon-medical-report"></div>
+                        <h4 style="height:66px;"><a href="#">Immunology</a></h4>
+                        <div class="text">We Employ cutting-edge diagnostics and personalized solutions, focusing on the study of the immune system to address and manage various health conditions effectively.</div>
                      </div>
                   </div>
                </div>
             </div>
          </section>
          <!-- End Services Five -->
-         <!-- Choose One -->
-         <div class="choose-one style-two">
-            <div class="auto-container">
-               <div class="row clearfix">
-                  <!-- Choose Block One -->
-                  <div class="choose-block_one col-lg-3 col-md-6 col-sm-12">
-                     <div class="choose-block_one-inner">
-                        <div class="choose-block_one-icon">
-                           <div class="choose-block_one-number">01</div>
-                           <i class="flaticon-medical-team"></i>
-                        </div>
-                        <h5>full satisfaction</h5>
-                        <div class="text">Physiotherapy is provided by specially trained and regulated physiotherapists.</div>
-                     </div>
-                  </div>
-                  <!-- Choose Block One -->
-                  <div class="choose-block_one col-lg-3 col-md-6 col-sm-12">
-                     <div class="choose-block_one-inner">
-                        <div class="choose-block_one-icon">
-                           <div class="choose-block_one-number">02</div>
-                           <i class="flaticon-education"></i>
-                        </div>
-                        <h5>our expert team</h5>
-                        <div class="text">Physiotherapy is provided by specially trained and regulated physiotherapists.</div>
-                     </div>
-                  </div>
-                  <!-- Choose Block One -->
-                  <div class="choose-block_one col-lg-3 col-md-6 col-sm-12">
-                     <div class="choose-block_one-inner">
-                        <div class="choose-block_one-icon">
-                           <div class="choose-block_one-number">03</div>
-                           <i class="flaticon-mri"></i>
-                        </div>
-                        <h5>modern technology</h5>
-                        <div class="text">Physiotherapy is provided by specially trained and regulated physiotherapists.</div>
-                     </div>
-                  </div>
-                  <!-- Choose Block One -->
-                  <div class="choose-block_one col-lg-3 col-md-6 col-sm-12">
-                     <div class="choose-block_one-inner">
-                        <div class="choose-block_one-icon">
-                           <div class="choose-block_one-number">04</div>
-                           <i class="flaticon-file"></i>
-                        </div>
-                        <h5>normal pricing</h5>
-                        <div class="text">Physiotherapy is provided by specially trained and regulated physiotherapists.</div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- End Choose One -->
+
          <!-- CTA One -->
          <section class="cta-one">
             <div class="cta-one_pattern" style="background-image:url('{{('theme/assets/images/background/pattern-12.png')}}')"></div>
@@ -286,8 +259,8 @@
                   <div class="d-flex justify-content-between align-items-center flex-wrap">
                      <span class="cta-one_icon flaticon-orthopedics"></span>
                      <div class="cta-one_content">
-                        <div class="cta-one_title">Orthopedists Quality & Excelence</div>
-                        <h2 class="cta-one_heading">Expect Nothing But The Best <br> From Medical Technology</h2>
+                        <div class="cta-one_title">we uphold honesty and integrity above all else.</div>
+                        <h2 class="cta-one_heading">Expect Nothing But The Best <br> From Biopassion Diagnostics</h2>
                      </div>
                      <div class="cta-one_button">
                         <a href="appointment.html" class="theme-btn btn-style-three">
@@ -374,98 +347,29 @@
                <!-- Sec Title -->
                <div class="sec-title light centered">
                   <div class="sec-title_title">Customer says</div>
-                  <h2 class="sec-title_heading">Testimonials</h2>
+                  {{-- <h2 class="sec-title_heading">Testimonials</h2> --}}
                </div>
-               <a class="testimonial-two-reviews" href="#">Read More Reviews</a>
+
                <div class="testimonial-outer">
                   <!-- Client Testimonial Carousel -->
                   <div class="client-testimonial-carousel owl-carousel owl-theme">
                      <!-- Testimonial Two -->
                      <div class="testimonial-block_two">
                         <div class="testimonial-block_two-inner">
-                           <div class="testimonial-block_two-quote"><img src="{{asset('theme/assets/images/icons/quote.png')}}" alt="" /></div>
-                           <div class="testimonial-block_two-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going passage</div>
+
+                           <div class="testimonial-block_two-text" style="max-width:600px; margin:0px auto;">Biopassion diagnostics has Quality lab tests with high standard of professionalism and work ethics by the staffs</div>
                         </div>
                      </div>
                      <!-- Testimonial Two -->
-                     <div class="testimonial-block_two">
-                        <div class="testimonial-block_two-inner">
-                           <div class="testimonial-block_two-quote"><img src="{{asset('theme/assets/images/icons/quote.png')}}" alt="" /></div>
-                           <div class="testimonial-block_two-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going passage</div>
-                        </div>
-                     </div>
-                     <!-- Testimonial Two -->
-                     <div class="testimonial-block_two">
-                        <div class="testimonial-block_two-inner">
-                           <div class="testimonial-block_two-quote"><img src="{{asset('theme/assets/images/icons/quote.png')}}" alt="" /></div>
-                           <div class="testimonial-block_two-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going passage</div>
-                        </div>
-                     </div>
-                     <!-- Testimonial Two -->
-                     <div class="testimonial-block_two">
-                        <div class="testimonial-block_two-inner">
-                           <div class="testimonial-block_two-quote"><img src="{{asset('theme/assets/images/icons/quote.png')}}" alt="" /></div>
-                           <div class="testimonial-block_two-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going passage</div>
-                        </div>
-                     </div>
-                     <!-- Testimonial Two -->
-                     <div class="testimonial-block_two">
-                        <div class="testimonial-block_two-inner">
-                           <div class="testimonial-block_two-quote"><img src="{{asset('theme/assets/images/icons/quote.png')}}" alt="" /></div>
-                           <div class="testimonial-block_two-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going passage</div>
-                        </div>
-                     </div>
-                     <!-- Testimonial Two -->
-                     <div class="testimonial-block_two">
-                        <div class="testimonial-block_two-inner">
-                           <div class="testimonial-block_two-quote"><img src="{{asset('theme/assets/images/icons/quote.png')}}" alt="" /></div>
-                           <div class="testimonial-block_two-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going passage</div>
-                        </div>
-                     </div>
                   </div>
                   <!--Product Thumbs Carousel-->
                   <div class="client-thumb-outer">
                      <div class="client-thumbs-carousel owl-carousel owl-theme">
                         <div class="thumb-item">
-                           <figure class="thumb-box"><img src="{{asset('theme/assets/images/resource/author-1.jpg')}}" alt=""></figure>
+                           {{-- <figure class="thumb-box"><img src="{{asset('theme/assets/images/resource/author-1.jpg')}}" alt=""></figure> --}}
                            <div class="author-info">
-                              <div class="author-name">Nathan Hirsch</div>
-                              <div class="location">New York</div>
-                           </div>
-                        </div>
-                        <div class="thumb-item">
-                           <figure class="thumb-box"><img src="{{asset('theme/assets/images/resource/author-2.jpg')}}" alt=""></figure>
-                           <div class="author-info">
-                              <div class="author-name">Nathan Hirsch</div>
-                              <div class="location">New York</div>
-                           </div>
-                        </div>
-                        <div class="thumb-item">
-                           <figure class="thumb-box"><img src="{{asset('theme/assets/images/resource/author-3.jpg')}}" alt=""></figure>
-                           <div class="author-info">
-                              <div class="author-name">Nathan Hirsch</div>
-                              <div class="location">New York</div>
-                           </div>
-                        </div>
-                        <div class="thumb-item">
-                           <figure class="thumb-box"><img src="{{asset('theme/assets/images/resource/author-1.jpg')}}" alt=""></figure>
-                           <div class="author-info">
-                              <div class="author-name">Nathan Hirsch</div>
-                              <div class="location">New York</div>
-                           </div>
-                        </div>
-                        <div class="thumb-item">
-                           <figure class="thumb-box"><img src="{{asset('theme/assets/images/resource/author-2.jpg')}}" alt=""></figure>
-                           <div class="author-info">
-                              <div class="author-name">Nathan Hirsch</div>
-                              <div class="location">New York</div>
-                           </div>
-                        </div>
-                        <div class="thumb-item">
-                           <figure class="thumb-box"><img src="{{asset('theme/assets/images/resource/author-3.jpg')}}" alt=""></figure>
-                           <div class="author-info">
-                              <div class="author-name">Nathan Hirsch</div>
-                              <div class="location">New York</div>
+                              <div class="author-name">Lucy Kwamboka – Client</div>
+                              <div class="location">Westlands Nairobi</div>
                            </div>
                         </div>
                      </div>

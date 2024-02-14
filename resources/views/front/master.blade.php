@@ -39,10 +39,9 @@
                         </ul>
                         <!-- Social Box -->
                         <ul class="header-social_box-two">
-                           <li><a href="https://www.twitter.com/" class="fa-brands fa-twitter fa-fw"></a></li>
-                           <li><a href="https://www.facebook.com/" class="fa-brands fa-facebook-f fa-fw"></a></li>
-                           <li><a href="https://dribbble.com/" class="fa-brands fa-dribbble fa-fw"></a></li>
                            <li><a href="https://www.linkedin.com/" class="fa-brands fa-linkedin fa-fw"></a></li>
+                           <li><a href="https://www.facebook.com/" class="fa-brands fa-facebook-f fa-fw"></a></li>
+                           <li><a href="https://www.twitter.com/" class="fa-brands fa-twitter fa-fw"></a></li>
                         </ul>
                      </div>
                   </div>
@@ -97,7 +96,7 @@
                                         <a href="#">Our Clientele</a>
                                      </li>
                                      <li>
-                                        <a href="#">Contact Us</a>
+                                        <a href="{{route('contact-us')}}">Contact Us</a>
                                      </li>
                                  </ul>
                               </div>
@@ -116,8 +115,6 @@
                            <!-- Search Btn -->
                            <div class="search-box-btn search-box-outer"><span class="icon fa fa-search"></span></div>
                            <!-- Nav Btn -->
-
-
 							<div class="nav-btn navSidebar-button fa-regular fa-user fa-fw"></div>
 
                            <span class="hamburger">
@@ -169,95 +166,6 @@
             <!-- End Mobile Menu -->
          </header>
          <!-- End Main Header -->
-         <!-- Sidebar Cart Item -->
-         <div class="xs-sidebar-group info-group">
-            <div class="xs-overlay xs-bg-black"></div>
-            <div class="xs-sidebar-widget">
-               <div class="sidebar-widget-container">
-                  <div class="close-button">
-                     <span class="fa fa-solid fa-xmark fa-fw"></span>
-                  </div>
-                  <div class="sidebar-textwidget">
-                     <!-- Sidebar Info Content -->
-                     <div class="sidebar-info-contents">
-                        <div class="content-inner">
-                           <!-- Title Box -->
-                           <div class="title-box">
-                              <h5>Shopping <span>Bag</span></h5>
-                              <div class="price">$15 from free economy shipping</div>
-                           </div>
-                           <!-- Empty Cart Box -->
-                           <div class="empty-cart-box">
-                              <!-- No Product -->
-                              <div class="no-cart">
-                                 <span class="icon fa fa-sharp fa-solid fa-cart-shopping fa-fw"></span>
-                                 No products in cart.
-                              </div>
-                           </div>
-                           <!-- Lower Box -->
-                           <div class="lower-box">
-                              <h5>Popular <span>Suggestions</span></h5>
-                              <!-- Post Block -->
-                              <div class="post-block">
-                                 <div class="inner-box">
-                                    <div class="image">
-                                       <img src="assets/images/resource/post-thumb-1.jpg" alt="" />
-                                    </div>
-                                    <h6><a href="#">Hematology Machine</a></h6>
-                                    <div class="rating">
-                                       <span class="fa fa-star"></span>
-                                       <span class="fa fa-star"></span>
-                                       <span class="fa fa-star"></span>
-                                       <span class="fa fa-star"></span>
-                                       <span class="fa fa-star"></span>
-                                    </div>
-                                    <div class="price-box">$125</div>
-                                    <a class="theme-btn bag-btn" href="#">add to bag</a>
-                                 </div>
-                              </div>
-                              <!-- Post Block -->
-                              <div class="post-block">
-                                 <div class="inner-box">
-                                    <div class="image">
-                                       <img src="assets/images/resource/post-thumb-2.jpg" alt="" />
-                                    </div>
-                                    <h6><a href="#">Dermatology</a></h6>
-                                    <div class="rating">
-                                       <span class="fa fa-star"></span>
-                                       <span class="fa fa-star"></span>
-                                       <span class="fa fa-star"></span>
-                                       <span class="fa fa-star"></span>
-                                       <span class="fa fa-star"></span>
-                                    </div>
-                                    <div class="price-box">$205</div>
-                                    <a class="theme-btn bag-btn" href="#">add to bag</a>
-                                 </div>
-                              </div>
-                              <!-- Post Block -->
-                              <div class="post-block">
-                                 <div class="inner-box">
-                                    <div class="image">
-                                       <img src="assets/images/resource/post-thumb-3.jpg" alt="" />
-                                    </div>
-                                    <h6><a href="#">Cardiology</a></h6>
-                                    <div class="rating">
-                                       <span class="fa fa-star"></span>
-                                       <span class="fa fa-star"></span>
-                                       <span class="fa fa-star"></span>
-                                       <span class="fa fa-star"></span>
-                                       <span class="fa fa-star"></span>
-                                    </div>
-                                    <div class="price-box">$125</div>
-                                    <a class="theme-btn bag-btn" href="#">add to bag</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
 
          @yield('content')
 {{--
@@ -337,7 +245,7 @@
                               <div class="footer-widget contact-widget">
                                  <h4 class="main-footer_title">Contact Info</h4>
                                  <ul class="main-footer_contact-list">
-                                    <li><span class="icon fa-solid fa-phone fa-fw"></span><a href="https://maps.app.goo.gl/c8aBRXgMcjZepZeB9">Medical Laboratory Center, Nairobi Kenya, Lower Kabete, At Gacio Stage </a> </li>
+                                    <li><span class="icon fa-solid fa-map-marker fa-fw"></span><a href="https://maps.app.goo.gl/c8aBRXgMcjZepZeB9">Medical Laboratory Center, Nairobi Kenya, Lower Kabete, At Gacio Stage </a> </li>
                                     <li><span class="icon fa-solid fa-envelope fa-fw"></span> <a href="mailto:info@biopassiondiagnostics.com">info@biopassiondiagnostics.com</a></li>
                                     <li><span class="icon fa-solid fa-clock fa-fw"></span>Mon - Sat 8:00 - 6:30, <br> Sunday - CLOSED</li>
                                  </ul>
@@ -371,73 +279,7 @@
          <!-- End Search Popup -->
       </div>
       <!-- End PageWrapper -->
-      <!-- Color Palate / Color Switcher -->
-      <div class="color-palate">
-         <div class="color-trigger">
-            <i class="fa-solid fa-gear fa-fw"></i>
-         </div>
-         <div class="color-palate-inner">
-            <div class="color-palate-head">
-               <h6>Choose Options</h6>
-            </div>
-            <!-- Demos Carousel -->
-            <div class="demos-carousel">
-               <div class="demos-title">Demo's Layouts</div>
-               <ul class="single-item-carousel owl-carousel owl-theme demos-list">
-                  <li data-text="Home General"><a href="{{url('/')}}"><img src="assets/images/demos/1.jpg" alt=""></a></li>
-                  <li data-text="Home Clinic"><a href="index-2.html"><img src="assets/images/demos/2.jpg" alt=""></a></li>
-                  <li data-text="Home Dentist"><a href="index-3.html"><img src="assets/images/demos/3.jpg" alt=""></a></li>
-                  <li data-text="Home Cardiology"><a href="index-4.html"><img src="assets/images/demos/4.jpg" alt=""></a></li>
-                  <li data-text="Home Surgery"><a href="index-5.html"><img src="assets/images/demos/5.jpg" alt=""></a></li>
-                  <li data-text="Home Veterinary"><a href="index-6.html"><img src="assets/images/demos/6.jpg" alt=""></a></li>
-                  <li data-text="Home Veterinary"><a href="index-7.html"><img src="assets/images/demos/7.jpg" alt=""></a></li>
-               </ul>
-            </div>
-            <!-- Colors -->
-            <div class="various-color clearfix">
-               <div class="colors-list">
-                  <span class="palate default-color active" data-theme-file="assets/css/color-themes/default-color.css')}}"></span>
-                  <span class="palate green-color" data-theme-file="assets/css/color-themes/green-color.css')}}"></span>
-                  <span class="palate olive-color" data-theme-file="assets/css/color-themes/blue-color.css')}}"></span>
-                  <span class="palate orange-color" data-theme-file="assets/css/color-themes/orange-color.css')}}"></span>
-                  <span class="palate purple-color" data-theme-file="assets/css/color-themes/purple-color.css')}}"></span>
-                  <span class="palate teal-color" data-theme-file="assets/css/color-themes/teal-color.css')}}"></span>
-                  <span class="palate brown-color" data-theme-file="assets/css/color-themes/brown-color.css')}}"></span>
-                  <span class="palate yellow-color" data-theme-file="assets/css/color-themes/yellow-color.css')}}"></span>
-               </div>
-            </div>
-            <h6>RTL Version</h6>
-            <ul class="rtl-version option-box">
-               <li class="rtl">RTL Version</li>
-               <li>LTR Version</li>
-            </ul>
-            <h6>Boxed Version</h6>
-            <ul class="box-version option-box">
-               <li class="box">Boxed</li>
-               <li>Full width</li>
-            </ul>
-            <h6>Want Sticky Header</h6>
-            <ul class="header-version option-box">
-               <li class="box">No</li>
-               <li>Yes</li>
-            </ul>
-            <h6>Dark Verion</h6>
-            <ul class="dark-version option-box">
-               <li class="box">Yes</li>
-               <li>No</li>
-            </ul>
-            <div class="purchase-box">
-               You will find much more options for colors and styling in admin panel. This color picker is used only for demonstation purposes.
-               <a href="#" class="theme-btn btn-style-two">
-               <span class="btn-wrap">
-               <span class="text-one">buy now</span>
-               <span class="text-two">buy now</span>
-               </span>
-               </a>
-            </div>
-         </div>
-      </div>
-      <!-- End Color Palate / Color Switcher -->
+
       <!-- Scroll To Top -->
       <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
       <script src="{{asset('theme/assets/js/jquery.js')}}"></script>
