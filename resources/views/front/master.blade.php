@@ -2,7 +2,132 @@
 <html>
    <head>
       <meta charset="utf-8">
-      <title>Merit Medical Business HTML-5 Template | Homepage 09</title>
+      {{-- SEO --}}
+      <meta name="title" content="Biopassion Diagnostics - Comprehensive Diagnostic Medical Laboratory Services">
+      <meta name="description" content="At Biopassion Diagnostics, we prioritize honesty and integrity, fostering loyalty, enthusiasm, and unity in our interactions with both customers and colleagues. Our commitment revolves around placing patients/clients at the forefront of every action, striving to exceed expectations. This dedication, coupled with our focus on delivering high-quality, accurate, and timely medical laboratory services, is integral to our diagnostic excellence and reliability.">
+      <meta name="keywords" content="Hematology,Clinical Biochemistry ,Microbiology & parasitology,Serology,Histopathology & Cytopathology,Immunology,Molecular biology,">
+      <meta name="robots" content="index, follow">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="language" content="English">
+
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:title" content="Biopassion Diagnostics - Comprehensive Diagnostic Medical Laboratory Services">
+      <meta property="og:site_name" content="Biopassion Diagnostics Medical Laboratory Center">
+      <meta property="og:url" content="https://biopassiondiagnostics.com"/>
+      <meta property="og:description" content="At Biopassion Diagnostics, we prioritize honesty and integrity, fostering loyalty, enthusiasm, and unity in our interactions with both customers and colleagues. Our commitment revolves around placing patients/clients at the forefront of every action, striving to exceed expectations. This dedication, coupled with our focus on delivering high-quality, accurate, and timely medical laboratory services, is integral to our diagnostic excellence and reliability.">
+      <meta property="og:type" content="website">
+      <meta property="og:image" content="https://biopassiondiagnostics.com/uploads/logo/logo.png">
+	  <meta property="og:image:secure_url" content="https://biopassiondiagnostics.com/uploads/logo/logo.png" />
+	  <meta property="og:image:width" content="1000" />
+	  <meta property="og:image:height" content="194" />
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@biopassiondiag1" />
+      <meta name="twitter:title" content="Biopassion Diagnostics - Comprehensive Diagnostic Medical Laboratory Services" />
+      <meta name="twitter:description" content="At Biopassion Diagnostics, we prioritize honesty and integrity, fostering loyalty, enthusiasm, and unity in our interactions with both customers and colleagues. Our commitment revolves around placing patients/clients at the forefront of every action, striving to exceed expectations. This dedication, coupled with our focus on delivering high-quality, accurate, and timely medical laboratory services, is integral to our diagnostic excellence and reliability." />
+      <meta name="twitter:creator" content="@biopassiondiag1" />
+      <meta name="twitter:image" content="https://biopassiondiagnostics.com/uploads/logo/logo.png" />
+		<script type="application/ld+json" class="aioseo-schema">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                  {
+                    "@type": "BreadcrumbList",
+                    "@id": "https://biopassiondiagnostics.com",
+                    "itemListElement": [
+                      {
+                        "@type": "ListItem",
+                        "@id": "https://biopassiondiagnostics.com//#listItem",
+                        "position": 1,
+                        "item": {
+                          "@type": "WebPage",
+                          "@id": "https://biopassiondiagnostics.com//",
+                          "name": "Home",
+                          "description": "At Biopassion Diagnostics, we prioritize honesty and integrity, fostering loyalty, enthusiasm, and unity in our interactions with both customers and colleagues. Our commitment revolves around placing patients/clients at the forefront of every action, striving to exceed expectations. This dedication, coupled with our focus on delivering high-quality, accurate, and timely medical laboratory services, is integral to our diagnostic excellence and reliability.",
+                          "url": "https://biopassiondiagnostics.com//"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "@type": "Organization",
+                    "@id": "https://biopassiondiagnostics.com//#organization",
+                    "name": "Biopassion Diagnostics ",
+                    "url": "https://biopassiondiagnostics.com/",
+                    "logo": {
+                      "@type": "ImageObject",
+                      "url": "https://biopassiondiagnostics.com/uploads/logo/logo.png",
+                      "@id": "https://biopassiondiagnostics.com//#organizationLogo",
+                      "width": 250,
+                      "height": 100,
+                      "caption": "Biopassion Diagnostics "
+                    },
+                    "image": {
+                      "@id": "https://biopassiondiagnostics.com//#organizationLogo"
+                    },
+                    "sameAs": [
+                      "https://www.facebook.com/BiopassionDiagnostics",
+                      "https://twitter.com/biopassiondiag1",
+                      "https://www.linkedin.com/in/biopassion-diagnostics-1564aa179/"
+                    ],
+                    "contactPoint": {
+                      "@type": "ContactPoint",
+                      "telephone": "+254 704 150555",
+                      "contactType": "Customer Support"
+                    }
+                  },
+                  {
+                    "@type": "WebPage",
+                    "@id": "https://biopassiondiagnostics.com//#webpage",
+                    "url": "https://biopassiondiagnostics.com/",
+                    "name": "Biopassion Diagnostics - Comprehensive Diagnostic Medical Laboratory Services",
+                    "description": "At Biopassion Diagnostics, we prioritize honesty and integrity, fostering loyalty, enthusiasm, and unity in our interactions with both customers and colleagues. Our commitment revolves around placing patients/clients at the forefront of every action, striving to exceed expectations. This dedication, coupled with our focus on delivering high-quality, accurate, and timely medical laboratory services, is integral to our diagnostic excellence and reliability.",
+                    "inLanguage": "en-US",
+                    "isPartOf": {
+                      "@id": "https://biopassiondiagnostics.com//#website"
+                    },
+                    "breadcrumb": {
+                      "@id": "https://biopassiondiagnostics.com"
+                    },
+                    "image": {
+                      "@type": "ImageObject",
+                      "url": "https://biopassiondiagnostics.com/uploads/logo/logo.png",
+                      "@id": "https://biopassiondiagnostics.com//#mainImage",
+                      "width": 1000,
+                      "height": 194,
+                      "caption": "Biopassion Diagnostics "
+                    },
+                    "primaryImageOfPage": {
+                      "@id": "https://biopassiondiagnostics.com//#mainImage"
+                    },
+                    "datePublished": "2023-07-01T04:37:58+00:00",
+                    "dateModified": "2024-01-25T14:55:23+00:00"
+                  },
+                  {
+                    "@type": "WebSite",
+                    "@id": "https://biopassiondiagnostics.com//#website",
+                    "url": "https://biopassiondiagnostics.com/",
+                    "name": "Biopassion Diagnostics ",
+                    "description": "Keep up to date with the Latest News, Articles and Insights on the drug manufacturing, trade, technology and pharma supply chains in Africa.",
+                    "inLanguage": "en-US",
+                    "publisher": {
+                      "@id": "https://biopassiondiagnostics.com//#organization"
+                    },
+                    "potentialAction": {
+                      "@type": "SearchAction",
+                      "target": {
+                        "@type": "EntryPoint",
+                        "urlTemplate": "https://biopassiondiagnostics.com//?s={search_term_string}"
+                      },
+                      "query-input": "required name=search_term_string"
+                    }
+                  }
+                ]
+              }
+		</script>
+		<!-- All in One SEO -->
+
+      {{-- SEO --}}
       <!-- Stylesheets -->
       <link href="{{asset('theme/assets/css/bootstrap.css')}}" rel="stylesheet">
       <link href="{{asset('theme/assets/css/style.css')}}" rel="stylesheet">
@@ -24,7 +149,7 @@
    <body class="hidden-bar-wrapper">
       <div class="page-wrapper">
          <!-- Preloader -->
-         <div class="preloader"></div>
+         {{-- <div class="preloader"></div> --}}
          <!-- End Preloader -->
          <!-- Header Style One -->
          <header class="main-header header-style-two">
@@ -39,9 +164,10 @@
                         </ul>
                         <!-- Social Box -->
                         <ul class="header-social_box-two">
-                           <li><a href="https://www.linkedin.com/" class="fa-brands fa-linkedin fa-fw"></a></li>
-                           <li><a href="https://www.facebook.com/" class="fa-brands fa-facebook-f fa-fw"></a></li>
-                           <li><a href="https://www.twitter.com/" class="fa-brands fa-twitter fa-fw"></a></li>
+                           <li><a href="https://www.linkedin.com/in/biopassion-diagnostics-1564aa179/" class="fa-brands fa-linkedin fa-fw"></a></li>
+                           <li><a href="https://www.facebook.com/p/Biopassion-Diagnostics-100078695481297/" class="fa-brands fa-facebook-f fa-fw"></a></li>
+                           <li><a href="https://twitter.com/biopassiondiag1?lang=en" class="fa-brands fa-twitter fa-fw"></a></li>
+                           <li><a href="https://www.instagram.com/biopassiondiagnostics/?hl=en" class="fa-brands fa-instagram fa-fw"></a></li>
                         </ul>
                      </div>
                   </div>
@@ -75,25 +201,34 @@
                                     </li>
 
 
-                                    <li class="dropdown">
-                                    <a href="#">Who we are</a>
-                                    <ul>
-                                        <li><a href="#">About Us</a></li>
-                                        <li><a href="#">Our Team</a></li>
-                                        <li><a href="#">Our Values</a></li>
-                                    </ul>
+                                    <li>
+                                       <a href="{{url('/')}}/who-we-are">Who we are</a>
                                     </li>
 
                                     <li class="dropdown">
                                        <a href="#">What We Do</a>
+                                       <?php
+                                          $Services = DB::table('services')->where('extra','0')->get();
+                                       ?>
                                        <ul>
-                                          <li><a href="#">Service 1</a></li>
-                                          <li><a href="#">Service 1</a></li>
-                                          <li><a href="#">Service 1</a></li>
+                                        @foreach ($Services as $service)
+                                        <li><a href="{{url('/')}}/what-we-do/{{$service->slung}}">{{$service->title}}</a></li>
+                                        @endforeach
+                                        <li class="dropdown">
+                                            <a href="#">Other Services</a>
+                                            <ul>
+                                                <?php
+                                                    $Services = DB::table('services')->where('extra','1')->get();
+                                                ?>
+                                                @foreach ($Services as $service)
+                                                  <li><a href="{{url('/')}}/what-we-do/{{$service->slung}}">{{$service->title}}</a></li>
+                                                @endforeach
+                                            </ul>
+                                         </li>
                                        </ul>
                                     </li>
                                     <li>
-                                        <a href="#">Our Clientele</a>
+                                        <a href="{{url('/')}}/who-we-are#clientele">Our Clientele</a>
                                      </li>
                                      <li>
                                         <a href="{{route('contact-us')}}">Contact Us</a>
@@ -105,7 +240,7 @@
                         <!-- Main Menu End-->
                         <div class="outer-box d-flex align-items-center flex-wrap">
                            <div class="appointmeny_button-box">
-                              <a href="#" class="theme-btn btn-style-one">
+                              <a href="{{url('/')}}/make-an-appointment" class="theme-btn btn-style-one">
                               <span class="btn-wrap">
                               <span class="text-one">Schedule Appointment</span>
                               <span class="text-two">Schedule Now</span>
