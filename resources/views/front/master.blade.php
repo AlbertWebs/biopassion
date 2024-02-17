@@ -206,12 +206,14 @@
                                     </li>
 
                                     <li class="dropdown">
-                                       <a href="#">What We Do</a>
+                                       <a href="{{url('/')}}/what-we-do">What We Do</a>
                                        <?php
                                           $Services = DB::table('services')->where('extra','0')->get();
                                        ?>
                                        <ul>
+                                        <li><a href="what-we-do">All Services</a></li>
                                         @foreach ($Services as $service)
+
                                         <li><a href="{{url('/')}}/what-we-do/{{$service->slung}}">{{$service->title}}</a></li>
                                         @endforeach
                                         <li class="dropdown">
