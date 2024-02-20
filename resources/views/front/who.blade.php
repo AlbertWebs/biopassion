@@ -157,11 +157,13 @@
                        <li class="accordion block">
                           <div class="acc-btn active">
                              <div class="icon-outer"><span class="icon fa-solid fa-angle-right fa-fw"></span></div>
-                             What is an academic medical center?
+                             What services does Biopassion Diagnostics offer?
                           </div>
                           <div class="acc-content current">
                              <div class="content">
-                                <div class="text">Neque porro quisquam qui doid lorem ipsum quia dolor sit amet to iconsec tetur adipisci velit. Primis prompta eam eu. Per quod iriante, tollit qualis que urbanitas ei qui. Id liber democritum his.</div>
+                                <div class="text">
+                                    Biopassion Diagnostics provides a range of diagnostic services, including but not limited to genetic testing, molecular diagnostics, and personalized healthcare solutions. Our services are designed to cater to the diverse needs of individuals seeking insights into their health and well-being.
+                                </div>
                              </div>
                           </div>
                        </li>
@@ -169,11 +171,11 @@
                        <li class="accordion block">
                           <div class="acc-btn">
                              <div class="icon-outer"><span class="icon fa-solid fa-angle-right fa-fw"></span></div>
-                             What doctor will I see?
+                             How can I schedule a diagnostic test with Biopassion?
                           </div>
                           <div class="acc-content">
                              <div class="content">
-                                <div class="text">Neque porro quisquam qui doid lorem ipsum quia dolor sit amet to iconsec tetur adipisci velit. Primis prompta eam eu. Per quod iriante, tollit qualis que urbanitas ei qui. Id liber democritum his.</div>
+                                <div class="text">Scheduling a diagnostic test with Biopassion Diagnostics is easy. Simply visit our website or contact our customer service. You can choose from our list of available tests, book an appointment, and receive detailed instructions on the process. We strive to make the testing experience convenient and accessible.</div>
                              </div>
                           </div>
                        </li>
@@ -181,11 +183,11 @@
                        <li class="accordion block">
                           <div class="acc-btn">
                              <div class="icon-outer"><span class="icon fa-solid fa-angle-right fa-fw"></span></div>
-                             What is a medical student?
+                             Is my personal information kept confidential during the testing process?
                           </div>
                           <div class="acc-content">
                              <div class="content">
-                                <div class="text">Neque porro quisquam qui doid lorem ipsum quia dolor sit amet to iconsec tetur adipisci velit. Primis prompta eam eu. Per quod iriante, tollit qualis que urbanitas ei qui. Id liber democritum his.</div>
+                                <div class="text">At Biopassion Diagnostics, we prioritize the confidentiality and security of your personal information. We adhere to strict privacy protocols and comply with all relevant data protection regulations. Your data is handled with the utmost care, and only authorized personnel involved in the testing process have access to the information.</div>
                              </div>
                           </div>
                        </li>
@@ -193,11 +195,13 @@
                        <li class="accordion block">
                           <div class="acc-btn">
                              <div class="icon-outer"><span class="icon fa-solid fa-angle-right fa-fw"></span></div>
-                             How are residents supervised?
+                             How long does it take to receive test results?
                           </div>
                           <div class="acc-content">
                              <div class="content">
-                                <div class="text">Neque porro quisquam qui doid lorem ipsum quia dolor sit amet to iconsec tetur adipisci velit. Primis prompta eam eu. Per quod iriante, tollit qualis que urbanitas ei qui. Id liber democritum his.</div>
+                                <div class="text">
+                                    The turnaround time for test results may vary depending on the type of diagnostic test. Biopassion Diagnostics is committed to delivering accurate and timely results. Once your sample is received and processed, we strive to provide you with comprehensive reports promptly. You can check the estimated turnaround time for your specific test when scheduling your appointment.
+                                </div>
                              </div>
                           </div>
                        </li>

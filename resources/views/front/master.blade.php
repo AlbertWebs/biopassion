@@ -3,6 +3,7 @@
    <head>
       <meta charset="utf-8">
       {{-- SEO --}}
+      <title>Biopassion Diagnostics - Comprehensive Diagnostic Medical Laboratory Services</title>
       <meta name="title" content="Biopassion Diagnostics - Comprehensive Diagnostic Medical Laboratory Services">
       <meta name="description" content="At Biopassion Diagnostics, we prioritize honesty and integrity, fostering loyalty, enthusiasm, and unity in our interactions with both customers and colleagues. Our commitment revolves around placing patients/clients at the forefront of every action, striving to exceed expectations. This dedication, coupled with our focus on delivering high-quality, accurate, and timely medical laboratory services, is integral to our diagnostic excellence and reliability.">
       <meta name="keywords" content="Hematology,Clinical Biochemistry ,Microbiology & parasitology,Serology,Histopathology & Cytopathology,Immunology,Molecular biology,">
