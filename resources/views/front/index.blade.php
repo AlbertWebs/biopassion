@@ -335,63 +335,36 @@
          <!-- End Testimonial Two -->
 
          <!-- News Section -->
-         <section class="news-section style-two">
-            <div class="auto-container">
-               <div class="row clearfix">
+         <section class="news-section style-two" style="margin:0 auto">
+            <div class="auto-container" style="margin:0 auto">
+               <div class="row clearfix" style="margin:0 auto">
                   <!-- Title Column -->
-                  <div class="title-column col-lg-4 col-md-12 col-sm-12">
-                     <div class="inner-column">
-                        <!-- Sec Title -->
-                        <div class="sec-title_two">
-                           <div class="sec-title_two_title">Blog Posts</div>
-                           <h2 class="sec-title_two_heading">Our Latest Blog Posts</h2>
-                           <div class="sec-title_text">Replenish him third creature and meat blessed void a fruit third creature and meat blessed void a fruit gathered.</div>
-                        </div>
-                        <a href="blog.html" class="theme-btn btn-style-six">
-                        <span class="btn-wrap">
-                        <span class="text-one">All Blog Posts</span>
-                        <span class="text-two">All Blog Posts</span>
-                        </span>
-                        </a>
-                     </div>
-                  </div>
+
+                  <?php
+                      $Blogs = DB::table('blogs')->get();
+                  ?>php
+                  @foreach ($Blogs as $blogs)
                   <!-- Blocks Column -->
-                  <div class="blocks-column col-lg-4 col-md-12 col-sm-12">
+                  <div class="blocks-column col-lg-5 col-md-12 col-sm-12" >
                      <div class="inner-column">
                         <div class="pattern-image" style="background-image: url('{{asset('theme/assets/images/resource/tablet.png')}}')"></div>
                         <!-- News Block -->
                         <div class="news-block">
                            <div class="inner-box">
                               <div class="image">
-                                 <a href="blog-detail.html"><img src="{{asset('theme/assets/images/resource/news-25.jpg')}}" alt="" /></a>
+                                 <a href="{{url('/')}}/articles/{{$blogs->slung}}"><img src="{{asset('theme/assets/images/resource/news-25.jpg')}}" alt="" /></a>
                               </div>
                               <div class="lower-content">
-                                 <h4><a href="blog-detail.html">apply signal detection theory</a></h4>
-                                 <div class="text">Replenish him third creature and meat blessed void a fruit gathered you’re, they’re two waters</div>
-                                 <a href="blog-detail.html" class="read-more">Continue Reading</a>
+                                 <h4 style="min-height:94px;"><a href="{{url('/')}}/articles/{{$blogs->slung}}">{{$blogs->title}}</a></h4>
+                                 <div class="text">{{$blogs->meta}}</div>
+                                 <a href="{{url('/')}}/articles/{{$blogs->slung}}" class="read-more">Continue Reading</a>
                               </div>
                            </div>
                         </div>
                      </div>
                   </div>
                   <!-- Blocks Column -->
-                  <div class="blocks-column col-lg-4 col-md-12 col-sm-12">
-                     <div class="inner-column">
-                        <!-- News Block -->
-                        <div class="news-block">
-                           <div class="inner-box">
-                              <div class="image">
-                                 <a href="blog-detail.html"><img src="{{asset('theme/assets/images/resource/news-26.jpg')}}" alt="" /></a>
-                              </div>
-                              <div class="lower-content">
-                                 <h4><a href="blog-detail.html">Special offers for clients</a></h4>
-                                 <div class="text">Replenish him third creature and meat blessed void a fruit gathered you’re, they’re two waters</div>
-                                 <a href="blog-detail.html" class="read-more">Continue Reading</a>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
+                  @endforeach
                </div>
             </div>
          </section>
