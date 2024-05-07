@@ -434,7 +434,7 @@
 .main-header .main-menu .navigation > li > ul{
 	position:absolute;
 	width:16rem;
-	padding:25px 25px 30px 25px;
+	padding:15px 15px 20px 15px;
 	-webkit-transform: scaleY(0);
 	-ms-transform: scaleY(0);
 	-o-transform: scaleY(0);
@@ -1271,7 +1271,7 @@
 	position:absolute;
 	left:0px;
 	top:-50px;
-	padding:12px 115px;
+	padding:5px 115px;
     z-index: 999999999999;
 }
 
@@ -1300,10 +1300,10 @@
 }
 
 .header-style-two .main-menu .navigation > li > a{
-	font-weight:700;
-	padding:22px 20px;
+	/* font-weight:700; */
+	padding:12px 5px;
 	font-size:var(--font-16);
-	text-transform:uppercase;
+	/* text-transform:uppercase; */
 }
 
 .main-header.header-style-two .search-box-btn{
