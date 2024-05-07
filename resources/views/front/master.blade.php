@@ -196,7 +196,7 @@
                                  </button>
                               </div>
                               <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
-                                 <ul class="navigation clearfix">
+                                 {{-- <ul class="navigation clearfix">
                                     <li class="current">
                                        <a href="#">Home</a>
                                     </li>
@@ -236,7 +236,116 @@
                                      <li>
                                         <a href="{{route('contact-us')}}">Contact Us</a>
                                      </li>
+                                 </ul> --}}
+                                 {{--  --}}
+                                 <ul class="navigation clearfix">
+
+
+                                    <li class="dropdown">
+                                        <a href="{{url('/')}}/what-we-do">Patients</a>
+                                        <ul>
+                                            <li class="dropdown">
+                                                <a href="#">Get Tested</a>
+                                                <ul>
+                                                    <li><a href="{{url('/')}}/what-we-do/">Make, change, or cancel an appointment</a></li>
+                                                    <li><a href="{{url('/')}}/what-we-do/">Find a Locationt</a></li>
+                                                    <li><a href="{{url('/')}}/what-we-do/">Testing For Conditions</a></li>
+                                                    <li><a href="{{url('/')}}/what-we-do/">Prepare for Tests</a></li>
+                                                    <li><a href="{{url('/')}}/what-we-do/">Clinical Trials</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="#">Billing & Insuarnce</a>
+                                                <ul>
+                                                    <li><a href="{{url('/')}}/what-we-do/">Understanding the Cost of Your Care</a></li>
+                                                    <li><a href="{{url('/')}}/what-we-do/">Insuarnce</a></li>
+                                                    <li><a href="{{url('/')}}/what-we-do/">Financial Assistance</a></li>
+                                                    <li><a href="{{url('/')}}/what-we-do/">Self Pay Price Estimate</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="dropdown">
+                                                <a href="#">Results</a>
+                                                <ul>
+                                                    <li><a href="{{url('/')}}/what-we-do/">Access Your Results</a></li>
+                                                    <li><a href="{{url('/')}}/what-we-do/">Family Test Results</a></li>
+                                                    <li><a href="{{url('/')}}/what-we-do/">Understanding Test Results</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">Drugs Of Abuse</a>
+
+                                            </li>
+
+
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown">
+                                        <a href="{{url('/')}}/what-we-do">Healthcare professionals</a>
+                                        <ul>
+                                            <li class="dropdown">
+                                                <a href="#">About our Tests</a>
+                                                <ul>
+                                                    <li><a href="{{url('/')}}/what-we-do/">Allergy & Asthma</a></li>
+                                                    <li><a href="{{url('/')}}/what-we-do/">Arthritis</a></li>
+                                                    <li><a href="{{url('/')}}/what-we-do/">Autoimmune Diseases</a></li>
+                                                    <li><a href="{{url('/')}}/what-we-do/">Cancer</a></li>
+                                                    <li><a href="{{url('/')}}/what-we-do/">Cardiovascular Disease</a></li>
+                                                    <li><a href="{{url('/')}}/what-we-do/">Fertility Testing</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="#">Billing & Coding</a>
+                                                <ul>
+                                                    <li><a href="{{url('/')}}/what-we-do/">Commercial coverage & coding guidelines</a></li>
+                                                    <li><a href="{{url('/')}}/what-we-do/">Medicaid limited coverage policies</a></li>
+                                                    <li><a href="{{url('/')}}/what-we-do/">Medicare coverage & coding guides</a></li>
+                                                    <li><a href="{{url('/')}}/what-we-do/">Electronic billing</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="dropdown">
+                                                <a href="#">Clinical experts & education</a>
+                                                <ul>
+                                                    <li><a href="{{url('/')}}/what-we-do/">Clinical experts</a></li>
+                                                    <li><a href="{{url('/')}}/what-we-do/">Clinical Education Center</a></li>
+                                                    <li><a href="{{url('/')}}/what-we-do/">Diagnostic Insights</a></li>
+                                                </ul>
+                                            </li>
+
+
+                                            </li>
+
+
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown">
+                                        <a href="{{url('/')}}/what-we-do">Business & Organization
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Employee Screening</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Corporate Wellness</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Emloyee Health Coaching</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Drug Free Workplace</a>
+                                            </li>
+
+
+                                        </ul>
+                                    </li>
+
+
                                  </ul>
+                                 {{--  --}}
                               </div>
                            </nav>
                         </div>
