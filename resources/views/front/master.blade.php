@@ -161,7 +161,7 @@
                      <div class="d-flex justify-content-between align-items-center flex-wrap">
                         <ul class="header_info-list">
                            <li><span class="icon fa-solid fa-phone fa-fw"></span>Call Anytime: <a href="tel:+254 704 150555">+254 704 150555</a></li>
-                           <li><span class="icon fa-solid fa-envelope fa-fw"></span><a href="mailto:info@biopassiondiagnostics.com">info@biopassiondiagnostics.com</a></li>
+                           <li><span class="icon fa-solid fa-envelope fa-fw"></span><a href="mailto:info@biopassiondiagnostics.co.ke">info@biopassiondiagnostics.co.ke</a></li>
                         </ul>
                         <!-- Social Box -->
                         <ul class="header-social_box-two">
@@ -248,10 +248,10 @@
                                                 <a href="#">Get Tested</a>
                                                 <ul>
                                                     <li><a href="{{url('/')}}/what-we-do/">Make, change, or cancel an appointment</a></li>
-                                                    <li><a href="{{url('/')}}/what-we-do/">Find a Locationt</a></li>
+                                                    <li><a href="{{url('/')}}/what-we-do/">Find a Location</a></li>
                                                     <li><a href="{{url('/')}}/what-we-do/">Testing For Conditions</a></li>
                                                     <li><a href="{{url('/')}}/what-we-do/">Prepare for Tests</a></li>
-                                                    <li><a href="{{url('/')}}/what-we-do/">Clinical Trials</a></li>
+                                                    <li><a href="{{url('/')}}/what-we-do/">Infertility</a></li>
                                                 </ul>
                                             </li>
                                             <li class="dropdown">
@@ -285,6 +285,14 @@
                                     <li class="dropdown">
                                         <a href="{{url('/')}}/what-we-do">Healthcare professionals</a>
                                         <ul>
+                                             <li class="dropdown">
+                                                   <a href="#">Test Directory</a>
+
+                                            </li>
+                                            <li class="dropdown">
+                                                      <a href="#">Access Patient Results</a>
+
+                                             </li>
                                             <li class="dropdown">
                                                 <a href="#">About our Tests</a>
                                                 <ul>
@@ -300,7 +308,7 @@
                                                 <a href="#">Billing & Coding</a>
                                                 <ul>
                                                     <li><a href="{{url('/')}}/what-we-do/">Commercial coverage & coding guidelines</a></li>
-                                                    <li><a href="{{url('/')}}/what-we-do/">Medicaid limited coverage policies</a></li>
+
                                                     <li><a href="{{url('/')}}/what-we-do/">Medicare coverage & coding guides</a></li>
                                                     <li><a href="{{url('/')}}/what-we-do/">Electronic billing</a></li>
                                                 </ul>
@@ -481,8 +489,9 @@
                                  <ul class="footer-social_box">
                                     <li><a href="https://www.twitter.com/" class="fa-brands fa-twitter fa-fw"></a></li>
                                     <li><a href="https://www.facebook.com/" class="fa-brands fa-facebook-f fa-fw"></a></li>
-                                    <li><a href="https://dribbble.com/" class="fa-brands fa-dribbble fa-fw"></a></li>
+                                    <li><a href="https://instagram.com/" class="fa-brands fa-instagram fa-fw"></a></li>
                                     <li><a href="https://www.linkedin.com/" class="fa-brands fa-linkedin fa-fw"></a></li>
+                                    <li><a href="https://www.whatsapp.com/" class="fa-brands fa-whatsapp fa-fw"></a></li>
                                  </ul>
                               </div>
                            </div>
@@ -497,12 +506,12 @@
                             <div class="footer-widget links-widget">
                                <h4 class="main-footer_title">Service</h4>
                                <ul class="main-footer_list">
-                                  <li><a href="#">Emergency</a></li>
-                                  <li><a href="#">Psychotherapy</a></li>
-                                  <li><a href="#">Hourly Care</a></li>
-                                  <li><a href="#">Respite Home</a></li>
-                                  <li><a href="#">Advanced Care</a></li>
-                                  <li><a href="#">Laboratory</a></li>
+                                  <li><a href="#">Patient</a></li>
+                                  <li><a href="#">Healthcare Professionals</a></li>
+                                  <li><a href="#">Business & Organization</a></li>
+                                  <li><a href="#">Health Systems & Hospitals</a></li>
+                                  {{-- <li><a href="#">Advanced Care</a></li>
+                                  <li><a href="#">Laboratory</a></li> --}}
                                </ul>
                             </div>
                          </div>
@@ -512,7 +521,7 @@
                                  <h4 class="main-footer_title">Contact Info</h4>
                                  <ul class="main-footer_contact-list">
                                     <li><span class="icon fa-solid fa-map-marker fa-fw"></span><a href="https://maps.app.goo.gl/c8aBRXgMcjZepZeB9">Medical Laboratory Center, Nairobi Kenya, Lower Kabete, At Gacio Stage </a> </li>
-                                    <li><span class="icon fa-solid fa-envelope fa-fw"></span> <a href="mailto:info@biopassiondiagnostics.com">info@biopassiondiagnostics.com</a></li>
+                                    <li><span class="icon fa-solid fa-envelope fa-fw"></span> <a href="mailto:info@biopassiondiagnostics.co.ke">info@biopassiondiagnostics.co.ke</a></li>
                                     <li><span class="icon fa-solid fa-clock fa-fw"></span>Mon - Sat 8:00 - 6:30, <br> Sunday - CLOSED</li>
                                  </ul>
                               </div>
@@ -535,7 +544,7 @@
          <div class="search-popup">
             <div class="color-layer"></div>
             <button class="close-search"><span class="fa fa-solid fa-xmark fa-fw"></span></button>
-            <form method="post" action="https://html.themerange.net/merit/merit/blog.html">
+            <form method="post" action="#">
                <div class="form-group">
                   <input type="search" name="search-field" value="" placeholder="Search Here" required="">
                   <button class="fa fa-solid fa-magnifying-glass fa-fw" type="submit"></button>
