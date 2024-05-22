@@ -394,8 +394,24 @@
                            <!-- Search Btn -->
                            <div class="search-box-btn search-box-outer"><span class="icon fa fa-search"></span></div>
                            <!-- Nav Btn -->
-							<div class="nav-btn navSidebar-button fa-regular fa-user fa-fw"></div>
+                           @if(Auth::User())
+                                <a class="nav-btn navSidebar-button fa-regular fa fa-sign-out fa-fw" href=""
+                                    onclick="document.getElementById('logout-form').submit();">
+                                    {{-- <a class="nav-btn navSidebar-button fa-regular fa fa-sign-out fa-fw"></a> --}}
+                                </a>
+                           @else
+                              <a href="{{url('/')}}/dashboard" class="">
+                                 <span class="nav-btn navSidebar-buttons fa-regular fa-user fa-fw"></span>
+                              </a>
+                           @endif
 
+
+
+
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
 
                         </div>
                         <!-- Mobile Navigation Toggler -->
