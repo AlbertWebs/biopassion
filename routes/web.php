@@ -20,6 +20,58 @@ Route::get('/what-we-do', [App\Http\Controllers\HomeController::class, 'what'])-
 Route::get('/what-we-do/{slung}', [App\Http\Controllers\HomeController::class, 'what_single'])->name('what-we-do-single');
 Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact-us');
 
+Route::group(['prefix'=>'patients'], function(){
+    Route::group(['prefix'=>'get-tested'], function(){
+        Route::get('/conditions', [App\Http\Controllers\HomeController::class, 'conditions'])->name('conditions');
+        Route::get('/prepare', [App\Http\Controllers\HomeController::class, 'prepare'])->name('prepare');
+        Route::get('/infertility', [App\Http\Controllers\HomeController::class, 'infertility'])->name('infertility');
+    });
+
+    Route::group(['prefix'=>'billing-insurance'], function(){
+        Route::get('/understanding-the-cost-of-your-care', [App\Http\Controllers\HomeController::class, 'costing'])->name('understanding-the-cost-of-your-care');
+        Route::get('/estimate', [App\Http\Controllers\HomeController::class, 'estimate'])->name('estimate');
+        Route::get('/infertility', [App\Http\Controllers\HomeController::class, 'infertility'])->name('infertility');
+    });
+
+    Route::group(['prefix'=>'test-results'], function(){
+        Route::get('/family-results', [App\Http\Controllers\HomeController::class, 'family_results'])->name('family-results');
+        // Route::get('/estimate', [App\Http\Controllers\HomeController::class, 'estimate'])->name('estimate');
+        // Route::get('/infertility', [App\Http\Controllers\HomeController::class, 'infertility'])->name('infertility');
+    });
+
+    Route::group(['prefix'=>'test-results'], function(){
+        Route::get('/drugs-of-abuse', [App\Http\Controllers\HomeController::class, 'abuse'])->name('drugs-of-abuse');
+    });
+
+});
+Route::group(['prefix'=>'healthcare-professionals'], function(){
+    Route::group(['prefix'=>'test-directory'], function(){
+        Route::get('/', [App\Http\Controllers\HomeController::class, 'directory'])->name('test-directory');
+    });
+    Route::group(['prefix'=>'about-our-tests'], function(){
+        Route::get('/allergy-asthma', [App\Http\Controllers\HomeController::class, 'asthma'])->name('allergy-asthma');
+        Route::get('/arthritis', [App\Http\Controllers\HomeController::class, 'arthritis'])->name('arthritis');
+        Route::get('/autoimmune-diseases', [App\Http\Controllers\HomeController::class, 'autoimmune'])->name('autoimmune-diseases');
+        Route::get('/cancer', [App\Http\Controllers\HomeController::class, 'cancer'])->name('cancer');
+        Route::get('/cardiovascular-disease', [App\Http\Controllers\HomeController::class, 'cardiovascular'])->name('cardiovascular-disease');
+        Route::get('/fertility-testing', [App\Http\Controllers\HomeController::class, 'fertility'])->name('fertility-testing');
+    });
+    Route::group(['prefix'=>'billing-coding'], function(){
+        Route::get('/commercial-coverage-and-coding-guidelines', [App\Http\Controllers\HomeController::class, 'guidelines'])->name('commercial-coverage-and-coding-guidelines');
+    });
+
+    Route::group(['prefix'=>'clinical-experts-education'], function(){
+        Route::get('/clinical-experts', [App\Http\Controllers\HomeController::class, 'clinical'])->name('clinical-experts');
+        Route::get('/clinical-education-center', [App\Http\Controllers\HomeController::class, 'clinical_education'])->name('clinical-education-center');
+        Route::get('/diagnostic-insights', [App\Http\Controllers\HomeController::class, 'diagnostic_insights'])->name('diagnostic-insights');
+
+    });
+
+
+
+});
+
+
 Auth::routes();
 /*------------------------------------------
 --------------------------------------------
@@ -29,6 +81,9 @@ All Normal Users Routes List
 Route::middleware(['auth', 'user-access:user'])->group(function () {
     Route::get('/home', [PatientController::class, 'index'])->name('the-dashboard');
     Route::get('/dashboard', [PatientController::class, 'index'])->name('dashboard');
+    Route::get('/dashboard/my-results', [PatientController::class, 'results'])->name('my-results');
+    Route::get('/dashboard/my-appointments', [PatientController::class, 'results'])->name('my-appointments');
+    Route::get('/dashboard/my-profile', [PatientController::class, 'results'])->name('profile');
 });
 
 /*------------------------------------------

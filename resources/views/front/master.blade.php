@@ -248,34 +248,33 @@
                                             <li class="dropdown">
                                                 <a href="#">Get Tested</a>
                                                 <ul>
-                                                    <li><a href="{{url('/')}}/what-we-do/">Make, change, or cancel an appointment</a></li>
-                                                    <li><a href="{{url('/')}}/what-we-do/">Find a Location</a></li>
-                                                    <li><a href="{{url('/')}}/what-we-do/">Testing For Conditions</a></li>
-                                                    <li><a href="{{url('/')}}/what-we-do/">Prepare for Tests</a></li>
-                                                    <li><a href="{{url('/')}}/what-we-do/">Infertility</a></li>
+                                                    <li><a href="{{url('/')}}/dashboard">Make, change, or cancel an appointment</a></li>
+                                                    <li><a href="{{url('/')}}/contact-us">Find a Location</a></li>
+                                                    <li><a href="{{route('conditions')}}">Testing For Conditions</a></li>
+                                                    <li><a href="{{route('prepare')}}">Prepare for Tests</a></li>
+                                                    <li><a href="{{route('infertility')}}">Infertility</a></li>
                                                 </ul>
                                             </li>
                                             <li class="dropdown">
                                                 <a href="#">Billing & Insuarnce</a>
                                                 <ul>
-                                                    <li><a href="{{url('/')}}/what-we-do/">Understanding the Cost of Your Care</a></li>
-                                                    <li><a href="{{url('/')}}/what-we-do/">Insuarnce</a></li>
-                                                    <li><a href="{{url('/')}}/what-we-do/">Financial Assistance</a></li>
-                                                    <li><a href="{{url('/')}}/what-we-do/">Self Pay Price Estimate</a></li>
+                                                    <li><a href="{{route('understanding-the-cost-of-your-care')}}">Understanding the Cost of Your Care</a></li>
+                                                    <li><a href="{{route('estimate')}}">Insuarnce</a></li>
+                                                    <li><a href="{{route('estimate')}}">Financial Assistance</a></li>
+                                                    <li><a href="{{route('estimate')}}">Self Pay Price Estimate</a></li>
                                                 </ul>
                                             </li>
 
                                             <li class="dropdown">
                                                 <a href="#">Results</a>
                                                 <ul>
-                                                    <li><a href="{{url('/')}}/what-we-do/">Access Your Results</a></li>
-                                                    <li><a href="{{url('/')}}/what-we-do/">Family Test Results</a></li>
-                                                    <li><a href="{{url('/')}}/what-we-do/">Understanding Test Results</a></li>
+                                                    <li><a href="{{url('/')}}/dashboard">Access Your Results</a></li>
+                                                    <li><a href="{{route('family-results')}}">Family Test Results</a></li>
                                                 </ul>
                                             </li>
 
                                             <li>
-                                                <a href="#">Drugs Of Abuse</a>
+                                                <a href="{{route('drugs-of-abuse')}}">Drugs Of Abuse</a>
 
                                             </li>
 
@@ -284,43 +283,40 @@
                                     </li>
 
                                     <li class="dropdown">
-                                        <a href="{{url('/')}}/what-we-do">Healthcare professionals</a>
+                                        <a href="#">Healthcare professionals</a>
                                         <ul>
-                                             <li class="dropdown">
-                                                   <a href="#">Test Directory</a>
-
+                                            <li>
+                                                   <a href="{{route('test-directory')}}">Test Directory</a>
                                             </li>
                                             <li class="dropdown">
-                                                      <a href="#">Access Patient Results</a>
-
-                                             </li>
+                                                      <a href="{{url('/')}}/dashboard">Access Patient Results</a>
+                                            </li>
                                             <li class="dropdown">
                                                 <a href="#">About our Tests</a>
                                                 <ul>
-                                                    <li><a href="{{url('/')}}/what-we-do/">Allergy & Asthma</a></li>
-                                                    <li><a href="{{url('/')}}/what-we-do/">Arthritis</a></li>
-                                                    <li><a href="{{url('/')}}/what-we-do/">Autoimmune Diseases</a></li>
-                                                    <li><a href="{{url('/')}}/what-we-do/">Cancer</a></li>
-                                                    <li><a href="{{url('/')}}/what-we-do/">Cardiovascular Disease</a></li>
-                                                    <li><a href="{{url('/')}}/what-we-do/">Fertility Testing</a></li>
+                                                    <li><a href="{{route('allergy-asthma')}}">Allergy & Asthma</a></li>
+                                                    <li><a href="{{route('arthritis')}}">Arthritis</a></li>
+                                                    <li><a href="{{route('autoimmune-diseases')}}">Autoimmune Diseases</a></li>
+                                                    <li><a href="{{route('cancer')}}">Cancer</a></li>
+                                                    <li><a href="{{route('cardiovascular-disease')}}">Cardiovascular Disease</a></li>
+                                                    <li><a href="{{route('fertility-testing')}}">Fertility Testing</a></li>
                                                 </ul>
                                             </li>
                                             <li class="dropdown">
                                                 <a href="#">Billing & Coding</a>
                                                 <ul>
-                                                    <li><a href="{{url('/')}}/what-we-do/">Commercial coverage & coding guidelines</a></li>
-
-                                                    <li><a href="{{url('/')}}/what-we-do/">Medicare coverage & coding guides</a></li>
-                                                    <li><a href="{{url('/')}}/what-we-do/">Electronic billing</a></li>
+                                                    <li><a href="{{route('commercial-coverage-and-coding-guidelines')}}">Commercial coverage & coding guidelines</a></li>
+                                                    {{-- <li><a href="{{url('/')}}/what-we-do/">Medicare coverage & coding guides</a></li>
+                                                    <li><a href="{{url('/')}}/what-we-do/">Electronic billing</a></li> --}}
                                                 </ul>
                                             </li>
 
                                             <li class="dropdown">
                                                 <a href="#">Clinical experts & education</a>
                                                 <ul>
-                                                    <li><a href="{{url('/')}}/what-we-do/">Clinical experts</a></li>
-                                                    <li><a href="{{url('/')}}/what-we-do/">Clinical Education Center</a></li>
-                                                    <li><a href="{{url('/')}}/what-we-do/">Diagnostic Insights</a></li>
+                                                    <li><a href="{{route('clinical-experts')}}">Clinical experts</a></li>
+                                                    <li><a href="{{route('clinical-education-center')}}">Clinical Education Center</a></li>
+                                                    <li><a href="{{route('diagnostic-insights')}}">Diagnostic Insights</a></li>
                                                 </ul>
                                             </li>
 

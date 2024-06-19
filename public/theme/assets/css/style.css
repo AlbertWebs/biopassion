@@ -1,6 +1,6 @@
 /* Merit Medical Business HTML-5 Template */
 
-/*** 
+/***
 
 ====================================================================
 	Attachment Css Files
@@ -24,7 +24,7 @@
 @import url('odometer-theme-default.css');
 @import url('jquery.bootstrap-touchspin.css');
 
-/*** 
+/***
 
 ====================================================================
 	Main Slider Section
@@ -248,7 +248,7 @@
 	border-color:var(--main-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	About One
@@ -369,7 +369,7 @@
 	margin-top:20px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Services One
@@ -530,7 +530,7 @@
 	color:var(--white-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Modern One
@@ -569,7 +569,7 @@
 	top:5px;
 	line-height:1em;
 	color:var(--main-color);
-	
+
 	display:inline-block;
 	font-family: "Flaticon";
 	font-size:var(--font-80);
@@ -638,7 +638,7 @@
 	top:2px;
 	line-height:1em;
 	color:var(--white-color);
-	
+
 	display:inline-block;
 	font-family: "Flaticon";
 	font-size:var(--font-40);
@@ -660,7 +660,7 @@
 	margin-top:var(--margin-top-10);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Department One
@@ -829,7 +829,7 @@
 	color:var(--white-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Team One
@@ -1028,7 +1028,7 @@
 	-ms-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
 	transition:all 500ms ease;
-	
+
 	background: var(--color-five);
 	background: linear-gradient(to top, var(--color-five) 0%, rgba(var(--white-color-rgb), 0) 100%);
 }
@@ -1089,7 +1089,7 @@
 	color: var(--white-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Testimonial One
@@ -1291,7 +1291,7 @@
 	padding-top: 100px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	News One
@@ -1406,7 +1406,7 @@
 	margin-top:var(--margin-top-10);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Newsletter Section
@@ -1507,7 +1507,7 @@
 
 .subscribe-form .form-group input[type="submit"]:hover,
 .subscribe-form button:hover{
-	
+
 }
 
 .subscribe-form.style-two .form-group input[type="submit"],
@@ -1515,7 +1515,7 @@
 	background-color:var(--main-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Services Two
@@ -1711,7 +1711,7 @@
 	font-family: 'Font Awesome 6 Free';
 }
 
-/*** 
+/***
 
 ====================================================================
 	About Two
@@ -1891,7 +1891,7 @@
 	background:url(../images/icons/tag.png);
 }
 
-/*** 
+/***
 
 ====================================================================
 	CTA One
@@ -1949,7 +1949,7 @@
 	margin-top:var(--margin-top-25);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Specialist One
@@ -2061,7 +2061,7 @@
 }
 
 .specialist-tabs .tabs-content .tab.active-tab{
-	display:block;	
+	display:block;
 }
 
 .specialist-one_image{
@@ -2150,7 +2150,7 @@
 	background-color:var(--main-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Team Two
@@ -2294,7 +2294,7 @@
 	-ms-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
 	transition:all 500ms ease;
-	
+
 	background: var(--color-five);
 	background: linear-gradient(to top, var(--color-five) 0%, rgba(var(--white-color-rgb), 0) 100%);
 }
@@ -2328,7 +2328,7 @@
 	transition:all 500ms ease;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Question One
@@ -2384,7 +2384,7 @@
 	color:var(--color-four);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Comment Form
@@ -2546,7 +2546,7 @@
 	opacity: 1;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Testimonial Two
@@ -2672,15 +2672,15 @@
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
-	transition:all 300ms ease;	
+	transition:all 300ms ease;
 }
 
 .testimonial-two .client-thumb-outer .owl-item{
-	z-index:0;	
+	z-index:0;
 }
 
 .testimonial-two .client-thumb-outer .owl-item.active{
-	z-index:10;	
+	z-index:10;
 }
 
 .testimonial-two .client-thumb-outer .thumb-item .thumb-box:before{
@@ -2693,7 +2693,7 @@
 	display:block;
 	z-index:1;
 	background-color:rgba(255,255,255,0.50);
-} 
+}
 
 .testimonial-two .client-thumb-outer .owl-item.active .thumb-box:before{
 	opacity:0;
@@ -2721,7 +2721,7 @@
 	top:50%;
 	right:15px;
 	margin-top:-20px;
-} 
+}
 
 .testimonial-two .owl-nav .owl-prev{
 	position:absolute;
@@ -2803,7 +2803,7 @@
 	color:var(--white-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Timetable One
@@ -2994,7 +2994,7 @@
 	opacity:0;
 	font-family: "Flaticon";
 	background-color:rgba(var(--white-color-rgb), 0.70);
-	
+
 	-webkit-transition: all 900ms ease;
     -ms-transition: all 900ms ease;
     -o-transition: all 900ms ease;
@@ -3129,7 +3129,7 @@
 	background-color:var(--main-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Sponsors Section
@@ -3170,7 +3170,7 @@
 	display:none;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Main Slider Section
@@ -3350,7 +3350,7 @@
 	border-color:var(--color-four);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Services Three
@@ -3457,7 +3457,7 @@
 	color:var(--white-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Health One
@@ -3573,7 +3573,7 @@
 	margin-bottom:var(--margin-bottom-10);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Services Four
@@ -3663,7 +3663,7 @@
 	border-radius:10px 0px 0px 10px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Fluid One
@@ -3673,7 +3673,7 @@
 
 .fluid-one{
 	position:relative;
-	
+
 }
 
 .fluid-one .left-column{
@@ -3863,7 +3863,7 @@
 	box-shadow:0px 0px 15px rgba(0,0,0,0.10);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Counter Two
@@ -3918,7 +3918,7 @@
 	font-size:var(--font-18);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Testimonial Three
@@ -4089,7 +4089,7 @@
 	margin-top: var(--margin-top-10);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Team Three
@@ -4211,7 +4211,7 @@
 	color:var(--color-four);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Faq One
@@ -4269,7 +4269,7 @@
 	border-radius:280px 280px 0px 0px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Accordion Style
@@ -4348,11 +4348,11 @@
 }
 
 .accordion-box .block .acc-content .content-text{
-	
+
 }
 
 .accordion-box .block .acc-content.current{
-	display:block;	
+	display:block;
 }
 
 .accordion-box .block .content{
@@ -4397,7 +4397,7 @@
 	opacity:0;
 	font-family: "Flaticon";
 	background-color:rgba(var(--white-color-rgb), 0.70);
-	
+
 	-webkit-transition: all 900ms ease;
     -ms-transition: all 900ms ease;
     -o-transition: all 900ms ease;
@@ -4570,7 +4570,7 @@
 	padding:30px 30px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Sponsors Two
@@ -4679,7 +4679,7 @@
 	-moz-transition: all 300ms ease;
 	-ms-transition: all 300ms ease;
 	-o-transition: all 300ms ease;
-	transition: all 300ms ease;	
+	transition: all 300ms ease;
 }
 
 .page-title .bread-crumb li a:hover{
@@ -5134,7 +5134,7 @@
 	position:relative;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Achievement Section
@@ -5193,7 +5193,7 @@
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
     transition: all 300ms ease;
-	
+
 }
 
 .achievement-section .clients-column .inner-column .column .image img:hover{
@@ -5245,7 +5245,7 @@
 	color:var(--white-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Testimonial Section
@@ -5297,7 +5297,7 @@
 	background-color: var(--main-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 			Coming Soon
@@ -5437,7 +5437,7 @@
 	-moz-transition:all 300ms ease;
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
-	transition:all 300ms ease;	
+	transition:all 300ms ease;
 }
 
 .coming-soon .emailed-form .form-group input:focus,
@@ -5461,7 +5461,7 @@
 	-moz-transition:all 300ms ease;
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
-	transition:all 300ms ease;	
+	transition:all 300ms ease;
 }
 
 .coming-soon .emailed-form .form-group input[type="submit"]:hover,
@@ -5699,7 +5699,7 @@
 	color:var(--white-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Privacy Section
@@ -5787,7 +5787,7 @@
 
 
 
-/*** 
+/***
 
 ====================================================================
 	Pricing Section
@@ -5991,7 +5991,7 @@
 	font-family: 'Font Awesome 6 Free';
 }
 
-/*** 
+/***
 
 ====================================================================
 	Services Page
@@ -6004,7 +6004,7 @@
 	padding:110px 0px 80px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Pricing One
@@ -6124,7 +6124,7 @@
 	color:var(--color-four);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Process One
@@ -6224,7 +6224,7 @@
 	background-color:var(--color-five);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Contact One
@@ -6272,7 +6272,7 @@
 	margin-top:var(--margin-top-15);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Map One
@@ -6290,7 +6290,7 @@
 	width:100%;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Contact Form One
@@ -6323,7 +6323,7 @@
 .contact-form input.error,
 .contact-form select.error,
 .contact-form textarea.error{
-	border-color:#ff0000 !important;	
+	border-color:#ff0000 !important;
 }
 
 .contact-form label.error{
@@ -6334,7 +6334,7 @@
 	text-transform:uppercase;
 	font-size:12px;
 	color:#ff0000;
-	font-weight:500;	
+	font-weight:500;
 }
 
 
@@ -6343,7 +6343,7 @@
 
 
 
-/*** 
+/***
 
 ====================================================================
 	Contact Page Section
@@ -6462,7 +6462,7 @@
 }
 
 
-/*** 
+/***
 
 ====================================================================
 	Contact Page Section
@@ -6532,7 +6532,7 @@
 	border-bottom:none;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Contact Form Section
@@ -6544,7 +6544,7 @@
 	position:relative;
 	padding:0px 0px 0px;
 }
-	
+
 .contact-form-section .form-column{
 	position:relative;
 	margin-bottom:var(--margin-bottom-30);
@@ -6566,7 +6566,7 @@
 	position:relative;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Gallery One
@@ -6715,7 +6715,7 @@
     -moz-transition: all 0.5s;
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
-    transition: all 0.5s; 
+    transition: all 0.5s;
 	background-color:rgba(var(--main-color-rgb), 0.40);
 }
 
@@ -6772,7 +6772,7 @@
     -ms-transform: perspective(400px) rotateY(0deg);
     -o-transform: perspective(400px) rotateY(0deg);
     transform: perspective(400px) rotateY(0deg);
-	
+
 }
 
 .project-block .inner-box:hover .image .overlay-box{
@@ -6848,7 +6848,7 @@
 	color:var(--color-four);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Department One
@@ -7246,7 +7246,7 @@
 	font-family: 'Font Awesome 6 Free';
 }
 
-/*** 
+/***
 
 ====================================================================
 	Sidebar Page Container
@@ -7269,7 +7269,7 @@
 	z-index:1;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Sidebar Widget
@@ -7326,7 +7326,7 @@
 .department-list li a:before{
 	position:absolute;
 	content:'\f061';
-	right:30px; 
+	right:30px;
 	font-family: 'Font Awesome 6 Free';
 }
 
@@ -7488,7 +7488,7 @@
 .department-detail p{
 	line-height:30px;
 	font-size:var(--font-16);
-	color:var(--color-three);
+	/* color:var(--color-three); */
 	margin-bottom:var(--margin-bottom-10);
 }
 
@@ -7523,7 +7523,7 @@
 	font-family: 'Font Awesome 6 Free';
 }
 
-/*** 
+/***
 
 ====================================================================
 	Blog Page
@@ -7752,7 +7752,7 @@
 	opacity:0;
 	font-family: "Flaticon";
 	background-color:rgba(var(--white-color-rgb), 0.70);
-	
+
 	-webkit-transition: all 900ms ease;
     -ms-transition: all 900ms ease;
     -o-transition: all 900ms ease;
@@ -8163,7 +8163,7 @@
 	color:var(--main-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Comments Area
@@ -8216,7 +8216,7 @@
 }
 
 .sidebar-page-container .comments-area .reply-comment{
-	
+
 }
 
 .sidebar-page-container .comments-area .comment-box .author-thumb{
@@ -8282,7 +8282,7 @@
 	background-color: var(--main-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Comment Form
@@ -8363,7 +8363,7 @@
 	padding:17px 40px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Error Section
@@ -8408,7 +8408,7 @@
 	padding:18px 40px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Register Section
@@ -8436,7 +8436,7 @@
 }
 
 .styled-form{
-	position:relative;	
+	position:relative;
 }
 
 .styled-form .submit-text{
@@ -8502,7 +8502,7 @@
 
 .styled-form .form-group .check-box input[type="checkbox"]:checked + label:after {
 	max-width: 20px;
-	opacity: 1;	
+	opacity: 1;
 }
 
 .styled-form .form-group .check-box label:before{
@@ -8555,11 +8555,11 @@
 .checkout-section .styled-form input[type="password"],
 .checkout-section .styled-form select{
 	line-height:26px;
-	height:44px;	
+	height:44px;
 }
 
 .styled-form select option{
-	text-indent:20px;	
+	text-indent:20px;
 }
 
 .styled-form .form-group button{
@@ -8570,16 +8570,16 @@
 
 .styled-form textarea{
 	resize:none;
-	height:110px;	
+	height:110px;
 }
 
 .styled-form input:focus,
 .styled-form select:focus,
 .styled-form textarea:focus{
-	border-color:var(--main-color);	
+	border-color:var(--main-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Filter Box
@@ -8933,7 +8933,7 @@
 }
 
 /* Quality Box */
-	
+
 .quantity-box{
 	position:relative;
 }
@@ -8946,7 +8946,7 @@
 	position:relative;
 	float:left;
 	text-align:center;
-	margin:0px 10px 10px 0px;	
+	margin:0px 10px 10px 0px;
 }
 
 .select-size-box .input-box{
@@ -8959,7 +8959,7 @@
 	top:0px;
 	visibility:hidden;
 	position:absolute;
-	opacity:0;	
+	opacity:0;
 }
 
 .select-size-box .select-box label{
@@ -8979,7 +8979,7 @@
 
 .select-size-box .select-box input[type="radio"]:checked+label{
 	background-color:var(--black-color);
-	color:#ffffff;	
+	color:#ffffff;
 }
 
 /* Item Quantity */
@@ -9034,7 +9034,7 @@
 
 .quantity-box .bootstrap-touchspin .input-group-btn-vertical > .btn.bootstrap-touchspin-down:hover,
 .quantity-box .bootstrap-touchspin .input-group-btn-vertical > .btn.bootstrap-touchspin-up:hover{
-	
+
 }
 
 .quantity-box .bootstrap-touchspin .glyphicon-chevron-up:before {
@@ -9063,7 +9063,7 @@
 .quantity-box .bootstrap-touchspin .input-group-btn-vertical i{
 	top: 6px;
 	left: 14px;
-	font-size: inherit !important; 
+	font-size: inherit !important;
 }
 
 .quantity-box .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down{
@@ -9262,7 +9262,7 @@
 }
 
 /* Quality Box */
-	
+
 .quantity-box{
 	position:relative;
 }
@@ -9275,7 +9275,7 @@
 	position:relative;
 	float:left;
 	text-align:center;
-	margin:0px 10px 10px 0px;	
+	margin:0px 10px 10px 0px;
 }
 
 .select-size-box .input-box{
@@ -9288,7 +9288,7 @@
 	top:0px;
 	visibility:hidden;
 	position:absolute;
-	opacity:0;	
+	opacity:0;
 }
 
 .select-size-box .select-box label{
@@ -9308,7 +9308,7 @@
 
 .select-size-box .select-box input[type="radio"]:checked+label{
 	background-color:var(--black-color);
-	color:#ffffff;	
+	color:#ffffff;
 }
 
 .shop-detail-section .content-column .categories{
@@ -9394,7 +9394,7 @@
 
 .quantity-box .bootstrap-touchspin .input-group-btn-vertical > .btn.bootstrap-touchspin-down:hover,
 .quantity-box .bootstrap-touchspin .input-group-btn-vertical > .btn.bootstrap-touchspin-up:hover{
-	
+
 }
 
 .quantity-box .bootstrap-touchspin .input-group-btn-vertical{
@@ -9405,14 +9405,14 @@
 .quantity-box .bootstrap-touchspin .input-group-btn-vertical i{
 	top: 6px;
 	left: 14px;
-	font-size: inherit !important; 
+	font-size: inherit !important;
 }
 
 .quantity-box .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down{
 	margin-top: 0px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Product Tabs Style
@@ -9464,7 +9464,7 @@
 }
 
 .shop-detail-section .prod-tabs .tabs-content .tab.active-tab{
-	display:block;	
+	display:block;
 }
 
 .prod-tabs .tabs-content p{
@@ -9619,10 +9619,10 @@
 .shop-comment-form input:focus,
 .shop-comment-form select:focus,
 .shop-comment-form textarea:focus{
-	border-color:var(--main-color);	
+	border-color:var(--main-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Comments Area
@@ -9647,11 +9647,11 @@
 }
 
 .shop-detail-section .comments-area .comment-box:nth-child(1){
-	padding-top:0px;	
+	padding-top:0px;
 }
 
 .shop-detail-section .comments-area .comment-box:hover{
-	border-color:var(--main-color);	
+	border-color:var(--main-color);
 }
 
 .shop-detail-section .comments-area .comment-box.reply-comment{
@@ -9795,7 +9795,7 @@
 
 
 
-/*** 
+/***
 
 ====================================================================
 	Cart Section
@@ -9828,7 +9828,7 @@
 
 .cart-section .cart-table{
 	width:100%;
-	min-width:900px;	
+	min-width:900px;
 }
 
 .cart-table .cart-header{
@@ -9886,7 +9886,7 @@
 	left:0px;
 	top:0px;
 	padding:10px 10px;
-	border:1px solid #f0f0f0;	
+	border:1px solid #f0f0f0;
 }
 
 .cart-table .cross-icon{
@@ -9961,7 +9961,7 @@
 }
 
 .cart-table tbody tr{
-	border-bottom:1px solid #f0f0f0;	
+	border-bottom:1px solid #f0f0f0;
 }
 
 .cart-table tbody tr td.price{
@@ -9984,7 +9984,7 @@
 
 .shoping-cart-section .total-column .inner-column{
 	position:relative;
-	
+
 }
 
 .shoping-cart-section .total-column .title-box{
@@ -10109,7 +10109,7 @@
 
 .shoping-cart-section .check-box input[type="checkbox"]:checked + label:after {
 	max-width: 20px;
-	opacity: 1;	
+	opacity: 1;
 }
 
 .cart-total-outer .proceed-btn{
@@ -10195,7 +10195,7 @@
 	position:relative;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Shipping Form
@@ -10236,7 +10236,7 @@
 }
 
 .shipping-form .form-group .ui-button .ui-icon{
-	
+
 }
 
 .shipping-form .form-group textarea::-webkit-input-placeholder,
@@ -10360,7 +10360,7 @@
 
 .shipping-form .check-box input[type="checkbox"]:checked + label:after {
 	max-width: 20px;
-	opacity: 1;	
+	opacity: 1;
 }
 
 .shipping-form .theme-btn{
@@ -10548,7 +10548,7 @@
 	height:18px;
 	z-index: 99;
 	border-radius:0px;
-	cursor:pointer;	
+	cursor:pointer;
 	border: 4px solid var(--color-four);
 }
 
@@ -10570,7 +10570,7 @@
 	color:var(--white-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Slider Section
@@ -10715,7 +10715,7 @@
 	display:none;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Call To Action Section
@@ -10759,7 +10759,7 @@
 	line-height:1.3em;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Services Section
@@ -10873,7 +10873,7 @@
 	color:#f98f74;
 }
 
-/*** 
+/***
 
 ====================================================================
 	About Section
@@ -10973,7 +10973,7 @@
 	background:url(../images/icons/dott.png) no-repeat;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Help Section
@@ -11060,7 +11060,7 @@
 	border-color:#5153ff;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Video Section
@@ -11202,7 +11202,7 @@
 
 
 
-/*** 
+/***
 
 ====================================================================
 	Services Section Two
@@ -11483,7 +11483,7 @@
 	margin-top:30px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Team Section
@@ -11705,7 +11705,7 @@
 	color:#222222;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Appointment Section
@@ -11736,7 +11736,7 @@
 	box-shadow:0px 0px 30px rgba(0,0,0,0.10);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Appointment Form
@@ -11863,7 +11863,7 @@
 	text-align:center;
 }
 
-/*** 
+/***
 
 ====================================================================
 	News Section
@@ -12001,7 +12001,7 @@
 	color:#222222;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Testimonial Section
@@ -12175,7 +12175,7 @@
 }
 
 
-/*** 
+/***
 
 ====================================================================
 	Banner Section
@@ -12233,7 +12233,7 @@
 	padding-top:80px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Services Section Three
@@ -12246,7 +12246,7 @@
 	padding:110px 0px 90px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	About Section Two
@@ -12327,7 +12327,7 @@
 
 
 
-/*** 
+/***
 
 ====================================================================
 	Help Section Two
@@ -12396,7 +12396,7 @@
 	border-color:#01bbbf;
 }
 
-/*** 
+/***
 
 ====================================================================
 	News Section Two
@@ -12533,7 +12533,7 @@
 	border-color:#5153ff;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Slider Section Two
@@ -12632,7 +12632,7 @@
 	display:none;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Cases Section
@@ -12643,7 +12643,7 @@
 .cases-section{
 	position:relative;
 	overflow:hidden;
-	
+
 }
 
 .cases-section .inner-container{
@@ -12894,7 +12894,7 @@
   transition: transform 0.3s 0.7s, opacity 0s 0.7s;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Banner Section
@@ -12986,7 +12986,7 @@
 	font-weight:400;
 	opacity: 0;
 	font-family: 'Poppins', sans-serif;
-	
+
 	transform: scaleY(0);
 	transform-origin: top;
 	-webkit-transition: all 1000ms ease;
@@ -13141,7 +13141,7 @@
 	background-color:#001024;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Services Section
@@ -13263,7 +13263,7 @@
 }
 
 .services-section-four .tabs-box .tab.active-tab{
-  display:block;  
+  display:block;
 }
 
 .services-section-four .tabs-box .tab{
@@ -13426,7 +13426,7 @@
 	font-family: 'Poppins', sans-serif;
 }
 
-/*** 
+/***
 
 ====================================================================
 	About Section
@@ -13482,7 +13482,7 @@
 }
 
 .about-section-four .content-column .about-list li:before{
-	
+
 	position:absolute;
 	content: "\f109";
 	left:0px;
@@ -13543,7 +13543,7 @@
 	line-height:1.3em;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Appointment Section
@@ -13588,7 +13588,7 @@
 
 .appointment-form-two .form-group{
 	position:relative;
-	margin-bottom:20px;	
+	margin-bottom:20px;
 }
 
 .appointment-form-two .form-group .field-label{
@@ -13620,14 +13620,14 @@
 	height:50px;
 	font-size:13px;
 	border:1px solid #e0e0e0;
-	padding:12px 15px;	
+	padding:12px 15px;
 	background-color:#ffffff;
 	color:#222222;
 	border-radius:2px;
 	transition:all 500ms ease;
 	-webkit-transition:all 500ms ease;
 	-ms-transition:all 500ms ease;
-	-o-transition:all 500ms ease;	
+	-o-transition:all 500ms ease;
 }
 
 .appointment-form-two .select-box{
@@ -13635,7 +13635,7 @@
 	width:88px;
 	text-align:center;
 	display:inline-block;
-	margin:0px 20px 0px 0px;	
+	margin:0px 20px 0px 0px;
 }
 
 .appointment-form-two .select-box:last-child{
@@ -13647,7 +13647,7 @@
 	top:0px;
 	visibility:hidden;
 	position:absolute;
-	opacity:0;	
+	opacity:0;
 }
 
 .appointment-form-two .select-box .icon{
@@ -13673,10 +13673,10 @@
 .appointment-form-two .select-box input[type="radio"]:checked+label{
 	background:#0385e1;
 	border-color:#0385e1;
-	color:#ffffff;	
+	color:#ffffff;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Counter Section
@@ -13830,7 +13830,7 @@
 	margin-top:20px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Gallery Section
@@ -14018,7 +14018,7 @@
 	box-shadow:0px 0px 15px rgba(0,0,0,0.15);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Team Section
@@ -14163,7 +14163,7 @@
 	color:#2a7bcd;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Pricing Section
@@ -14312,7 +14312,7 @@
 	background-color:#0385e1;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Call To Action Section
@@ -14379,7 +14379,7 @@
 	color:#001024;
 }
 
-/*** 
+/***
 
 ====================================================================
 	News Section
@@ -14548,7 +14548,7 @@
 	opacity:1;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Contact Section
@@ -14744,7 +14744,7 @@
 	margin-right:10px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Dental Section
@@ -14762,7 +14762,7 @@
 	border:10px solid #ffffff;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Slider Three
@@ -14904,7 +14904,7 @@
 	background-color:var(--main-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	About Three
@@ -14971,7 +14971,7 @@
 	margin-top: 30px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Choose One
@@ -15054,7 +15054,7 @@
 	font-size: 16px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Offer One
@@ -15178,7 +15178,7 @@
 	font-family: "Flaticon";
 }
 
-/*** 
+/***
 
 ====================================================================
 	Video One
@@ -15229,7 +15229,7 @@
 	background-color:rgba(var(--white-color-rgb), 1);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Quality One
@@ -15264,7 +15264,7 @@
 	padding: 100px 0px 100px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Product Tabs Style
@@ -15318,7 +15318,7 @@
 }
 
 .quality-tabs .tabs-content .tab.active-tab{
-	display:block;	
+	display:block;
 }
 
 .quality-one_button{
@@ -15326,7 +15326,7 @@
 	margin-top: 50px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Appointment One
@@ -15380,7 +15380,7 @@
 	background-color: rgba(var(--black-color-rgb), 0.05);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Team Four
@@ -15393,7 +15393,7 @@
 	padding: 100px 0px 70px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Slider Four
@@ -15542,7 +15542,7 @@
 	background-color:var(--white-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	LiveChat
@@ -15569,7 +15569,7 @@
 	text-transform: uppercase;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Services Five
@@ -15643,7 +15643,7 @@
 	color: var(--black-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Slider Five
@@ -15805,7 +15805,7 @@
 	display: none;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Consultancy One
@@ -15908,7 +15908,7 @@
 	background-color: var(--white-color);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Consultancy One
