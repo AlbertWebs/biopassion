@@ -72,7 +72,14 @@ Route::group(['prefix'=>'business-and-organization'], function(){
         Route::get('/corporate-wellness', [App\Http\Controllers\HomeController::class, 'corporate_welness'])->name('corporate-wellness');
         Route::get('/emloyee-health-coaching', [App\Http\Controllers\HomeController::class, 'coaching'])->name('emloyee-health-coaching');
         Route::get('/drug-free-workplace', [App\Http\Controllers\HomeController::class, 'workplace'])->name('drug-free-workplace');
+});
 
+Route::group(['prefix'=>'health-systems-and-hospitals'], function(){
+    Route::get('/outreach-partnerships', [App\Http\Controllers\HomeController::class, 'outreach'])->name('outreach-partnerships');
+    Route::get('/collaborative-lab-solutions', [App\Http\Controllers\HomeController::class, 'collaborative'])->name('collaborative-lab-solutions');
+    Route::get('/lab-testing-consultation', [App\Http\Controllers\HomeController::class, 'consultation'])->name('lab-testing-consultation');
+    Route::get('/clinical-trials-testing', [App\Http\Controllers\HomeController::class, 'trials'])->name('clinical-trials-testing');
+    Route::get('/sposored-testing', [App\Http\Controllers\HomeController::class, 'sposored'])->name('sposored-testing');
 });
 
 

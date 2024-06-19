@@ -353,19 +353,19 @@
                                         </a>
                                         <ul>
                                             <li>
-                                                <a href="#">Outreach Partnerships</a>
+                                                <a href="{{route('outreach-partnerships')}}">Outreach Partnerships</a>
                                             </li>
                                             <li>
-                                                <a href="#">Collaborative Lab Solutions</a>
+                                                <a href="{{route('collaborative-lab-solutions')}}">Collaborative Lab Solutions</a>
                                             </li>
                                             <li>
-                                                <a href="#">Lab Testing Consultation</a>
+                                                <a href="{{route('lab-testing-consultation')}}">Lab Testing Consultation</a>
                                             </li>
                                             <li>
-                                                <a href="#">Clinical Trials Testing</a>
+                                                <a href="{{route('clinical-trials-testing')}}">Clinical Trials Testing</a>
                                             </li>
                                             <li>
-                                                <a href="#">Sposored Testing</a>
+                                                <a href="{{route('sposored-testing')}}">Sposored Testing</a>
                                             </li>
 
 

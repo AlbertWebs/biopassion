@@ -108,6 +108,25 @@ class HomeController extends Controller
         return view('front.workplace');
     }
 
+    public function outreach(){
+        return view('front.outreach');
+    }
+    public function collaborative(){
+        return view('front.collaborative');
+    }
+    public function consultation(){
+        return view('front.consultation');
+    }
+
+    public function trials(){
+        return view('front.trials');
+    }
+
+    public function sposored(){
+        return view('front.sposored');
+    }
+
+
 
 
     public function what_single($slung){
