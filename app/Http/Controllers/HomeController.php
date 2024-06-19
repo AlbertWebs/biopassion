@@ -93,6 +93,21 @@ class HomeController extends Controller
         return view('front.diagnostic_insights');
     }
 
+    public function employee_screening(){
+        return view('front.employee_screening');
+    }
+
+    public function corporate_welness(){
+        return view('front.corporate_welness');
+    }
+
+    public function coaching(){
+        return view('front.coaching');
+    }
+    public function workplace(){
+        return view('front.workplace');
+    }
+
 
 
     public function what_single($slung){

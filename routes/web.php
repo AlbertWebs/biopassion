@@ -64,10 +64,14 @@ Route::group(['prefix'=>'healthcare-professionals'], function(){
         Route::get('/clinical-experts', [App\Http\Controllers\HomeController::class, 'clinical'])->name('clinical-experts');
         Route::get('/clinical-education-center', [App\Http\Controllers\HomeController::class, 'clinical_education'])->name('clinical-education-center');
         Route::get('/diagnostic-insights', [App\Http\Controllers\HomeController::class, 'diagnostic_insights'])->name('diagnostic-insights');
-
     });
+});
 
-
+Route::group(['prefix'=>'business-and-organization'], function(){
+        Route::get('/employee-screening', [App\Http\Controllers\HomeController::class, 'employee_screening'])->name('employee-screening');
+        Route::get('/corporate-wellness', [App\Http\Controllers\HomeController::class, 'corporate_welness'])->name('corporate-wellness');
+        Route::get('/emloyee-health-coaching', [App\Http\Controllers\HomeController::class, 'coaching'])->name('emloyee-health-coaching');
+        Route::get('/drug-free-workplace', [App\Http\Controllers\HomeController::class, 'workplace'])->name('drug-free-workplace');
 
 });
 
