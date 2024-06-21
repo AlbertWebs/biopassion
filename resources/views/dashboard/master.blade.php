@@ -98,36 +98,36 @@
                <div id="sidebar-menu" class="sidebar-menu">
                   <ul>
                      <li class="menu-title">Main</li>
-                     <li class="submenu">
+                     <li >
                         <a href="{{url('/')}}/dashboard"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/menu-icon-01.svg')}}" alt></span> <span> Dashboard </span> </a>
                      </li>
-                     <li class="submenu">
+                     <li >
                         <a href="{{url('/')}}/"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/clock.svg')}}" alt></span> <span> Main Website </span> </a>
                      </li>
-                     <li class="submenu">
+                     <li >
                         <a href="#"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/menu-icon-02.svg')}}" alt></span> <span> My Profile </span> </a>
 
                      </li>
-                     <li class="submenu">
+                     <li >
                         <a href="#"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/menu-icon-03.svg')}}" alt></span> <span>My Results </span> </a>
 
                      </li>
-                     <li class="submenu">
+                     <li >
                         <a href="#"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/menu-icon-03.svg')}}" alt></span> <span>My Payments </span> </a>
                      </li>
-                     <li class="submenu">
+                     <li >
 
                      </li>
-                     <li class="submenu">
+                     <li >
                         <a href="#"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/menu-icon-04.svg')}}" alt></span> <span> My Appoinment </span> </a>
 
                      </li>
-                     <li class="submenu">
-                        <a href="#"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/edit.svg')}}" alt></span> <span> Privacy Policy </span> </a>
+                     <li>
+                        <a target="new" href="{{route('privacy-policy')}}"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/edit.svg')}}" alt></span> <span> Privacy Policy </span> </a>
 
                      </li>
-                     <li class="submenu">
-                        <a href="#"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/edit.svg')}}" alt></span> <span> Terms and Conditions </span> </a>
+                     <li>
+                        <a target="new" href="{{route('terms-and-conditions')}}"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/edit.svg')}}" alt></span> <span> Terms and Conditions </span> </a>
                      </li>
 
                   </ul>

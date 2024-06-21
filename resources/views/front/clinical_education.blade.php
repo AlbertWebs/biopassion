@@ -12,7 +12,9 @@
           <div class="content-side col-lg-10 col-md-12 col-sm-12" style="margin:0 auto">
              <div class="department-detail">
                 <div class="inner-box">
-
+                    <div class="image">
+                        <img style="border-radius:15px" src="{{asset('uploads/pexels-thisisengineering-3861457.jpg')}}" alt="" />
+                     </div>
 
                     <div>
                         <h4>Clinical Education Center</h4>

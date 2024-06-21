@@ -7,10 +7,10 @@
 <div class="auto-container">
     <h2>Testing for conditions</h2>
     <ul class="bread-crumb clearfix">
-        <li><a href="#">Home</a></li>
-        <li>Patients</li>
-        <li>Get Tested</li>
-        <li>Testing for conditions</li>
+       <a href="#">Home</a><br>
+       Patients<br>
+       Get Tested<br>
+       Testing for conditions<br>
     </ul>
 </div>
 </section>
@@ -35,20 +35,21 @@
                    <p>
                         Taking proactive steps for your health by getting tested is one of the smartest decisions you can make. At Biopassion Diagnostics, we are here to provide you with the essential information and reassurance needed to make informed health choices. Gain confidence and clarity through our comprehensive testing services, which offer valuable insights into your preventive and treatment options.
 
-                        Biopassion Diagnostics offers a wide range of tests, including:
+                        Biopassion Diagnostics offers a wide range of tests, including:<br><br>
 
-                        <ul style="font-size:16px;">
-                            <li>Allergy and asthma</li>
-                            <li>Cancer</li>
-                            <li>Chronic disease</li>
-                            <li>Digestive health</li>
-                            <li>Heart health</li>
-                            <li>Hereditary cancer</li>
-                            <li>Infectious disease</li>
-                            <li>Men's health</li>
-                            <li>Neurological disease</li>
-                            <li>Women's health</li>
-                        </ul>
+
+
+                           Allergy and asthma<br>
+                           Cancer<br>
+                           Chronic disease<br>
+                           Digestive health<br>
+                           Heart health<br>
+                           Hereditary cancer<br>
+                           Infectious disease<br>
+                           Men's health<br>
+                           Neurological disease<br>
+                           Women's health<br>
+
                     </p>
 
                    {{--  --}}
@@ -125,9 +126,9 @@
                </div>
             </div>
             <ul class="question-one_contact-list">
-               <li><span class="icon fa-solid fa-phone fa-fw"></span>Medical Laboratory Center, Nairobi Kenya, Lower Kabete, At Gacio Stage</li>
-               <li><span class="icon fa-solid fa-envelope fa-fw"></span> <a href="mailto:info@biopassiondiagnostics.com">info@biopassiondiagnostics.com</a></li>
-               <li><span class="icon fa-solid fa-clock fa-fw"></span>Mon - Fri  8:00 - 6:30, <br> Sunday - CLOSED</li>
+              <span class="icon fa-solid fa-phone fa-fw"></span>Medical Laboratory Center, Nairobi Kenya, Lower Kabete, At Gacio Stage<br>
+              <span class="icon fa-solid fa-envelope fa-fw"></span> <a href="mailto:info@biopassiondiagnostics.com">info@biopassiondiagnostics.com</a><br>
+              <span class="icon fa-solid fa-clock fa-fw"></span>Mon - Fri  8:00 - 6:30, <br> Sunday - CLOSED<br>
             </ul>
          </div>
          <!-- Form Column -->

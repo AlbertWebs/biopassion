@@ -12,7 +12,9 @@
           <div class="content-side col-lg-10 col-md-12 col-sm-12" style="margin:0 auto">
              <div class="department-detail">
                 <div class="inner-box">
-
+                    <div class="image">
+                        <img style="border-radius:15px" src="{{asset('uploads/pexels-cytonn-955395.jpg')}}" alt="" />
+                     </div>
                     <div>
                         <h4>Outreach Partnership Services at Biopassion Diagnostics</h4>
                         <p>At Biopassion Diagnostics, we are committed to expanding access to high-quality diagnostic services through strategic outreach partnerships. Our <a href="https://www.biopassiondiagnostics.com/outreach-partnerships">Outreach Partnership Services</a> are designed to support healthcare providers, clinics, and community organizations in delivering comprehensive diagnostic testing to their patients. By partnering with us, you can enhance your service offerings and improve patient care within your community.</p>

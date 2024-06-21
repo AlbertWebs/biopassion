@@ -125,6 +125,12 @@ class HomeController extends Controller
     public function sposored(){
         return view('front.sposored');
     }
+    public function privacy(){
+        return view('front.privacy');
+    }
+    public function terms(){
+        return view('front.terms');
+    }
 
 
 

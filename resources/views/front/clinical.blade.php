@@ -12,7 +12,9 @@
           <div class="content-side col-lg-10 col-md-12 col-sm-12" style="margin:0 auto">
              <div class="department-detail">
                 <div class="inner-box">
-
+                    <div class="image">
+                        <img style="border-radius:15px" src="{{asset('uploads/pexels-artempodrez-5726789.jpg')}}" alt="" />
+                     </div>
 
                     <div>
                         <h4>Clinical Experts at Biopassion Diagnostics</h4><br><br>

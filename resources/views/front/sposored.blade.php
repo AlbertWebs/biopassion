@@ -12,6 +12,9 @@
           <div class="content-side col-lg-10 col-md-12 col-sm-12" style="margin:0 auto">
              <div class="department-detail">
                 <div class="inner-box">
+                    <div class="image">
+                        <img style="border-radius:15px; max-width:200px;" src="{{asset('uploads/logo/logo.png')}}" alt="" />
+                     </div>
                     <div>
                         <h4>Sponsored Testing at Biopassion Diagnostics</h4>
                         <p>At Biopassion Diagnostics, we are dedicated to supporting healthcare advancements and research through our comprehensive <a href="https://www.biopassiondiagnostics.com/sponsored-testing">Sponsored Testing</a> services. Our expertise and state-of-the-art laboratory facilities enable us to provide accurate and reliable testing for a wide range of sponsored studies, clinical trials, and research projects.</p>

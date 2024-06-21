@@ -19,6 +19,8 @@ Route::get('/who-we-are', [App\Http\Controllers\HomeController::class, 'who'])->
 Route::get('/what-we-do', [App\Http\Controllers\HomeController::class, 'what'])->name('what-we-do');
 Route::get('/what-we-do/{slung}', [App\Http\Controllers\HomeController::class, 'what_single'])->name('what-we-do-single');
 Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact-us');
+Route::get('/terms-and-conditions', [App\Http\Controllers\HomeController::class, 'terms'])->name('terms-and-conditions');
+Route::get('/privacy-policy', [App\Http\Controllers\HomeController::class, 'privacy'])->name('privacy-policy');
 
 Route::group(['prefix'=>'patients'], function(){
     Route::group(['prefix'=>'get-tested'], function(){
@@ -30,13 +32,10 @@ Route::group(['prefix'=>'patients'], function(){
     Route::group(['prefix'=>'billing-insurance'], function(){
         Route::get('/understanding-the-cost-of-your-care', [App\Http\Controllers\HomeController::class, 'costing'])->name('understanding-the-cost-of-your-care');
         Route::get('/estimate', [App\Http\Controllers\HomeController::class, 'estimate'])->name('estimate');
-        Route::get('/infertility', [App\Http\Controllers\HomeController::class, 'infertility'])->name('infertility');
     });
 
     Route::group(['prefix'=>'test-results'], function(){
         Route::get('/family-results', [App\Http\Controllers\HomeController::class, 'family_results'])->name('family-results');
-        // Route::get('/estimate', [App\Http\Controllers\HomeController::class, 'estimate'])->name('estimate');
-        // Route::get('/infertility', [App\Http\Controllers\HomeController::class, 'infertility'])->name('infertility');
     });
 
     Route::group(['prefix'=>'test-results'], function(){

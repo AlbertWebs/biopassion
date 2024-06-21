@@ -34,7 +34,7 @@
                    {{--  --}}
                    <p>
                     Arrive prepared for a smoother visit at Biopassion Diagnostics Patient Service Center to call/WhatsApp us at <a href="tel:+254704150556">0704150556</a> for enquiry about your specimen collection.
-                   </p>
+
                     <br><br>
                     For our visually impaired patients, we offer accessible check-in options. You can use your mobile device to complete the check-in process. Alternatively, when you arrive, simply swipe three fingers in any direction across our kiosk screen to check in. Our staff is also available to assist you with any additional needs to ensure a seamless experience.
                     <br><br>

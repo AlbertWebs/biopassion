@@ -12,7 +12,9 @@
           <div class="content-side col-lg-10 col-md-12 col-sm-12" style="margin:0 auto">
              <div class="department-detail">
                 <div class="inner-box">
-
+                    <div class="image">
+                        <img style="border-radius:15px" src="{{asset('uploads/People-working-in-a-lab.png')}}" alt="" />
+                     </div>
                     <div>
                         <h4>Collaborative Lab Solutions at Biopassion Diagnostics</h4>
                         <p>At Biopassion Diagnostics, we believe in the power of collaboration to enhance the quality and efficiency of healthcare services. Our <a href="https://www.biopassiondiagnostics.com/collaborative-lab-solutions">Collaborative Lab Solutions</a> are designed to provide healthcare providers, hospitals, and clinics with comprehensive laboratory services that support their diagnostic and clinical needs. By partnering with us, you can leverage our advanced technology, expertise, and resources to improve patient care and streamline operations.</p>

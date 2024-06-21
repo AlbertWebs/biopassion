@@ -38,7 +38,8 @@
                         <li>Go to the M-Pesa menu on your mobile device.</li>
                         <li>Select the “Lipa na M-Pesa” option.</li>
                         <li>Choose the “Pay Bill” option.</li>
-                        <li>Enter our Biopassion Diagnostics Till Number: <strong>[Your Till Number Here]</strong>.</li>
+                        <li>Enter our Paybill Number: <strong>600100</strong>.</li>
+                        <li>Account Nummber <strong>0100010130225</strong>.</li>
                         <li>Enter the amount to be paid.</li>
                         <li>Confirm the details and complete the transaction.</li>
                     </ol>
@@ -50,11 +51,11 @@
                         <li>Visit your bank's branch or use your online banking platform.</li>
                         <li>Provide the following bank details:
                             <ul>
-                                <li><strong>Bank Name:</strong> [Your Bank Name Here]</li>
+                                <li><strong>Bank Name:</strong> Stanbic Bank</li>
                                 <li><strong>Account Name:</strong> Biopassion Diagnostics</li>
-                                <li><strong>Account Number:</strong> [Your Account Number Here]</li>
-                                <li><strong>Branch:</strong> [Your Bank Branch Here]</li>
-                                <li><strong>SWIFT Code:</strong> [Your SWIFT Code Here] (if applicable)</li>
+                                <li><strong>Account Number:</strong> 0100010130225</li>
+                                {{-- <li><strong>Branch:</strong> [Your Bank Branch Here]</li> --}}
+                                <li><strong>SWIFT Code:</strong> SBICKENX XXX (if applicable)</li>
                             </ul>
                         </li>
                         <li>Enter the amount to be transferred.</li>
