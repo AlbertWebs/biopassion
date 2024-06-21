@@ -33,7 +33,7 @@
                  <div class="contact-info-block_inner">
                     <span class="contact-info-block_icon flaticon-placeholder"></span>
                     <h4 class="contact-info-block_heading"> Address</h4>
-                    <div class="contact-info-block_text">Medical Laboratory Center, Nairobi Kenya, Lower Kabete, At Gacio Stage</div>
+                    <div class="contact-info-block_text">Nairobi, Kenya Location: Gachie, Riva at Sunset stage</div>
                  </div>
               </div>
               <!-- Contact Info Block -->
@@ -41,7 +41,7 @@
                  <div class="contact-info-block_inner">
                     <span class="contact-info-block_icon flaticon-send-mail"></span>
                     <h4 class="contact-info-block_heading">Email</h4>
-                    <div class="contact-info-block_text"><a href="mailto:info@biopassiondiagnostics.com">info@biopassiondiagnostics.com</a><br> <a href="mailto:info@biopassiondiagnostics.com">info@biopassiondiagnostics.com</a></div>
+                    <div class="contact-info-block_text"><a href="mailto:info@biopassiondiagnostics.co.ke">info@biopassiondiagnostics.co.ke</a><br> <a href="mailto:info@biopassiondiagnostics.co.ke">info@biopassiondiagnostics.co.ke</a></div>
                  </div>
               </div>
               <!-- Contact Info Block -->
@@ -51,7 +51,7 @@
                  <div class="contact-info-block_inner">
                     <span class="contact-info-block_icon flaticon-telephone"></span>
                     <h4 class="contact-info-block_heading">Phone</h4>
-                    <div class="contact-info-block_text"><a href="tel:+254 704 150555">+254 704 150555</a><br> <a href="tel:+254 704 150555">+254 704 150555</a></div>
+                    <div class="contact-info-block_text"><a href="tel:+254 704 150 555">+254 704 150 555</a><br> <a href="tel:0202 150 555">0202 150 555</a></div>
                  </div>
               </div>
            </div>
@@ -86,7 +86,21 @@
                           <input type="text" name="phone" placeholder="Phone" required="">
                        </div>
                        <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                          <input type="text" name="department" placeholder="Department" required="">
+                          <select>
+                            <option value="Customer Care">Customer Care</option>
+                            <option value="Billing">Billing</option>
+                            <option value="Sale and marketing">Sale and marketing</option>
+
+                            <option value="Research and development (R&D)">Research and development (R&D)</option>
+                            <option value="Main Laborator">Main Laborator</option>
+                            <option value="Sale and marketing">Sale and marketing</option>
+                            <option value="Admin">Admin</option>
+                            <option value="Lead Specialist">Lead Specialist</option>
+                            <option value="Quality Assurance">Quality Assurance</option>
+                            <option value="Human Resource">Human Resource</option>
+                            <option value="Information technology (IT)">Information technology (IT)</option>
+                            <option value="Procurement">Procurement</option>
+                          </select>
                        </div>
                        <div class="col-lg-12 col-md-12 col-sm-12 form-group">
                           <textarea class="" name="message" placeholder="how can i help you? Feel free to get in touch"></textarea>

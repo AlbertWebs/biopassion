@@ -32,7 +32,9 @@
                     Welcome to Biopassion Diagnostics, where your health and comfort are our top priorities. Our goal is to provide you with a seamless and supportive experience from start to finish. Whether you're visiting us for the first time or you're a returning patient, we are here to ensure your visit is smooth and efficient. Read on to learn how you can prepare for your appointment and make the most of our services.
                    </div>
                    {{--  --}}
-                   <p>Arrive prepared for a smoother visit at Biopassion Diagnostics. If your doctor has provided you with a test order, you will need to visit one of our more than 2,000 Patient Service Centers to have your specimen collected. Our extensive network ensures you can find a convenient location close to you.
+                   <p>
+                    Arrive prepared for a smoother visit at Biopassion Diagnostics Patient Service Center to call/WhatsApp us at <a href="tel:+254704150556">0704150556</a> for enquiry about your specimen collection.
+                   </p>
                     <br><br>
                     For our visually impaired patients, we offer accessible check-in options. You can use your mobile device to complete the check-in process. Alternatively, when you arrive, simply swipe three fingers in any direction across our kiosk screen to check in. Our staff is also available to assist you with any additional needs to ensure a seamless experience.
                     <br><br>
