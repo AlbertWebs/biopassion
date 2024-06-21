@@ -251,27 +251,27 @@
                               <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                                  <input type="text" name="phone" placeholder="Phone Number*" required="">
                               </div>
-                              <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                              <div class="col-lg-12 col-md-6 col-sm-12 form-group">
                                  <input type="email" name="email" placeholder="Email Address" required="">
                               </div>
                               <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                                  <select class="custom-select-box">
-                                    <option>Department</option>
-                                    <option>Department 01</option>
-                                    <option>Department 02</option>
-                                    <option>Department 03</option>
-                                    <option>Department 04</option>
+                                    <option value="Customer Care">Customer Care</option>
+                                    <option value="Billing">Billing</option>
+                                    <option value="Sale and marketing">Sale and marketing</option>
+
+                                    <option value="Research and development (R&D)">Research and development (R&D)</option>
+                                    <option value="Main Laborator">Main Laborator</option>
+                                    <option value="Sale and marketing">Sale and marketing</option>
+                                    <option value="Admin">Admin</option>
+                                    <option value="Lead Specialist">Lead Specialist</option>
+                                    <option value="Quality Assurance">Quality Assurance</option>
+                                    <option value="Human Resource">Human Resource</option>
+                                    <option value="Information technology (IT)">Information technology (IT)</option>
+                                    <option value="Procurement">Procurement</option>
                                  </select>
                               </div>
-                              <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                 <select class="custom-select-box">
-                                    <option>Doctor</option>
-                                    <option>Doctor 01</option>
-                                    <option>Doctor 02</option>
-                                    <option>Doctor 03</option>
-                                    <option>Doctor 04</option>
-                                 </select>
-                              </div>
+
                               <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                                  <input type="text" class="datepicker" name="date" placeholder="Booking Date" required="">
                                  <span class="icon far fa-calendar-check"></span>
@@ -342,7 +342,7 @@
 
                   <?php
                       $Blogs = DB::table('blogs')->get();
-                  ?>php
+                  ?>
                   @foreach ($Blogs as $blogs)
                   <!-- Blocks Column -->
                   <div class="blocks-column col-lg-5 col-md-12 col-sm-12" >
