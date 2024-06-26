@@ -23,44 +23,27 @@
 
                    <div>
 
-                    <p>Substance abuse can have far-reaching impacts, affecting not only the individual but also their family, workplace, and community. Early detection through reliable testing is a key component in preventing the escalation of abuse and facilitating appropriate interventions and treatment.</p>
+                         <p>Substance abuse can have far-reaching impacts, affecting not only the individual but also their family, workplace, and community. Early detection through reliable testing is a key component in preventing the escalation of abuse and facilitating appropriate interventions and treatment.</p>
 
-                        <h3>Comprehensive Testing Services</h3>
-                        <p>We offer a wide range of testing options to identify the presence of various substances, including but not limited to:</p><br>
-                        <ul style="font-size:16px;">
-                            Marijuana (THC)<br>
-                            Cocaine<br>
-                            Opiates (e.g., heroin, morphine)<br>
-                            Amphetamines<br>
-                            Methamphetamines<br>
-                            Benzodiazepines<br>
-                            Barbiturates<br>
-                            Alcohol<br>
-                            PCP (Phencyclidine)<br>
-                        </ul>
+                         {{--  --}}
+                         In particular, the drugs of abuse test uncovers the use of dangerous substances like fentanyl, which have been responsible for many overdoses and deaths.
+                        <br>
+                         <strong><p>Marijuana (THC):</strong> Sourced from the cannabis plant, this screening identifies THC, the primary psychoactive component in marijuana. Cannabinoids, the broader group, are also detectable.</p><br><br>
+                         <strong><p>Cocaine (COC):</strong> Derived from the coca plant, cocaine is a potent stimulant that affects the central nervous system. The test detects the drug and its by-products.</p><br><br>
+                         <strong><p>Opiates (OPI):</strong> This group encompasses drugs like morphine, codeine, hydrocodone (found in Vicodin), and oxycodone (active in OxyContin and Percocet).</p><br><br>
+                         <strong><p>Phencyclidine (PCP):</strong> More commonly referred to as “Angel Dust”, it’s a hallucinogen that can lead to severe psychological effects, including paranoia and delusions.</p><br><br>
+                         <strong><p>Amphetamine (AMP):</strong> This category captures a variety of stimulants. It includes prescription drugs like Desoxyn and illegal substances like methamphetamine. These drugs share structural and chemical properties, leading to their classification under the same group.</p><br><br>
+                         <strong><p>Benzodiazepines (BZO):</strong> These central nervous system depressants include drugs like Ativan, Halcion, Klonopin, Valium, and Xanax. Although they are primarily prescribed for conditions like anxiety, they are also frequently misused.</p><br><br>
+                         <strong><p>Barbiturates (BAR):</strong> Part of the depressant class, barbiturates encompass substances such as Fiorinal, Pentothal, Seconal, and Nembutal. They have specific medical uses but are also known for their misuse potential.</p><br><br>
+                         <strong><p>Methadone (MTD):</strong> A medication used in opioid treatment programs like Methadose and Dolophine. It’s designed to reduce withdrawal symptoms but has misuse potential.</p><br><br>
+                         <strong><p>Methaqualone (MQL):</strong> Known popularly as Quaaludes, methaqualone was once a popular sedative. Although not manufactured anymore, illegal versions still exist.</p><br><br>
+                         <strong><p>Propoxyphene (PPX):</strong> Includes medications like Darvocet and Darvon. These are narcotic pain relievers but have been associated with various health concerns.</p><br><br>
+                         <strong><p>Ecstasy (MDMA):</strong> A synthetic drug altering mood and perception, MDMA is chemically similar to both stimulants and hallucinogens. It produces feelings of increased energy and pleasure.</p><br><br>
+                         <strong><p>Fentanyl (FYL):</strong> A synthetic opioid, often prescribed for pain but has a high potential for misuse due to its potency.</p><br><br>
+                         It’s vital to note that while the panel drug test typically covers the above substances, variations might exist depending on the provider or specific requirements.</p><br><br>
 
-                        <h3>Testing Methods</h3>
-                        <p>Our state-of-the-art laboratory facilities utilize advanced testing methods to ensure precision and reliability. We offer various sample collection options, including urine, blood, hair, and saliva, to cater to different testing needs and contexts. Each method is carefully chosen based on the specific requirements and the detection window of the substances being tested.</p>
-
-                        <h3>Who Can Benefit from Our Services?</h3>
-                        <p>Our Drugs of Abuse testing services are suitable for a wide range of applications, including:</p>
-
-                        <p>
-                            <strong>Workplace Testing:</strong> Helping employers maintain a safe and productive work environment through pre-employment screening and random drug testing programs.<br>
-                            <strong>Healthcare Providers:</strong> Assisting medical professionals in diagnosing and managing substance abuse disorders in patients.<br>
-                            <strong>Rehabilitation Centers:</strong> Monitoring the progress of individuals undergoing treatment for substance abuse to ensure adherence to their recovery plan.<br>
-                            <strong>Schools and Universities:</strong> Promoting a drug-free environment by implementing testing programs for students and staff.<br>
-                            <strong>Legal and Judicial Systems:</strong> Providing essential evidence for cases involving drug use, including probation and parole monitoring.<br>
-                        </p>
-                        <br><br>
-
-                        <h3>Confidential and Supportive Approach</h3>
-                        <p>At Biopassion Diagnostics, we handle all testing with the utmost confidentiality and sensitivity. We understand the personal and sensitive nature of substance abuse testing, and our compassionate team is dedicated to providing a supportive environment for all individuals undergoing testing.</p>
-
-                        <p>Our goal is to deliver accurate results swiftly, enabling timely decisions and interventions. We are committed to working closely with you to meet your specific needs, whether you are an individual seeking testing, an employer, or a healthcare provider.</p>
-
-                        <p>Contact Biopassion Diagnostics today to learn more about our Drugs of Abuse testing services and how we can assist you in promoting health, safety, and well-being in your community.</p>
-
+                        <p> For instance, some tests screen for Oxycodone (OXY) separately, and some test for tricyclic antidepressants or buprenorphine. Always verify the exact substances screened for when undertaking or mandating the test.</p>
+                         {{--  --}}
                    </div>
 
 

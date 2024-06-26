@@ -27,7 +27,7 @@
                     <h4>Allergy and Asthma Testing at Biopassion Diagnostics</h4>
                     <p>Allergies, respiratory infections, and asthma often manifest with similar symptoms, making it challenging to distinguish between them. Accurately identifying or ruling out allergies as the source of your patients' symptoms can lead to better treatment decisions and improved patient outcomes.</p>
 
-                    <p>Biopassion Diagnostics provides a comprehensive range of ImmunoCAP® IgE blood allergy tests, from individual allergen tests and component testing to regional environmental allergy test panels. These tests are designed to meet the diverse needs of patients and help pinpoint specific allergens to enhance health and well-being.</p>
+                    <p>Biopassion Diagnostics provides a comprehensive range of IgE blood allergy tests, from individual allergen tests and component testing to regional environmental allergy test panels. These tests are designed to meet the diverse needs of patients and help pinpoint specific allergens to enhance health and well-being.</p>
 
                     <h4>Helping You Identify Allergens to Improve Lives</h4>
                     {{-- <p>Allergies impact tens of millions of adults and children in the United States. According to the CDC, more than 19 million adults and over 5 million children in the US suffer from seasonal allergies (hay fever), and over 4.5 million children have food allergies.</p> --}}
