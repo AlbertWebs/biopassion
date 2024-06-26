@@ -121,7 +121,7 @@
                               <div class="counter-one_block col-lg-4 col-md-6 col-sm-6">
                                  <div class="counter-one_inner">
                                     <span class="counter-one_icon fa fa-smile"></span>
-                                    <div class="counter-one_counter d-flex"><span class="odometer" data-count="1890"></span></div>
+                                    <div class="counter-one_counter d-flex">+<span class="odometer" data-count="1"></span>M</div>
                                     <div class="counter-one_text">Hapy Customers</div>
                                  </div>
                               </div>
@@ -129,7 +129,7 @@
                               <div class="counter-one_block col-lg-4 col-md-6 col-sm-6">
                                  <div class="counter-one_inner">
                                     <span class="counter-one_icon flaticon-medical-team"></span>
-                                    <div class="counter-one_counter d-flex">+<span class="odometer" data-count="2225"></span></div>
+                                    <div class="counter-one_counter d-flex"><span class="odometer" data-count="96.9"></span>%</div>
                                     <div class="counter-one_text">Successfull Diagnostics</div>
                                  </div>
                               </div>
