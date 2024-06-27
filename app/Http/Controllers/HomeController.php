@@ -131,6 +131,10 @@ class HomeController extends Controller
     public function terms(){
         return view('front.terms');
     }
+    public function collection(){
+        return view('front.collection');
+    }
+
 
 
 

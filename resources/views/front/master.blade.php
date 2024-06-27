@@ -372,6 +372,12 @@
                                         </ul>
                                     </li>
 
+                                    <li>
+                                        <a href="{{url('/')}}/home-sample-collection">Home Sample Collection
+                                        </a>
+
+                                    </li>
+
                                  </ul>
                                  {{--  --}}
                               </div>
