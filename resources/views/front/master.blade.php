@@ -337,6 +337,7 @@
                                             <li class="dropdown">
                                                 <a href="#">Billing & Coding</a>
                                                 <ul>
+                                                    <li><a href="{{route('pay-a-bill')}}">Pay a Bill</a></li>
                                                     <li><a href="{{route('commercial-coverage-and-coding-guidelines')}}">Commercial coverage & coding guidelines</a></li>
                                                     {{-- <li><a href="{{url('/')}}/what-we-do/">Medicare coverage & coding guides</a></li>
                                                     <li><a href="{{url('/')}}/what-we-do/">Electronic billing</a></li> --}}

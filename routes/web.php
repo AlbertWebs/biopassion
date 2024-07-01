@@ -72,6 +72,7 @@ Route::group(['prefix'=>'healthcare-professionals'], function(){
         Route::get('/fertility-testing', [App\Http\Controllers\HomeController::class, 'fertility'])->name('fertility-testing');
     });
     Route::group(['prefix'=>'billing-coding'], function(){
+        Route::get('/pay-a-bill', [App\Http\Controllers\HomeController::class, 'pay_bill'])->name('pay-a-bill');
         Route::get('/commercial-coverage-and-coding-guidelines', [App\Http\Controllers\HomeController::class, 'guidelines'])->name('commercial-coverage-and-coding-guidelines');
     });
 

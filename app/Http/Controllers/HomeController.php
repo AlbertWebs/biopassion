@@ -145,6 +145,9 @@ class HomeController extends Controller
     public function dna_paternity_testing(){
         return view('front.dna_paternity_testing');
     }
+    public function pay_bill(){
+        return view('front.pay_bill');
+    }
 
 
 
