@@ -33,7 +33,7 @@
                     <div class="service-block-two_pattern-two" style="background-image:url('{{asset('theme/assets/images/background/pattern-10.')}}')"></div>
                     <span class="service-block_two-icon flaticon-research"></span>
                     <h4 class="service-block_two-heading" style="min-height:100px;"><a href="{{url('/')}}/what-we-do/{{$Services->slung}}">{{$Services->title}}</a></h4>
-                    <div class="service-block_two-text">{{$Services->content}}</div>
+                    <div class="service-block_two-text">{!! html_entity_decode($Services->meta) !!}</div>
                     <a class="service-block_two-more" href="{{url('/')}}/what-we-do/{{$Services->slung}}">Read More</a>
                     </div>
                 </div>
@@ -139,7 +139,7 @@
                    </div>
                 </div>
                 <ul class="question-one_contact-list">
-                   <li><span class="icon fa-solid fa-phone fa-fw"></span>Medical Laboratory Center, Nairobi Kenya, Lower Kabete, At Gacio Stage</li>
+                   <li><span class="icon fa-solid fa-phone fa-fw"></span>Medical Laboratory , Nairobi Kenya, Gachie, Riva. At Sunset stage</li>
                    <li><span class="icon fa-solid fa-envelope fa-fw"></span> <a href="mailto:info@biopassiondiagnostics.com">info@biopassiondiagnostics.com</a></li>
                    <li><span class="icon fa-solid fa-clock fa-fw"></span>Mon - Fri  8:00 - 6:30, <br> Sunday - CLOSED</li>
                 </ul>

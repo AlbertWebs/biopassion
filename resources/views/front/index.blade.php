@@ -212,7 +212,7 @@
             <div class="auto-container">
                <div class="cta-one_inner-container">
                   <div class="d-flex justify-content-between align-items-center flex-wrap">
-                     <span class="cta-one_icon flaticon-orthopedics"></span>
+                     <span class="cta-one_icon flaticon-laboratory"></span>
                      <div class="cta-one_content">
                         <div class="cta-one_title">we uphold honesty and integrity above all else.</div>
                         <h2 class="cta-one_heading">Expect Nothing But The Best <br> From Biopassion Diagnostics</h2>
