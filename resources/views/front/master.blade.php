@@ -147,8 +147,13 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
       <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js')}}"></script><![endif]-->
       <!--[if lt IE 9]><script src="js/respond.js')}}"></script><![endif]-->
+      <!--Floating WhatsApp css-->
+     <link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+     <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/5d392d6beb82e88615a2eeb3c/1d603c00fa71af0f58347ff94.js");</script>
    </head>
    <body class="hidden-bar-wrapper">
+    <!--Div where the WhatsApp will be rendered-->
+    <div style="z-index:100000" id="WAButton"></div>
       <div class="page-wrapper">
          <!-- Preloader -->
          {{-- <div class="preloader"></div> --}}
@@ -283,6 +288,22 @@
                                     </li>
 
                                     <li class="dropdown">
+                                        <a href="{{url('/')}}/home-sample-collection">Home Sample Collection
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <a href="{{url('/')}}/home-sample-collection">Home Sample Collection
+                                                </a>
+                                            </li>
+                                            <li >
+                                                <a href="{{route('book-home-sample-collection')}}">Make Your Booking
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+
+                                    <li class="dropdown">
                                         <a href="#">Healthcare professionals</a>
                                         <ul>
                                             <li>
@@ -338,7 +359,7 @@
                                                 <a href="{{route('corporate-wellness')}}">Corporate Wellness</a>
                                             </li>
                                             <li>
-                                                <a href="{{route('emloyee-health-coaching')}}">Emloyee Health Coaching</a>
+                                                <a href="{{route('emloyee-health-coaching')}}">Employee Health Coaching</a>
                                             </li>
                                             <li>
                                                 <a href="{{route('drug-free-workplace')}}">Drug Free Workplace</a>
@@ -372,11 +393,7 @@
                                         </ul>
                                     </li>
 
-                                    <li>
-                                        <a href="{{url('/')}}/home-sample-collection">Home Sample Collection
-                                        </a>
 
-                                    </li>
 
                                  </ul>
                                  {{--  --}}
@@ -596,5 +613,25 @@
       <script src="{{asset('theme/assets/js/main.js')}}"></script>
       <script src="{{asset('theme/assets/js/script.js')}}"></script>
       <script src="{{asset('theme/assets/js/color-settings.js')}}"></script>
+      <!--Floating WhatsApp javascript-->
+     <script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+
+     <script type="text/javascript">
+         $(function () {
+             $('#WAButton').floatingWhatsApp({
+                 phone: '+254704150555', //WhatsApp Business phone number
+                 headerTitle: 'Chat with us on WhatsApp!', //Popup Title
+                 popupMessage: 'Hello, how can we help you?', //Popup Message
+                 message: 'I have just visited *https://biopassiondiagnostics.com*',
+                 showPopup: true, //Enables popup display
+                 buttonImage: '<img src="{{url('/')}}/uploads/icon/whatsapp.svg" />', //Button Image
+                 //headerColor: 'crimson', //Custom header color
+                 //backgroundColor: 'crimson', //Custom background button color
+                 position: "left" //Position: left | right
+
+             });
+         });
+     </script>
+
    </body>
 </html>

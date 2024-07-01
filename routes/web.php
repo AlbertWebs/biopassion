@@ -17,6 +17,9 @@ use App\Http\Controllers\PatientController;
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/who-we-are', [App\Http\Controllers\HomeController::class, 'who'])->name('who-we-are');
 Route::get('/home-sample-collection', [App\Http\Controllers\HomeController::class, 'collection'])->name('home-sample-collection');
+Route::get('/book-home-sample-collection', [App\Http\Controllers\HomeController::class, 'book'])->name('book-home-sample-collection');
+Route::get('/book-home-sample-collection-post', [App\Http\Controllers\HomeController::class, 'book_post'])->name('book-home-sample-collection-post');
+
 
 Route::get('/what-we-do', [App\Http\Controllers\HomeController::class, 'what'])->name('what-we-do');
 Route::get('/what-we-do/{slung}', [App\Http\Controllers\HomeController::class, 'what_single'])->name('what-we-do-single');

@@ -136,6 +136,23 @@ class HomeController extends Controller
     }
 
 
+    public function book(){
+        return view('front.book');
+    }
+
+    public function book_post(Request $request){
+       $Booking = new Booking;
+       $Booking->name = $request->name;
+       $Booking->email = $request->email;
+       $Booking->phone = $request->phone;
+       $Booking->apartment = $request->apartment;
+       $Booking->location = $request->location;
+       $Booking->message = $request->message;
+       $Booking->save();
+
+
+    }
+
 
 
 
