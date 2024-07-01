@@ -107,6 +107,7 @@
                         <div class="modern-one_image">
                            <img src="{{asset('uploads/about-5.jpg')}}" alt="" />
                         </div>
+                        <br><br><br>
                         <div class="counter-one" style="background-image:url('{{('theme/assets/images/background/pattern-5.png')}}')">
                            <div class="row clearfix">
                               <!-- Counter Column -->
