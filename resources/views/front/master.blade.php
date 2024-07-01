@@ -403,10 +403,10 @@
                         <!-- Main Menu End-->
                         <div class="outer-box d-flex align-items-center flex-wrap">
                            <div class="appointmeny_button-box">
-                              <a href="{{url('/')}}/make-an-appointment" class="theme-btn btn-style-one">
+                              <a href="{{url('/')}}/make-an-appointment" class="theme-btn btn-style-one" style="padding:6px 32px">
                               <span class="btn-wrap">
-                              <span class="text-one">Schedule Appointment</span>
-                              <span class="text-two">Schedule Now</span>
+                              <span class="text-one">Make<br>Appointment</span>
+                              <span class="text-two">Schedule </span>
                               </span>
                               </a>
                            </div>

@@ -1271,7 +1271,7 @@
 	position:absolute;
 	left:0px;
 	top:-50px;
-	padding:5px 115px;
+	padding:5px 45px;
     z-index: 999999999999;
 }
 
@@ -1296,7 +1296,7 @@
 
 .header-style-two .header-upper .inner-container{
 	position:relative;
-	padding-left:330px;
+	padding-left:190px;
 }
 
 .header-style-two .main-menu .navigation > li > a{
