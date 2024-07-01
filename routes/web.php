@@ -34,6 +34,15 @@ Route::group(['prefix'=>'patients'], function(){
         Route::get('/conditions', [App\Http\Controllers\HomeController::class, 'conditions'])->name('conditions');
         Route::get('/prepare', [App\Http\Controllers\HomeController::class, 'prepare'])->name('prepare');
         Route::get('/infertility', [App\Http\Controllers\HomeController::class, 'infertility'])->name('infertility');
+
+    });
+
+    Route::group(['prefix'=>'biopassion-OnDemand-tests'], function(){
+        Route::get('/fertility-testing-and-support-at-biopassion-diagnostics', [App\Http\Controllers\HomeController::class, 'fertility_testing'])->name('fertility-testing-and-support-at-biopassion-diagnostics');
+        Route::get('/sexual-transmited-diseases-stisstds-testing', [App\Http\Controllers\HomeController::class, 'sexual_transmited'])->name('sexual-transmited-diseases-stisstds-testing');
+        Route::get('/dna-paternity-testing', [App\Http\Controllers\HomeController::class, 'dna_paternity_testing'])->name('dna-paternity-testing');
+
+
     });
 
     Route::group(['prefix'=>'billing-insurance'], function(){

@@ -134,6 +134,18 @@ class HomeController extends Controller
     public function collection(){
         return view('front.collection');
     }
+    public function fertility_testing(){
+        return view('front.fertility_testing');
+    }
+
+    public function sexual_transmited(){
+        return view('front.sexual_transmited');
+    }
+
+    public function dna_paternity_testing(){
+        return view('front.dna_paternity_testing');
+    }
+
 
 
     public function book(){

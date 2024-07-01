@@ -278,10 +278,21 @@
                                                 </ul>
                                             </li>
 
-                                            <li>
-                                                <a href="{{route('drugs-of-abuse')}}">Drugs Of Abuse</a>
+                                            <li class="dropdown">
+                                                <a href="#">Biopassion OnDemand tests</a>
+                                                <ul>
+                                                    <li><a href="{{route('drugs-of-abuse')}}">Drugs of Abuse</a></li>
+                                                    <li><a href="{{route('fertility-testing-and-support-at-biopassion-diagnostics')}}">Fertility Testing and Support at Biopassion Diagnostics</a></li>
+                                                    <li><a href="{{route('sexual-transmited-diseases-stisstds-testing')}}">Sexual transmited diseases STIs/STDs testing</a></li>
+                                                    <li class="dropdown">
+                                                        <a href="{{route('family-results')}}">Health Checkup packages</a>
+
+                                                    </li>
+                                                    <li><a href="{{route('dna-paternity-testing')}}">DNA paternity testing</a></li>
+                                                </ul>
 
                                             </li>
+
 
 
                                         </ul>
