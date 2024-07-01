@@ -556,8 +556,9 @@
                               <div class="footer-widget contact-widget">
                                  <h4 class="main-footer_title">Contact Info</h4>
                                  <ul class="main-footer_contact-list">
-                                    <li><span class="icon fa-solid fa-map-marker fa-fw"></span><a href="https://maps.app.goo.gl/c8aBRXgMcjZepZeB9">Medical Laboratory , Nairobi Kenya, Gachie, Riva at Sunset stage </a> </li>
+                                    <li><span class="icon fa-solid fa-map-marker fa-fw"></span><a href="https://maps.app.goo.gl/c8aBRXgMcjZepZeB9">Medical Laboratory , Nairobi Kenya, Gachie, Riva. At Sunset stage </a> </li>
                                     <li><span class="icon fa-solid fa-envelope fa-fw"></span> <a href="mailto:info@biopassiondiagnostics.co.ke">info@biopassiondiagnostics.co.ke</a></li>
+                                    <li><span class="icon fa-solid fa-phone fa-fw"></span> <a href="tel:+254704150555">+254704150555</a></li>
                                     <li><span class="icon fa-solid fa-clock fa-fw"></span>Open Mon to Sun 8:00 to 8:00pm</li>
                                  </ul>
                               </div>
