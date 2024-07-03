@@ -18,7 +18,7 @@
 
                     <div>
                         <h4>Drug-Free Workplace Program at Biopassion Diagnostics</h4>
-                        <p>Maintaining a drug-free workplace is essential for ensuring the safety, health, and productivity of your employees. At Biopassion Diagnostics, we offer comprehensive <a href="https://www.biopassiondiagnostics.com/business-and-organization/drug-free-workplace">Drug-Free Workplace Programs</a> designed to help organizations create and sustain a safe and efficient work environment. Our programs include drug testing services, educational resources, and support for implementing and maintaining a drug-free policy.</p>
+                        <p>Maintaining a drug-free workplace is essential for ensuring the safety, health, and productivity of your employees. At Biopassion Diagnostics, we offer comprehensive <a href="{{url('/')}}/business-and-organization/drug-free-workplace">Drug-Free Workplace Programs</a> designed to help organizations create and sustain a safe and efficient work environment. Our programs include drug testing services, educational resources, and support for implementing and maintaining a drug-free policy.</p>
 
                         <h5>Comprehensive Drug Testing Services</h5>
                         <p>Biopassion Diagnostics provides a wide range of drug testing services to meet the specific needs of your organization. Our testing options include pre-employment screening, random drug testing, post-accident testing, and reasonable suspicion testing. We utilize advanced testing methods, including urine, hair, saliva, and blood tests, to ensure accurate and reliable results.</p>
@@ -32,7 +32,7 @@
                         <h5>Support and Rehabilitation</h5>
                         <p>At Biopassion Diagnostics, we believe in supporting employees who may struggle with substance abuse. Our Drug-Free Workplace Program includes resources for employee assistance programs (EAPs) and referrals to rehabilitation services. By providing support and rehabilitation options, we help employees overcome substance abuse issues and return to being productive members of the workforce.</p>
 
-                        <p>Implementing a Drug-Free Workplace Program with Biopassion Diagnostics not only enhances safety and productivity but also fosters a healthier and more supportive work environment. <a href="https://www.biopassiondiagnostics.com/contact-us">Contact us today</a> to learn more about our comprehensive drug-free workplace solutions and how we can help you maintain a safe and efficient workplace.</p>
+                        <p>Implementing a Drug-Free Workplace Program with Biopassion Diagnostics not only enhances safety and productivity but also fosters a healthier and more supportive work environment. <a href="{{url('/')}}/contact-us">Contact us today</a> to learn more about our comprehensive drug-free workplace solutions and how we can help you maintain a safe and efficient workplace.</p>
                     </div>
 
 
