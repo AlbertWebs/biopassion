@@ -15,7 +15,7 @@
 
                     <div>
                         <h4>Employee Health Coaching at Biopassion Diagnostics</h4>
-                        <p>At Biopassion Diagnostics, we understand that a healthy workforce is a productive workforce. Our <a href="https://www.biopassiondiagnostics.com/employee-health-coaching">Employee Health Coaching</a> programs are designed to provide personalized support and guidance to help employees achieve their health and wellness goals. Through one-on-one coaching, we empower employees to make lasting lifestyle changes that improve their overall well-being and enhance their productivity.</p>
+                        <p>At Biopassion Diagnostics, we understand that a healthy workforce is a productive workforce. Our <a href="{{url('/')}}/business-and-organization/emloyee-health-coaching">Employee Health Coaching</a> programs are designed to provide personalized support and guidance to help employees achieve their health and wellness goals. Through one-on-one coaching, we empower employees to make lasting lifestyle changes that improve their overall well-being and enhance their productivity.</p>
 
                         <h5>Personalized Health Coaching</h5>
                         <p>Our Employee Health Coaching services offer tailored support for each individual. Our experienced health coaches work with employees to create customized wellness plans based on their unique health needs and goals. Whether it's weight management, stress reduction, nutrition, or fitness, our coaches provide the tools and motivation needed for success.</p>
@@ -29,7 +29,7 @@
                         <h5>Benefits of Health Coaching</h5>
                         <p>Investing in Employee Health Coaching offers numerous benefits for both employees and employers. Improved health outcomes lead to reduced absenteeism, lower healthcare costs, and increased productivity. Employees gain the knowledge and confidence to maintain healthy habits, resulting in long-term health benefits and enhanced quality of life.</p>
 
-                        <p>Choose Biopassion Diagnostics for your <a href="https://www.biopassiondiagnostics.com/employee-health-coaching">Employee Health Coaching</a> needs and transform your workplace into a healthier, more productive environment. <a href="https://www.biopassiondiagnostics.com/contact-us">Contact us today</a> to learn more about our personalized health coaching programs and how we can support your organization's wellness initiatives.</p>
+                        <p>Choose Biopassion Diagnostics for your <a href="{{url('/')}}/business-and-organization/emloyee-health-coaching">Employee Health Coaching</a> needs and transform your workplace into a healthier, more productive environment. <a href="{{url('/')}}/contact-us">Contact us today</a> to learn more about our personalized health coaching programs and how we can support your organization's wellness initiatives.</p>
                     </div>
 
 
