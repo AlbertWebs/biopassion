@@ -13,7 +13,7 @@
              <div class="department-detail">
                 <div class="inner-box">
                     <div class="image">
-                        <img style="border-radius:15px" src="{{asset('uploads/pexels-pixabay-159211.jpg')}}" alt="" />
+                        <img style="border-radius:15px" src="{{asset('uploads/060ea47e-a92f-4560-a08b-80d209c9d594.jpeg')}}" alt="" />
                      </div>
                    <h3>Drugs of Abuse Testing at Biopassion Diagnostics</h3>
                    <div class="bold-text">

@@ -20,13 +20,6 @@
                         <br>
                         ACCOUNT:01000 10 130 225
                      </h3>
-
-
-
-
-
-
-
                    <p><strong> </strong> </p>
                    <br><br>
                 </div>

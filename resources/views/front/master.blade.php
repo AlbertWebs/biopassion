@@ -264,7 +264,7 @@
                                                 <a href="#">Billing & Insuarnce</a>
                                                 <ul>
                                                     <li><a href="{{route('understanding-the-cost-of-your-care')}}">Understanding the Cost of Your Care</a></li>
-                                                    <li><a href="{{route('estimate')}}">Insuarnce</a></li>
+                                                    <li><a href="{{route('estimate')}}">Insuarance</a></li>
                                                     <li><a href="{{route('estimate')}}">Financial Assistance</a></li>
                                                     <li><a href="{{route('estimate')}}">Self Pay Price Estimate</a></li>
                                                 </ul>
@@ -307,7 +307,7 @@
                                                 </a>
                                             </li>
                                             <li >
-                                                <a href="{{route('book-home-sample-collection')}}">Make Your Booking
+                                                <a href="{{url('/')}}/home-sample-collection/#contact">Make Your Booking
                                                 </a>
                                             </li>
                                         </ul>
@@ -320,8 +320,8 @@
                                             <li>
                                                    <a href="{{route('test-directory')}}">Test Directory</a>
                                             </li>
-                                            <li class="dropdown">
-                                                      <a href="{{url('/')}}/dashboard">Access Patient Results</a>
+                                            <li>
+                                                    <a href="{{url('/')}}/dashboard">Access Patient Results</a>
                                             </li>
                                             <li class="dropdown">
                                                 <a href="#">About our Tests</a>
@@ -332,6 +332,7 @@
                                                     <li><a href="{{route('cancer')}}">Cancer</a></li>
                                                     <li><a href="{{route('cardiovascular-disease')}}">Cardiovascular Disease</a></li>
                                                     <li><a href="{{route('fertility-testing')}}">Fertility Testing</a></li>
+                                                    <li><a href="{{route('drugs-of-abuse')}}">Drugs of Abuse</a></li>
                                                 </ul>
                                             </li>
                                             <li class="dropdown">

@@ -23,6 +23,7 @@
                     <h3>Request Your Price Estimate</h3>
                     <div class="default-form contact-form">
                         <form method="post" action="#" id="contact-form">
+                            @csrf
                            <div class="row clearfix">
                               <div class="col-lg-12 col-md-12 col-sm-12 form-group">
                                  <input type="text" name="username" placeholder="Name" required="">
@@ -30,6 +31,9 @@
                               <div class="col-lg-12 col-md-12 col-sm-12 form-group">
                                  <input type="text" name="email" placeholder="Email" required="">
                               </div>
+                              <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                <input type="text" name="phone" placeholder="Email" required="">
+                             </div>
 
                               <div class="col-lg-12 col-md-12 col-sm-12 form-group">
                                  <textarea class="" name="message" placeholder="how can i help you? Feel free to get in touch"></textarea>

@@ -39,7 +39,7 @@
                         <li>Select the “Lipa na M-Pesa” option.</li>
                         <li>Choose the “Pay Bill” option.</li>
                         <li>Enter our Paybill Number: <strong>600100</strong>.</li>
-                        <li>Account Nummber <strong>0100010130225</strong>.</li>
+                        <li>Account Nummber <strong>01 000 10 130 225</strong>.</li>
                         <li>Enter the amount to be paid.</li>
                         <li>Confirm the details and complete the transaction.</li>
                     </ol>
@@ -53,7 +53,7 @@
                             <ul>
                                 <li><strong>Bank Name:</strong> Stanbic Bank</li>
                                 <li><strong>Account Name:</strong> Biopassion Diagnostics</li>
-                                <li><strong>Account Number:</strong> 0100010130225</li>
+                                <li><strong>Account Number:</strong> 01 000 10 130 225</li>
                                 {{-- <li><strong>Branch:</strong> [Your Bank Branch Here]</li> --}}
                                 <li><strong>SWIFT Code:</strong> SBICKENX XXX (if applicable)</li>
                             </ul>
@@ -139,9 +139,9 @@
                </div>
             </div>
             <ul class="question-one_contact-list">
-               <li><span class="icon fa-solid fa-phone fa-fw"></span>Medical Laboratory Center, Nairobi Kenya, Lower Kabete, At Gacio Stage</li>
+               <li><span class="icon fa-solid fa-phone fa-fw"></span>Medical Laboratory , Nairobi Kenya, Gachie, Riva at Sunset stage</li>
                <li><span class="icon fa-solid fa-envelope fa-fw"></span> <a href="mailto:info@biopassiondiagnostics.com">info@biopassiondiagnostics.com</a></li>
-               <li><span class="icon fa-solid fa-clock fa-fw"></span>Mon - Fri  8:00 - 6:30, <br> Sunday - CLOSED</li>
+               <li><span class="icon fa-solid fa-clock fa-fw"></span>Open Daily - Fri  8:00 - 20:00</li>
             </ul>
          </div>
          <!-- Form Column -->
