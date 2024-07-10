@@ -153,7 +153,7 @@
    </head>
    <body class="hidden-bar-wrapper">
     <!--Div where the WhatsApp will be rendered-->
-    <div style="z-index:100000" id="WAButton"></div>
+    {{-- <div style="z-index:100000" id="WAButton"></div> --}}
       <div class="page-wrapper">
          <!-- Preloader -->
          {{-- <div class="preloader"></div> --}}
@@ -264,8 +264,8 @@
                                                 <a href="#">Billing & Insuarnce</a>
                                                 <ul>
                                                     <li><a href="{{route('understanding-the-cost-of-your-care')}}">Understanding the Cost of Your Care</a></li>
-                                                    <li><a href="{{route('estimate')}}">Insuarance</a></li>
-                                                    <li><a href="{{route('estimate')}}">Financial Assistance</a></li>
+                                                    {{-- <li><a href="{{route('estimate')}}">Insuarance</a></li>
+                                                    <li><a href="{{route('estimate')}}">Financial Assistance</a></li> --}}
                                                     <li><a href="{{route('estimate')}}">Self Pay Price Estimate</a></li>
                                                 </ul>
                                             </li>
@@ -284,8 +284,8 @@
                                                     <li><a href="{{route('drugs-of-abuse')}}">Drugs of Abuse</a></li>
                                                     <li><a href="{{route('fertility-testing-and-support-at-biopassion-diagnostics')}}">Fertility Testing and Support at Biopassion Diagnostics</a></li>
                                                     <li><a href="{{route('sexual-transmited-diseases-stisstds-testing')}}">Sexual transmited diseases STIs/STDs testing</a></li>
-                                                    <li class="dropdown">
-                                                        <a href="{{route('family-results')}}">Health Checkup packages</a>
+                                                    <li>
+                                                        <a href="{{route('health-checkup')}}">Health Checkup packages</a>
 
                                                     </li>
                                                     <li><a href="{{route('dna-paternity-testing')}}">DNA paternity testing</a></li>
@@ -571,8 +571,8 @@
                                  <ul class="main-footer_contact-list">
                                     <li><span class="icon fa-solid fa-map-marker fa-fw"></span><a href="https://maps.app.goo.gl/c8aBRXgMcjZepZeB9">Medical Laboratory , Nairobi Kenya, Gachie, Riva. At Sunset stage </a> </li>
                                     <li><span class="icon fa-solid fa-envelope fa-fw"></span> <a href="mailto:info@biopassiondiagnostics.co.ke">info@biopassiondiagnostics.co.ke</a></li>
-                                    <li><span class="icon fa-solid fa-phone fa-fw"></span> <a href="tel:+254704150555">+254704150555</a></li>
-                                    <li><span class="icon fa-solid fa-clock fa-fw"></span>Open Mon to Sun 8:00 to 8:00pm</li>
+                                    <li><span class="icon fa-solid fa-phone fa-fw"></span> <a href="tel:+254704150555">0704 150 555</a></li>
+                                    <li><span class="icon fa-solid fa-clock fa-fw"></span>Open Daily 8:00 to 8:00pm</li>
                                  </ul>
                               </div>
                            </div>
@@ -606,7 +606,12 @@
       <!-- End PageWrapper -->
 
       <!-- Scroll To Top -->
-      <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
+      <div class="scroll-to-top scroll-to-target" data-target="html">
+        <a href="tel:+254 704 150555">
+            <span class="fa fa-phone fa-2x"></span>
+        </a>
+    </div>
+      {{-- <div class="scroll-to-call scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div> --}}
       <script src="{{asset('theme/assets/js/jquery.js')}}"></script>
       <script src="{{asset('theme/assets/js/popper.min.js')}}"></script>
       <script src="{{asset('theme/assets/js/bootstrap.min.js')}}"></script>

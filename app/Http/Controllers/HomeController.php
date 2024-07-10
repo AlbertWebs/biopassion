@@ -80,6 +80,11 @@ class HomeController extends Controller
     public function guidelines(){
         return view('front.guidelines');
     }
+    public function health_checkup(){
+        return view('front.health_checkup');
+    }
+
+
 
     public function clinical(){
         return view('front.clinical');

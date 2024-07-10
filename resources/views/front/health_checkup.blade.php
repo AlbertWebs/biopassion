@@ -5,12 +5,12 @@
 <!-- Page Title -->
 <section class="page-title" style="background-image:url('{{asset('theme/assets/images/background/eye-1.jpg')}}')">
 <div class="auto-container">
-    <h2>Prepare for a test</h2>
+    <h2>Health Checkup</h2>
     <ul class="bread-crumb clearfix">
         <li><a href="#">Home</a></li>
         <li>Patients</li>
-        <li>Get Tested</li>
-        <li>Prepare for a test</li>
+        <li>Biopassion OnDemand Tests</li>
+        <li>Health Checkup</li>
     </ul>
 </div>
 </section>
@@ -24,10 +24,8 @@
           <div class="content-side col-lg-10 col-md-12 col-sm-12" style="margin:0 auto">
              <div class="department-detail">
                 <div class="inner-box">
-                   <div class="image">
-                      <img style="border-radius:15px" src="{{asset('uploads/pexels-artempodrez-5726789.jpg')}}" alt="" />
-                   </div>
-                   <h3>Prepare for a test</h3>
+
+                   <h3>Health Checkup</h3>
                    <div class="bold-text">
                     Welcome to Biopassion Diagnostics, where your health and comfort are our top priorities. Our goal is to provide you with a seamless and supportive experience from start to finish. Whether you're visiting us for the first time or you're a returning patient, we are here to ensure your visit is smooth and efficient. Read on to learn how you can prepare for your appointment and make the most of our services.
                    </div>
