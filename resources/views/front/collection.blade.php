@@ -28,15 +28,10 @@
 </section>
 
 <!-- Process One -->
-<section class="process-one">
+<section class="process-one" style="padding-top:80px; padding-bottom:80px;">
     <div class="auto-container">
         <div class="row clearfix">
-            {{-- <h4>
-                How to Book a Blood Test at Home with Biopassion Diagnostics
-            </h4>
-            <p>
-                Booking a blood test at home has never been easier, thanks to Biopassion Diagnostics. We understand the importance of convenience and comfort when it comes to managing your health. Here’s a simple guide on how to book a blood test at home with us.
-            </p> --}}
+
 
 
 
