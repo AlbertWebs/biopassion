@@ -121,7 +121,7 @@
                               <!-- Counter Column -->
                               <div class="counter-one_block col-lg-4 col-md-6 col-sm-6">
                                  <div class="counter-one_inner">
-                                    <span class="counter-one_icon fa fa-smile"></span>
+                                    <span class="counter-one_icon fa fa-"></span>
                                     <div class="counter-one_counter d-flex">+<span class="odometer" data-count="1"></span>M</div>
                                     <div class="counter-one_text">Hapy Customers</div>
                                  </div>

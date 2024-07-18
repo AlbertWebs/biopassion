@@ -32,7 +32,7 @@
                     <h4>Helping You Identify Allergens to Improve Lives</h4>
                     {{-- <p>Allergies impact tens of millions of adults and children in the United States. According to the CDC, more than 19 million adults and over 5 million children in the US suffer from seasonal allergies (hay fever), and over 4.5 million children have food allergies.</p> --}}
 
-                    <p>Allergy testing can provide critical information to help your patients avoid harmful exposures and recognize what is safe. The ImmunoCAP IgE blood test from Biopassion Diagnostics enables the easy identification of specific allergen triggers, leading to better patient management and outcomes.</p>
+                    <p>Allergy testing can provide critical information to help your patients avoid harmful exposures and recognize what is safe. The IgE blood test from Biopassion Diagnostics enables the easy identification of specific allergen triggers, leading to better patient management and outcomes.</p>
                     <br><br>
                 </div>
 

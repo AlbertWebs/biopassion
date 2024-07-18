@@ -20,7 +20,7 @@
              <div class="col-md-6">
                 <div class="morning-user">
                    <h2>Good Day!, <span>{{Auth::User()->name}}</span></h2>
-                   <p>Patients short profile goes here</p>
+                   <p style="color:#000000">{{Auth::User()->content}}</p>
                 </div>
              </div>
              <div class="col-md-6 position-blk">
