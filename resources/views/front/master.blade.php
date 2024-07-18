@@ -153,7 +153,7 @@
    </head>
    <body class="hidden-bar-wrapper">
     <!--Div where the WhatsApp will be rendered-->
-    {{-- <div style="z-index:100000" id="WAButton"></div> --}}
+    <div style="z-index:100000" id="WAButton"></div>
       <div class="page-wrapper">
          <!-- Preloader -->
          {{-- <div class="preloader"></div> --}}
