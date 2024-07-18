@@ -19,7 +19,7 @@
          <div class="header">
             <div class="header-left">
                <a href="index.html" class="logo">
-               <img src="{{asset('portal/assets/img/logo.png')}}" width="35" height="35" alt> <span>Biopassion</span>
+               <img src="{{url('/')}}/uploads/logo/logo.png" width="45" height="45" alt> <span>Biopassion</span>
                </a>
             </div>
             <a id="toggle_btn" href="javascript:void(0);"><img src="{{asset('portal/assets/img/icons/bar-icon.svg')}}" alt></a>

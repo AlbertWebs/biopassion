@@ -35,7 +35,7 @@
                               <div class="account-logo">
                                  {{-- <a href="index.html"><img src="{{asset('portal/assets/img/login-logo.png')}}" alt></a> --}}
                               </div>
-                              <h2>Login</h2>
+                              <h2>Register</h2>
                               <form method="POST" action="{{ route('register') }}">
                                 @csrf
                                 <div class="input-block">
@@ -58,6 +58,16 @@
                                         </span>
                                     @enderror
                                 </div>
+                                <div class="input-block">
+                                    <label>Phone <span class="login-danger">*</span></label>
+                                    <input id="mobile" type="text" class="form-control @error('mobile') is-invalid @enderror" name="mobile" value="{{ old('mobile') }}" required autocomplete="mobile">
+
+                                     @error('mobile')
+                                         <span class="invalid-feedback" role="alert">
+                                             <strong>{{ $message }}</strong>
+                                         </span>
+                                     @enderror
+                                 </div>
                                 <div class="input-block">
                                    <label>Password <span class="login-danger">*</span></label>
                                    <input id="password" type="password" class="form-control pass-input @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
@@ -84,11 +94,11 @@
                                    </div>
                                 </div>
                                 <div class="input-block login-btn">
-                                   <button class="btn btn-primary btn-block" type="submit">Sign up</button>
+                                   <button class="btn btn-primary btn-block" type="submit">Sign Up</button>
                                 </div>
                              </form>
                               <div class="next-sign">
-                                 <p class="account-subtitle">Already Have an account? <a href="{{route('login')}}">Sign Up</a></p>
+                                 <p class="account-subtitle">Already Have an account? <a href="{{route('login')}}">Sign In</a></p>
                                  <div class="social-login">
                                     <a href="javascript:;"><img src="{{asset('portal/assets/img/icons/login-icon-01.svg')}}" alt></a>
                                     {{-- <a href="javascript:;"><img src="{{asset('portal/assets/img/icons/login-icon-02.svg')}}" alt></a>
