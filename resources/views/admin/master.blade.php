@@ -4,7 +4,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
       <link rel="shortcut icon" type="image/x-icon" href="{{asset('portal/assets/img/favicon.png')}}">
-      <title>{{Auth::User()->name}} - Patients Portal</title>
+      <title>{{Auth::User()->name}} - Admin Portal</title>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="{{asset('portal/assets/css/bootstrap.min.css')}}">
       <link rel="stylesheet" href="{{asset('portal/assets/plugins/fontawesome/css/fontawesome.min.css')}}">
@@ -19,7 +19,7 @@
          <div class="header">
             <div class="header-left">
                <a href="index.html" class="logo">
-               <img src="{{url('/')}}/uploads/logo/logo.png" width="45" height="45" alt> <span>Biopassion</span>
+               <img src="{{url('/')}}/uploads/logo/logo.png" width="45" height="45" alt> <span>Admin</span>
                </a>
             </div>
             <a id="toggle_btn" href="javascript:void(0);"><img src="{{asset('portal/assets/img/icons/bar-icon.svg')}}" alt></a>
@@ -66,17 +66,17 @@
                   <a href="#" class="dropdown-toggle nav-link user-link" data-bs-toggle="dropdown">
                      <div class="user-names">
                         <h5>{{Auth::User()->name}} </h5>
-                        <span>Patient</span>
+                        <span>Admin</span>
                      </div>
                      <span class="user-img">
                      <img src="{{asset('portal/assets/img/user.jpg')}}" alt="Admin">
                      </span>
                   </a>
                   <div class="dropdown-menu">
-                     <a class="dropdown-item" href="profile.html">My Profile</a>
-                     <a class="dropdown-item" href="edit-profile.html">Edit Profile</a>
-                     <a class="dropdown-item" href="settings.html">Settings</a>
-                     <a class="dropdown-item" href="login.html">Logout</a>
+                     <a class="dropdown-item" href="#">My Profile</a>
+                     <a class="dropdown-item" href="#">Edit Profile</a>
+                     <a class="dropdown-item" href="#">Settings</a>
+                     <a onclick="document.getElementById('logout-form').submit();" class="dropdown-item" href="#">Logout</a>
                   </div>
                </li>
                {{-- <li class="nav-item ">
@@ -86,10 +86,10 @@
             <div class="dropdown mobile-user-menu float-end">
                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></a>
                <div class="dropdown-menu dropdown-menu-end">
-                  <a class="dropdown-item" href="profile.html">My Profile</a>
-                  <a class="dropdown-item" href="edit-profile.html">Edit Profile</a>
-                  <a class="dropdown-item" href="settings.html">Settings</a>
-                  <a class="dropdown-item" href="login.html">Logout</a>
+                     <a class="dropdown-item" href="#">My Profile</a>
+                     <a class="dropdown-item" href="#">Edit Profile</a>
+                     <a class="dropdown-item" href="#">Settings</a>
+                     <a onclick="document.getElementById('logout-form').submit();" class="dropdown-item" href="#">Logout</a>
                </div>
             </div>
          </div>
@@ -105,18 +105,23 @@
                         <a href="{{url('/')}}/"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/clock.svg')}}" alt></span> <span> Main Website </span> </a>
                      </li>
                      <li >
-                        <a href="{{route('dashboard.profile')}}"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/menu-icon-02.svg')}}" alt></span> <span> My Profile </span> </a>
+                        <a href="{{route('admin.patients')}}"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/menu-icon-02.svg')}}" alt></span> <span> My Patients </span> </a>
 
                      </li>
                      <li >
-                        <a href="{{route('my-results')}}"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/menu-icon-03.svg')}}" alt></span> <span>My Results </span> </a>
+                        <a href="{{route('admin.results')}}"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/menu-icon-03.svg')}}" alt></span> <span>Posted Results </span> </a>
 
                      </li>
-
+                     {{-- <li >
+                        <a href="#"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/menu-icon-03.svg')}}" alt></span> <span>Post Results </span> </a>
+                     </li> --}}
                      <li >
 
                      </li>
+                     <li >
+                        <a href="#"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/menu-icon-04.svg')}}" alt></span> <span> Appoinments </span> </a>
 
+                     </li>
                      <li>
                         <a target="new" href="{{route('privacy-policy')}}"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/edit.svg')}}" alt></span> <span> Privacy Policy </span> </a>
 

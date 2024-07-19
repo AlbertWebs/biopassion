@@ -14,13 +14,13 @@
                            <div class="slider-two_title">Biopassion Diagnostics Limited</div>
                            <h2 class="slider-two_heading">Show your health some love with 20% off lab tests. Terms apply. </h2>
                            <div class="slider-two_buttons">
-                              <a href="#" class="theme-btn btn-style-four">
+                              <a href="{{url('/')}}/make-an-appointment" class="theme-btn btn-style-four">
                               <span class="btn-wrap">
                               <span class="text-one">Make Appointment</span>
                               <span class="text-two">Make Appointment</span>
                               </span>
                               </a>
-                              <a href="about.html" class="theme-btn btn-style-five">
+                              <a href="{{url('/')}}/who-we-are" class="theme-btn btn-style-five">
                               <span class="btn-wrap">
                               <span class="text-one">Learn More</span>
                               <span class="text-two">Learn More</span>
@@ -91,7 +91,7 @@
                          </div>
 
                         <div class="modern-one_button">
-                           <a href="about.html" class="theme-btn btn-style-two">
+                           <a href="{{url('/')}}/who-we-are" class="theme-btn btn-style-two">
                            <span class="btn-wrap">
                            <span class="text-one">Learn More</span>
                            <span class="text-two">Learn More</span>

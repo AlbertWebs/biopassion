@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PatientController;
+use App\Http\Controllers\AdminController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -111,7 +113,9 @@ Route::middleware(['auth', 'user-access:user'])->group(function () {
     Route::get('/dashboard', [PatientController::class, 'index'])->name('dashboard');
     Route::get('/dashboard/my-results', [PatientController::class, 'results'])->name('my-results');
     Route::get('/dashboard/my-appointments', [PatientController::class, 'results'])->name('my-appointments');
-    Route::get('/dashboard/my-profile', [PatientController::class, 'results'])->name('profile');
+    Route::get('/dashboard/my-profile', [PatientController::class, 'profile'])->name('dashboard.profile');
+    Route::post('/admin/update-my-profile', [PatientController::class, 'update_profile'])->name('update-my-profile');
+
 });
 
 /*------------------------------------------
@@ -121,7 +125,19 @@ All Admin Routes List
 --------------------------------------------*/
 Route::middleware(['auth', 'user-access:admin'])->group(function () {
 
-    Route::get('/admin/home', [HomeController::class, 'adminHome'])->name('admin.home');
+    Route::get('/admin/home', [AdminController::class, 'adminHome'])->name('admin.home');
+    Route::get('/admin/profile', [AdminController::class, 'profile'])->name('admin.profile');
+    Route::post('/admin/update-profile', [AdminController::class, 'update_profile'])->name('update-profile');
+
+    //Results
+    Route::get('/admin/addResults/{id}', [AdminController::class, 'addResults'])->name('admin.addResults');
+    Route::get('/admin/results', [AdminController::class, 'results'])->name('admin.results');
+
+    Route::get('/admin/patients', [AdminController::class, 'patients'])->name('admin.patients');
+    Route::get('/admin/deleteResults/{id}', [AdminController::class, 'deleteResults'])->name('admin.deleteResults');
+
+
+
 });
 
 
