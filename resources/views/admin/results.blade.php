@@ -50,7 +50,7 @@
 
                                 <td class="text-end">
                                    <a class="btn btn-primary submit-form me-2" href="{{url('/')}}/admin/deleteResults/{{$item->id}}">
-                                    Add Results
+                                    Delete Results
                                     <span class="fa fa-file-pdf-o"></span></a>
                                 </td>
                             </tr>
