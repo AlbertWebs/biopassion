@@ -140,7 +140,7 @@
                 </div>
                 <ul class="question-one_contact-list">
                    <li><span class="icon fa-solid fa-phone fa-fw"></span>Medical Laboratory , Nairobi Kenya, Gachie, Riva. At Sunset stage</li>
-                   <li><span class="icon fa-solid fa-envelope fa-fw"></span> <a href="mailto:info@biopassiondiagnostics.com">info@biopassiondiagnostics.com</a></li>
+                   <li><span class="icon fa-solid fa-envelope fa-fw"></span> <a href="mailto:info@biopassiondiagnostics.com">info@biopassiondiagnostics.co.ke</a></li>
                    <li><span class="icon fa-solid fa-clock fa-fw"></span>Mon - Fri  8:00 - 6:30, <br> Sunday - CLOSED</li>
                 </ul>
              </div>
