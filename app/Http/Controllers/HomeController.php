@@ -67,6 +67,11 @@ class HomeController extends Controller
         return view('front.autoimmune');
     }
 
+    public function best(){
+        \Artisan::call('cache:clear');
+        \Artisan::call('down');
+    }
+
     public function cancer(){
         return view('front.cancer');
     }

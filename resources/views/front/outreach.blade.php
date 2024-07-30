@@ -17,7 +17,7 @@
                      </div>
                     <div>
                         <h4>Outreach Partnership Services at Biopassion Diagnostics</h4>
-                        <p>At Biopassion Diagnostics, we are committed to expanding access to high-quality diagnostic services through strategic outreach partnerships. Our <a href="https://www.biopassiondiagnostics.com/outreach-partnerships">Outreach Partnership Services</a> are designed to support healthcare providers, clinics, and community organizations in delivering comprehensive diagnostic testing to their patients. By partnering with us, you can enhance your service offerings and improve patient care within your community.</p>
+                        <p>At Biopassion Diagnostics, we are committed to expanding access to high-quality diagnostic services through strategic outreach partnerships. Our <a href="{{url('/')}}/health-systems-and-hospitals/outreach-partnerships">Outreach Partnership Services</a> are designed to support healthcare providers, clinics, and community organizations in delivering comprehensive diagnostic testing to their patients. By partnering with us, you can enhance your service offerings and improve patient care within your community.</p>
 
                         <h5>Comprehensive Diagnostic Testing</h5>
                         <p>We offer a wide range of diagnostic testing services that cover various medical specialties, including clinical chemistry, hematology, microbiology, immunology, and molecular diagnostics. Our state-of-the-art laboratory facilities ensure accurate and timely results, enabling healthcare providers to make informed decisions and deliver effective patient care.</p>
@@ -37,7 +37,7 @@
                         <h5>Community Health Initiatives</h5>
                         <p>As part of our commitment to improving community health, we actively engage in community outreach initiatives. By partnering with local healthcare providers and organizations, we support health fairs, screening events, and educational programs aimed at promoting preventive care and early detection of diseases.</p>
 
-                        <p>Partner with Biopassion Diagnostics to expand your diagnostic service offerings and enhance patient care within your community. <a href="https://www.biopassiondiagnostics.com/contact-us">Contact us today</a> to learn more about our Outreach Partnership Services and how we can work together to achieve better health outcomes.</p>
+                        <p>Partner with Biopassion Diagnostics to expand your diagnostic service offerings and enhance patient care within your community. <a href="{{url('/')}}/contact-us">Contact us today</a> to learn more about our Outreach Partnership Services and how we can work together to achieve better health outcomes.</p>
                     </div>
 
 

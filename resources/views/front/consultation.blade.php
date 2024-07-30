@@ -18,7 +18,7 @@
 
                     <div>
                         <h4>Lab Testing Consultation Services at Biopassion Diagnostics</h4>
-                        <p>At Biopassion Diagnostics, we provide specialized <a href="https://www.biopassiondiagnostics.com/lab-testing-consultation">Lab Testing Consultation Services</a> to meet the diverse needs of corporate organizations, businesses, healthcare providers, and other institutions. Our expert consultations help you understand and navigate the complexities of diagnostic testing, ensuring you receive the most accurate and relevant information for your specific requirements.</p>
+                        <p>At Biopassion Diagnostics, we provide specialized <a href="{{url('/')}}/health-systems-and-hospitals/lab-testing-consultation">Lab Testing Consultation Services</a> to meet the diverse needs of corporate organizations, businesses, healthcare providers, and other institutions. Our expert consultations help you understand and navigate the complexities of diagnostic testing, ensuring you receive the most accurate and relevant information for your specific requirements.</p>
 
                         <h5>Comprehensive Consultation for Corporate Organizations</h5>
                         <p>For corporate organizations, maintaining employee health and safety is paramount. Our lab testing consultation services include guidance on employee health screenings, drug testing protocols, and wellness programs. We work with HR departments and corporate health teams to develop customized testing strategies that promote a healthy workplace and comply with regulatory standards.</p>
@@ -38,7 +38,7 @@
                         <h5>Expert Guidance and Support</h5>
                         <p>At Biopassion Diagnostics, our team of experienced laboratory professionals and clinical experts is dedicated to providing exceptional support and guidance. We offer training sessions, educational resources, and ongoing consultation to ensure that our partners have the knowledge and tools they need to succeed. Our commitment to quality and excellence drives us to deliver the best possible service and support.</p>
 
-                        <p>Partner with Biopassion Diagnostics for reliable and comprehensive lab testing consultation services tailored to your specific needs. <a href="https://www.biopassiondiagnostics.com/contact-us">Contact us today</a> to learn more about how we can assist you in achieving your health and safety goals.</p>
+                        <p>Partner with Biopassion Diagnostics for reliable and comprehensive lab testing consultation services tailored to your specific needs. <a href="{{url('/')}}/contact-us">Contact us today</a> to learn more about how we can assist you in achieving your health and safety goals.</p>
                     </div>
 
 

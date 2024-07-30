@@ -18,7 +18,7 @@
 
                     <div>
                         <h4>Corporate Wellness Programs at Biopassion Diagnostics</h4>
-                        <p>At Biopassion Diagnostics, we believe that a healthy workforce is the foundation of a successful business. Our <a href="https://www.biopassiondiagnostics.com/business-and-organization/corporate-wellness">Corporate Wellness Programs</a> are designed to promote health and well-being among employees, enhance productivity, and reduce healthcare costs. We offer comprehensive wellness solutions tailored to meet the unique needs of corporate organizations.</p>
+                        <p>At Biopassion Diagnostics, we believe that a healthy workforce is the foundation of a successful business. Our <a href="{{url('/')}}/business-and-organization/corporate-wellness">Corporate Wellness Programs</a> are designed to promote health and well-being among employees, enhance productivity, and reduce healthcare costs. We offer comprehensive wellness solutions tailored to meet the unique needs of corporate organizations.</p>
 
                         <h5>Holistic Wellness Solutions</h5>
                         <p>Our Corporate Wellness Programs encompass a holistic approach to employee health, addressing physical, mental, and emotional well-being. We provide a variety of services, including health risk assessments, biometric screenings, fitness and nutrition programs, stress management workshops, and mental health support. By focusing on overall wellness, we help employees achieve a balanced and healthy lifestyle.</p>

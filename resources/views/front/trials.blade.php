@@ -15,7 +15,7 @@
 
                     <div>
                         <h4>Clinical Trials Testing at Biopassion Diagnostics</h4>
-                        <p>At Biopassion Diagnostics, we are committed to advancing medical research and improving patient outcomes through our comprehensive <a href="https://www.biopassiondiagnostics.com/clinical-trials-testing">Clinical Trials Testing</a> services. Our state-of-the-art laboratory facilities and expert team support clinical trials across various therapeutic areas, providing accurate and timely results to ensure the success of your research.</p>
+                        <p>At Biopassion Diagnostics, we are committed to advancing medical research and improving patient outcomes through our comprehensive <a href="{{url('/')}}/health-systems-and-hospitals/clinical-trials-testing">Clinical Trials Testing</a> services. Our state-of-the-art laboratory facilities and expert team support clinical trials across various therapeutic areas, providing accurate and timely results to ensure the success of your research.</p>
 
                         <h5>Comprehensive Testing Services</h5>
                         <p>We offer a wide range of testing services to support clinical trials, including biomarker analysis, genetic testing, pharmacokinetics, pharmacodynamics, and safety testing. Our advanced technologies and methodologies ensure precise and reliable data, critical for the validation of clinical trial results and regulatory submissions.</p>
@@ -35,7 +35,7 @@
                         <h5>Collaboration and Support</h5>
                         <p>At Biopassion Diagnostics, we value collaboration and are dedicated to supporting researchers throughout the clinical trial process. Our team of experts is available to provide consultation on test selection, study design, and data interpretation. We aim to be a trusted partner in your research, contributing to the advancement of medical science and the development of new therapies.</p>
 
-                        <p>Partner with Biopassion Diagnostics for reliable and comprehensive clinical trials testing services. <a href="https://www.biopassiondiagnostics.com/contact-us">Contact us today</a> to learn more about how we can support your research and help you achieve your clinical trial goals.</p>
+                        <p>Partner with Biopassion Diagnostics for reliable and comprehensive clinical trials testing services. <a href="{{url('/')}}/contact-us">Contact us today</a> to learn more about how we can support your research and help you achieve your clinical trial goals.</p>
                     </div>
 
 

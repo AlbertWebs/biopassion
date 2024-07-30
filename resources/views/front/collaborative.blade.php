@@ -17,7 +17,7 @@
                      </div>
                     <div>
                         <h4>Collaborative Lab Solutions at Biopassion Diagnostics</h4>
-                        <p>At Biopassion Diagnostics, we believe in the power of collaboration to enhance the quality and efficiency of healthcare services. Our <a href="https://www.biopassiondiagnostics.com/collaborative-lab-solutions">Collaborative Lab Solutions</a> are designed to provide healthcare providers, hospitals, and clinics with comprehensive laboratory services that support their diagnostic and clinical needs. By partnering with us, you can leverage our advanced technology, expertise, and resources to improve patient care and streamline operations.</p>
+                        <p>At Biopassion Diagnostics, we believe in the power of collaboration to enhance the quality and efficiency of healthcare services. Our <a href="{{url('/')}}/health-systems-and-hospitals/collaborative-lab-solutions">Collaborative Lab Solutions</a> are designed to provide healthcare providers, hospitals, and clinics with comprehensive laboratory services that support their diagnostic and clinical needs. By partnering with us, you can leverage our advanced technology, expertise, and resources to improve patient care and streamline operations.</p>
 
                         <h5>Comprehensive Laboratory Services</h5>
                         <p>Biopassion Diagnostics offers a full spectrum of laboratory services, including clinical chemistry, hematology, microbiology, immunology, and molecular diagnostics. Our state-of-the-art facilities and advanced testing methodologies ensure accurate and timely results, enabling healthcare providers to make informed clinical decisions and deliver high-quality patient care.</p>
@@ -37,7 +37,7 @@
                         <h5>Quality Assurance and Compliance</h5>
                         <p>Quality assurance and compliance are at the core of our laboratory operations. Biopassion Diagnostics adheres to stringent quality control measures and regulatory standards to ensure the accuracy and reliability of our test results. Our commitment to quality and compliance helps healthcare providers deliver safe and effective patient care.</p>
 
-                        <p>Partner with Biopassion Diagnostics to enhance your laboratory capabilities and improve patient outcomes. <a href="https://www.biopassiondiagnostics.com/contact-us">Contact us today</a> to learn more about our Collaborative Lab Solutions and how we can support your diagnostic and clinical needs.</p>
+                        <p>Partner with Biopassion Diagnostics to enhance your laboratory capabilities and improve patient outcomes. <a href="{{url('/')}}/contact-us">Contact us today</a> to learn more about our Collaborative Lab Solutions and how we can support your diagnostic and clinical needs.</p>
                     </div>
 
 

@@ -402,7 +402,7 @@
                                                 <a href="{{route('clinical-trials-testing')}}">Clinical Trials Testing</a>
                                             </li>
                                             <li>
-                                                <a href="{{route('sposored-testing')}}">Sposored Testing</a>
+                                                <a href="{{route('sposored-testing')}}">Sponsored Testing</a>
                                             </li>
 
 
@@ -586,7 +586,7 @@
                <!-- Footer Bottom -->
                <div class="main-footer_bottom">
                   <div class="d-flex justify-content-between align-items-center flex-wrap">
-                     <div class="footer_copyright">Copyright &copy; {{date('Y')}} Biopassion Diagnostics Company | All Rights Reserved | Powered By <a href="https://designekta.com">Designekta Studios</a> </div>
+                     <div class="footer_copyright">Copyright &copy; {{date('Y')}} Biopassion Diagnostics Company | All Rights Reserved </div>
                      <!-- Scroll To Top -->
                      <div class="footer-scroll_top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
                   </div>
@@ -611,7 +611,7 @@
       <!-- Scroll To Top -->
       <div class="scroll-to-top scroll-to-target" data-target="html">
         <a href="tel:+254 704 150555">
-            <span class="fa fa-phone fa-2x"></span>
+            <span class="fa fa-phone fa-2x" style="line-height: inherit;"></span>
         </a>
     </div>
       {{-- <div class="scroll-to-call scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div> --}}

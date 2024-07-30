@@ -17,7 +17,7 @@
                      </div>
                     <div>
                         <h4>Sponsored Testing at Biopassion Diagnostics</h4>
-                        <p>At Biopassion Diagnostics, we are dedicated to supporting healthcare advancements and research through our comprehensive <a href="https://www.biopassiondiagnostics.com/sponsored-testing">Sponsored Testing</a> services. Our expertise and state-of-the-art laboratory facilities enable us to provide accurate and reliable testing for a wide range of sponsored studies, clinical trials, and research projects.</p>
+                        <p>At Biopassion Diagnostics, we are dedicated to supporting healthcare advancements and research through our comprehensive <a href="{{url('/')}}/health-systems-and-hospitals/sposored-testing">Sponsored Testing</a> services. Our expertise and state-of-the-art laboratory facilities enable us to provide accurate and reliable testing for a wide range of sponsored studies, clinical trials, and research projects.</p>
 
                         <h5>Comprehensive Testing Services</h5>
                         <p>Our Sponsored Testing services encompass a broad spectrum of diagnostic tests, including genetic testing, biomarker analysis, pharmacokinetics, pharmacodynamics, and safety testing. We leverage advanced technologies and methodologies to deliver precise and timely results, essential for the success of your sponsored studies.</p>
@@ -37,7 +37,7 @@
                         <h5>Expert Consultation and Support</h5>
                         <p>At Biopassion Diagnostics, we offer ongoing consultation and support throughout the duration of your sponsored studies. Our experts are available to provide guidance on test selection, protocol development, and data interpretation. We strive to be a trusted partner in your research, contributing to the advancement of medical knowledge and the development of new therapies.</p>
 
-                        <p>Partner with Biopassion Diagnostics for your sponsored testing needs and benefit from our comprehensive services and expert support. <a href="https://www.biopassiondiagnostics.com/contact-us">Contact us today</a> to learn more about how we can collaborate to achieve your research and testing goals.</p>
+                        <p>Partner with Biopassion Diagnostics for your sponsored testing needs and benefit from our comprehensive services and expert support. <a href="{{url('/')}}/contact-us">Contact us today</a> to learn more about how we can collaborate to achieve your research and testing goals.</p>
                     </div>
 
 
