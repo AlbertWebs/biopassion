@@ -173,9 +173,9 @@
                         <ul class="header-social_box-two">
                             <li>
                                 @if(Auth::User())
-                                <a class="nav-btn navSidebar-button fa-regular fa fa-sign-out fa-fw" href=""
+                                <a class="" href=""
                                     onclick="document.getElementById('logout-form').submit();">
-                                    {{-- <a class="nav-btn navSidebar-button fa-regular fa fa-sign-out fa-fw"></a> --}}
+                                    <span class="nav-btn navSidebar-buttons fa-regular fa-user fa-fw"></span>
                                 </a>
                                 @else
                                     <a href="{{url('/')}}/dashboard" class="">
