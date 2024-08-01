@@ -1265,6 +1265,7 @@
 .appointmeny_button-box{
 	position:relative;
 	height:60px;
+    padding: 1px;
 }
 
 .main-header.header-style-two .logo-box{

@@ -40,7 +40,7 @@
 
                     <p>To get started with the My Family Initiative, simply request permission from your family members to set up and access their appointments and test results. Our friendly staff is here to assist you with the process and answer any questions you may have. Together, we can ensure that your loved ones receive the best possible care and support on their path to better health.</p>
 
-                    <p>Join the My Family Initiative today and take an active role in your family's health and well-being with Biopassion Diagnostics.</p>
+                    <p>Join the <a href="{{url('/')}}/login">My Family Initiative</a> today and take an active role in your family's health and well-being with Biopassion Diagnostics.</p>
                 </div>
 
 

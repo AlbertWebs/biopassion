@@ -171,6 +171,21 @@
                         </ul>
                         <!-- Social Box -->
                         <ul class="header-social_box-two">
+                            <li>
+                                @if(Auth::User())
+                                <a class="nav-btn navSidebar-button fa-regular fa fa-sign-out fa-fw" href=""
+                                    onclick="document.getElementById('logout-form').submit();">
+                                    {{-- <a class="nav-btn navSidebar-button fa-regular fa fa-sign-out fa-fw"></a> --}}
+                                </a>
+                                @else
+                                    <a href="{{url('/')}}/dashboard" class="">
+                                        <span class="nav-btn navSidebar-buttons fa-regular fa-user fa-fw"></span>
+                                    </a>
+                                @endif
+                            </li>
+                            <li>
+                                <span style="color:#ffffff">|</span>
+                            </li>
                            <li><a href="https://www.linkedin.com/in/biopassion-diagnostics-1564aa179/" class="fa-brands fa-linkedin fa-fw"></a></li>
                            <li><a href="https://www.facebook.com/p/Biopassion-Diagnostics-100078695481297/" class="fa-brands fa-facebook-f fa-fw"></a></li>
                            <li><a href="https://twitter.com/biopassiondiag1?lang=en" class="fa-brands fa-twitter fa-fw"></a></li>
@@ -429,19 +444,21 @@
                            <!-- Search Btn -->
                            {{-- <div class="search-box-btn search-box-outer"><span class="icon fa fa-search"></span></div> --}}
                            <!-- Nav Btn -->
-                           @if(Auth::User())
+                           {{-- @if(Auth::User())
                                 <a class="nav-btn navSidebar-button fa-regular fa fa-sign-out fa-fw" href=""
                                     onclick="document.getElementById('logout-form').submit();">
-                                    {{-- <a class="nav-btn navSidebar-button fa-regular fa fa-sign-out fa-fw"></a> --}}
+
                                 </a>
                            @else
                               <a href="{{url('/')}}/dashboard" class="">
                                  <span class="nav-btn navSidebar-buttons fa-regular fa-user fa-fw"></span>
                               </a>
-                           @endif
+                           @endif --}}
 
 
-
+                           <a href="#" class="">
+                            &nbsp;  &nbsp; &nbsp;
+                            </a>
 
 
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
