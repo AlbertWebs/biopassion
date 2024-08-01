@@ -44,7 +44,7 @@
                        <div class="about-two_feature col-lg-6 col-md-6 col-sm-6">
                           <div class="about-two_feature-inner">
                              <span class="about-two_feature-icon flaticon-medical-assistance"></span>
-                             <strong>Inpatient Services</strong>
+                             <strong> Online Consultation</strong>
                           </div>
                           We offers dedicated inpatient services, providing comprehensive and specialized care within a hospital setting to ensure optimal treatment, comfort, and support for our patients.
                        </div>
@@ -61,7 +61,7 @@
                        <div class="about-two_signature"><img src="assets/images/icons/signature.png" alt="" /></div>
                        <div class="about-two_author">
                           Erick Masiga<br>
-                          <span>MD Biopassion Diagnosis</span>
+                          <span>MD Biopassion Diagnostics</span>
                        </div>
                     </div>
                  </div>

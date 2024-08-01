@@ -41,20 +41,6 @@
                     </div>
 
 
-                    <!-- Time Widget -->
-                    <div class="sidebar-widget time-widget">
-                       <div class="widget-content">
-                          <div class="time-widget_content">
-                             <span class="clock_icon flaticon-clock"></span>
-                             <h4>Working Time</h4>
-                             <ul class="working-time_list">
-                                <li>Mon-Fri <span>08:00 - 20:00</span></li>
-                                <li>Saturday <span>09:00 - 17:00</span></li>
-                                <li>Sunday <span>Closed</span></li>
-                             </ul>
-                          </div>
-                       </div>
-                    </div>
 
                      <!-- Department Widget -->
                      <div class="sidebar-widget department-widget">
@@ -81,9 +67,9 @@
                           <div class="time-widget_content">
                              <h4>Contact Info</h4>
                              <ul class="contact-info_widget-list">
-                                <li><span class="icon fa-solid fa-phone fa-fw"></span>Medical Laboratory Center, Nairobi Kenya, Lower Kabete, At Gacio Stage</li>
-                                <li><span class="icon fa-solid fa-envelope fa-fw"></span> <a href="mailto:info@biopassiondiagnostics.com">info@biopassiondiagnostics.com</a></li>
-                                <li><span class="icon fa-solid fa-clock fa-fw"></span>Mon - Fri 8:00 - 6:30, <br> Sunday - CLOSED</li>
+                                <li><span class="icon fa-solid fa-phone fa-fw"></span>Medical Laboratory , Nairobi Kenya, Gachie, Riva. At Sunset stage</li>
+                                <li><span class="icon fa-solid fa-envelope fa-fw"></span> <a href="mailto:info@biopassiondiagnostics.com">info@biopassiondiagnostics.co.ke</a></li>
+                                <li><span class="icon fa-solid fa-clock fa-fw"></span>Open Daily 8:00 to 8:00pm</li>
                              </ul>
                           </div>
                        </div>
@@ -234,9 +220,9 @@
                    </div>
                 </div>
                 <ul class="question-one_contact-list">
-                   <li><span class="icon fa-solid fa-phone fa-fw"></span>Medical Laboratory Center, Nairobi Kenya, Lower Kabete, At Gacio Stage</li>
-                   <li><span class="icon fa-solid fa-envelope fa-fw"></span> <a href="mailto:info@biopassiondiagnostics.com">info@biopassiondiagnostics.com</a></li>
-                   <li><span class="icon fa-solid fa-clock fa-fw"></span>Mon - Fri  8:00 - 6:30, <br> Sunday - CLOSED</li>
+                   <li><span class="icon fa-solid fa-phone fa-fw"></span>Medical Laboratory , Nairobi Kenya, Gachie, Riva. At Sunset stage</li>
+                   <li><span class="icon fa-solid fa-envelope fa-fw"></span> <a href="mailto:info@biopassiondiagnostics.com">info@biopassiondiagnostics.co.ke</a></li>
+                   <li><span class="icon fa-solid fa-clock fa-fw"></span>Open Daily 8:00 to 8:00pm</li>
                 </ul>
              </div>
              <!-- Form Column -->
