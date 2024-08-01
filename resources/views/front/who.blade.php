@@ -51,7 +51,7 @@
                     </div>
                     <div class="d-flex align-items-center flex-wrap">
                        <!-- Button Box -->
-                       <a href="appointment.html" class="theme-btn btn-style-one">
+                       <a href="{{url('/')}}/who-we-are" class="theme-btn btn-style-one">
                        <span class="btn-wrap">
                        <span class="text-one">Book Appointment</span>
                        <span class="text-two">Book Appointment</span>
@@ -90,7 +90,7 @@
                     <h2 class="cta-one_heading">Expect Nothing But The Best<br> From Biopassion Diagnostics  </h2>
                  </div>
                  <div class="cta-one_button">
-                    <a href="appointment.html" class="theme-btn btn-style-three">
+                    <a href="{{url('/')}}/who-we-are" class="theme-btn btn-style-three">
                     <span class="btn-wrap">
                     <span class="text-one">Read More</span>
                     <span class="text-two">Read More</span>

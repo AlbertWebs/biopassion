@@ -41,7 +41,7 @@
                  <div class="contact-info-block_inner">
                     <span class="contact-info-block_icon flaticon-send-mail"></span>
                     <h4 class="contact-info-block_heading">Email</h4>
-                    <div class="contact-info-block_text"><a href="mailto:info@biopassiondiagnostics.co.ke">info@biopassiondiagnostics.co.ke</a><br> <a href="mailto:info@biopassiondiagnostics.co.ke">#</a></div>
+                    <div class="contact-info-block_text"><a href="mailto:info@biopassiondiagnostics.co.ke">info@biopassiondiagnostics.co.ke</a><br> <a href="mailto:info@biopassiondiagnostics.co.ke"></a></div>
                  </div>
               </div>
               <!-- Contact Info Block -->
@@ -51,7 +51,10 @@
                  <div class="contact-info-block_inner">
                     <span class="contact-info-block_icon flaticon-telephone"></span>
                     <h4 class="contact-info-block_heading">Phone</h4>
-                    <div class="contact-info-block_text"><a href="tel:+254 704 150 555">+254 704 150 555</a><br> <a href="tel:0704150555">0704150555</a></div>
+                    <div class="contact-info-block_text">
+                        {{-- 0704150555 /0202150555 --}}
+                        <a href="tel:+254 704 150 555">+254 704 150 555</a><br> <a href="tel:0202150555">0202150555</a>
+                    </div>
                  </div>
               </div>
            </div>
