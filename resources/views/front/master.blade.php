@@ -427,7 +427,7 @@
                               </a>
                            </div>
                            <!-- Search Btn -->
-                           <div class="search-box-btn search-box-outer"><span class="icon fa fa-search"></span></div>
+                           {{-- <div class="search-box-btn search-box-outer"><span class="icon fa fa-search"></span></div> --}}
                            <!-- Nav Btn -->
                            @if(Auth::User())
                                 <a class="nav-btn navSidebar-button fa-regular fa fa-sign-out fa-fw" href=""
