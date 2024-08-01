@@ -46,12 +46,12 @@
                              <span class="about-two_feature-icon flaticon-medical-assistance"></span>
                              <strong> Online Consultation</strong>
                           </div>
-                          We offers dedicated inpatient services, providing comprehensive and specialized care within a hospital setting to ensure optimal treatment, comfort, and support for our patients.
+                          Biopassion Diagnostics offers the convenience of <b>online doctor consultations</b> , allowing you to receive medical advice, Home/Office sample Collection and treatment from the comfort of your own home.
                        </div>
                     </div>
                     <div class="d-flex align-items-center flex-wrap">
                        <!-- Button Box -->
-                       <a href="{{url('/')}}/who-we-are" class="theme-btn btn-style-one">
+                       <a href="{{url('/')}}/make-an-appointment" class="theme-btn btn-style-one">
                        <span class="btn-wrap">
                        <span class="text-one">Book Appointment</span>
                        <span class="text-two">Book Appointment</span>

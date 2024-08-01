@@ -335,8 +335,10 @@
          </section>
          <!-- End Testimonial Two -->
 
-         <!-- News Section -->
          <section class="news-section style-two" style="margin:0 auto">
+         </section>
+         <!-- News Section -->
+         {{-- <section class="news-section style-two" style="margin:0 auto">
             <div class="auto-container" style="margin:0 auto">
                <div class="row clearfix" style="margin:0 auto">
                   <!-- Title Column -->
@@ -368,6 +370,6 @@
                   @endforeach
                </div>
             </div>
-         </section>
+         </section> --}}
          <!-- End News Section -->
 @endsection

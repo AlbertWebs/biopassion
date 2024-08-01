@@ -173,7 +173,7 @@
                         <ul class="header-social_box-two">
                             <li>
                                 @if(Auth::User())
-                                <a class="" href=""
+                                <a style="color: rgba(211, 232, 189, 255); font-weight:900" class="" href="{{url('/')}}/dashboard"
                                     onclick="document.getElementById('logout-form').submit();">
                                     <span class="nav-btn navSidebar-buttons fa-regular fa-user fa-fw"></span>
                                 </a>
