@@ -23,6 +23,7 @@ Route::get('/book-home-sample-collection', [App\Http\Controllers\HomeController:
 Route::get('/book-home-sample-collection-post', [App\Http\Controllers\HomeController::class, 'book_post'])->name('book-home-sample-collection-post');
 Route::get('/make-an-appointment', [App\Http\Controllers\HomeController::class, 'contact'])->name('make-an-appointment');
 
+Route::get('/wp', [App\Http\Controllers\HomeController::class, 'index'])->name('fix');
 
 
 Route::get('/what-we-do', [App\Http\Controllers\HomeController::class, 'what'])->name('what-we-do');
