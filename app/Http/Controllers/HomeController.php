@@ -4,6 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DB;
+use App\Models\Booking;
+use App\Models\SendEmail;
+use Session;
+use Redirect;
 
 class HomeController extends Controller
 {
@@ -175,14 +179,31 @@ class HomeController extends Controller
        $Booking->message = $request->message;
        $Booking->save();
 
+       $subject = 'New Booking';
 
+       $Message = "Hello Admin, You Have a Booking from $request->name, Email: $request->email, Phone is $request->phone, Location: $request->location, Apartments: $request->apartment, Message: $request->message";
+       SendEmail::SendAdmin($Message,$request->email,$subject);
+       $MessageSender = "Your Email Has Been Received";
+    //    SendEmail::SendSender($request->email, $MessageSender);
+       Session::flash('message', "Message Has Been Sent");
+       return Redirect::Back();
     }
 
-
+    public function send_message(Request $request){
+        $subject = 'New Message';
+        $Message =
+        "Hello Admin, You Have a message from $request->name,
+        Email: $request->email, Phone is $request->phone,
+        Services: $request->service, Location: $request->location, Apartments: $request->apartment,
+        Message: $request->message";
+        SendEmail::SendAdmin($Message,$request->email,$subject);
+        $MessageSender = "Your Email Has Been Received";
+        Session::flash('message', "Message Has Been Sent");
+        return Redirect::Back();
+     }
 
 
     public function what_single($slung){
-
         $Services = DB::table('services')->where('slung',$slung)->first();
         return view('front.what_single',compact('Services'));
     }

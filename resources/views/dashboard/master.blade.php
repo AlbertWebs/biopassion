@@ -31,34 +31,7 @@
                </form>
             </div>
             <ul class="nav user-menu float-end">
-               <li class="nav-item dropdown d-none d-md-block">
-                  <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown"><img src="{{asset('portal/assets/img/icons/note-icon-02.svg')}}" alt><span class="pulse"></span> </a>
-                  <div class="dropdown-menu notifications">
-                     <div class="topnav-dropdown-header">
-                        <span>Notifications</span>
-                     </div>
-                     <div class="drop-scroll">
-                        <ul class="notification-list">
-                           <li class="notification-message">
-                              <a href="activities.html">
-                                 <div class="media">
-                                    <span class="avatar">
-                                    <img alt="John Doe" src="{{asset('portal/assets/img/user.jpg')}}" class="img-fluid">
-                                    </span>
-                                    <div class="media-body">
-                                       <p class="noti-details"><span class="noti-title">John Doe</span> added new task <span class="noti-title">Patient appointment booking</span></p>
-                                       <p class="noti-time"><span class="notification-time">4 mins ago</span></p>
-                                    </div>
-                                 </div>
-                              </a>
-                           </li>
-                        </ul>
-                     </div>
-                     <div class="topnav-dropdown-footer">
-                        <a href="activities.html">View all Notifications</a>
-                     </div>
-                  </div>
-               </li>
+
                <li class="nav-item dropdown d-none d-md-block">
                   <a href="javascript:void(0);" id="open_msg_box" class="hasnotifications nav-link"><img src="{{asset('portal/assets/img/icons/note-icon-01.svg')}}" alt><span class="pulse"></span> </a>
                </li>
@@ -72,12 +45,12 @@
                      <img src="{{asset('portal/assets/img/user.jpg')}}" alt="Admin">
                      </span>
                   </a>
-                  <div class="dropdown-menu">
+                  {{-- <div class="dropdown-menu">
                      <a class="dropdown-item" href="profile.html">My Profile</a>
                      <a class="dropdown-item" href="edit-profile.html">Edit Profile</a>
                      <a class="dropdown-item" href="settings.html">Settings</a>
                      <a class="dropdown-item" href="login.html">Logout</a>
-                  </div>
+                  </div> --}}
                </li>
                {{-- <li class="nav-item ">
                   <a href="settings.html" class="hasnotifications nav-link"><img src="{{asset('portal/assets/img/icons/setting-icon-01.svg')}}" alt> </a>
@@ -85,12 +58,12 @@
             </ul>
             <div class="dropdown mobile-user-menu float-end">
                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></a>
-               <div class="dropdown-menu dropdown-menu-end">
+               {{-- <div class="dropdown-menu dropdown-menu-end">
                   <a class="dropdown-item" href="profile.html">My Profile</a>
                   <a class="dropdown-item" href="edit-profile.html">Edit Profile</a>
                   <a class="dropdown-item" href="settings.html">Settings</a>
                   <a class="dropdown-item" href="login.html">Logout</a>
-               </div>
+               </div> --}}
             </div>
          </div>
          <div class="sidebar" id="sidebar">

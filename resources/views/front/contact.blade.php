@@ -77,10 +77,11 @@
               </div>
               <!-- Default Form -->
               <div class="default-form contact-form">
-                 <form method="post" action="https://html.themerange.net/merit/merit/sendemail.php" id="contact-form">
+                 <form method="post" action="{{route('send-message')}}" id="contact-form">
+                    @csrf
                     <div class="row clearfix">
                        <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                          <input type="text" name="username" placeholder="Name" required="">
+                          <input type="text" name="name" placeholder="Name" required="">
                        </div>
                        <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                           <input type="text" name="email" placeholder="Email" required="">
@@ -89,7 +90,7 @@
                           <input type="text" name="phone" placeholder="Phone" required="">
                        </div>
                        <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                          <select>
+                          <select name="service">
                             <option value="Customer Care">Customer Care</option>
                             <option value="Billing">Billing</option>
 
@@ -111,7 +112,7 @@
                        <div class="col-lg-12 col-md-12 col-sm-12 form-group text-center">
                           <!-- Button Box -->
                           <div class="button-box">
-                             <button class="theme-btn btn-style-one">
+                             <button type="submit" class="theme-btn btn-style-one">
                              <span class="btn-wrap">
                              <span class="text-one">get in touch</span>
                              <span class="text-two">get in touch</span>
