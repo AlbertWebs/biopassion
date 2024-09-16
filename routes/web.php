@@ -23,6 +23,8 @@ Route::get('/book-home-sample-collection', [App\Http\Controllers\HomeController:
 Route::post('/book-home-sample-collection-post', [App\Http\Controllers\HomeController::class, 'book_post'])->name('book-home-sample-collection-post');
 Route::get('/make-an-appointment', [App\Http\Controllers\HomeController::class, 'contact'])->name('make-an-appointment');
 Route::post('/send-message', [App\Http\Controllers\HomeController::class, 'send_message'])->name('send-message');
+Route::post('/make-an-appointment', [App\Http\Controllers\HomeController::class, 'appointment'])->name('make-an-appointment');
+
 
 
 Route::get('/wp', [App\Http\Controllers\HomeController::class, 'index'])->name('fix');
@@ -113,29 +115,28 @@ All Normal Users Routes List
 --------------------------------------------
 --------------------------------------------*/
 Route::middleware(['auth', 'user-access:user'])->group(function () {
-    Route::get('/home', [PatientController::class, 'index'])->name('the-dashboard');
-    Route::get('/dashboard', [PatientController::class, 'index'])->name('dashboard');
-    Route::get('/dashboard/my-results', [PatientController::class, 'results'])->name('my-results');
-    Route::get('/dashboard/my-appointments', [PatientController::class, 'results'])->name('my-appointments');
-    Route::get('/dashboard/my-profile', [PatientController::class, 'profile'])->name('dashboard.profile');
-    Route::post('/admin/update-my-profile', [PatientController::class, 'update_profile'])->name('update-my-profile');
-
+    Route::group(['prefix'=>'dashboard'], function(){
+        Route::get('/', [PatientController::class, 'index'])->name('dashboard');
+        Route::get('/my-results', [PatientController::class, 'results'])->name('my-results');
+        Route::get('/my-appointments', [PatientController::class, 'results'])->name('my-appointments');
+        Route::get('/my-profile', [PatientController::class, 'profile'])->name('dashboard.profile');
+        Route::post('/admin/update-my-profile', [PatientController::class, 'update_profile'])->name('update-my-profile');
+    });
 });
 
-
+/*------------------------------------------
 /*------------------------------------------
 --------------------------------------------
 All Normal Users Routes List
 --------------------------------------------
 --------------------------------------------*/
 Route::middleware(['auth', 'user-access:manager'])->group(function () {
-    Route::get('/home', [PatientController::class, 'index'])->name('the-dashboard-doctor');
-    Route::get('/dashboard', [PatientController::class, 'index'])->name('manager.home.doctor');
-    Route::get('/dashboard/my-results', [PatientController::class, 'results'])->name('my-results-doctor');
-    Route::get('/dashboard/my-appointments', [PatientController::class, 'results'])->name('my-appointments-doctor');
-    Route::get('/dashboard/my-profile', [PatientController::class, 'profile'])->name('dashboard.profile.doctor');
-    Route::post('/admin/update-my-profile', [PatientController::class, 'update_profile'])->name('update-my-profile-doctor');
+    Route::group(['prefix'=>'doctor'], function(){
+
+    });
+
 });
+
 
 /*------------------------------------------
 --------------------------------------------

@@ -25,9 +25,10 @@ class UserAccess
             return redirect()->route('admin.home');
         }else if (auth()->user()->type == 'manager') {
             return redirect()->route('the-dashboard-doctor');
+        }else if (auth()->user()->type == 'user') {
+            return redirect()->route('dashboard');
         }else{
-            // Check company
-            return redirect()->route('the-dashboard');
+            return redirect()->route('home');
         }
 
         return response()->json(['You do not have permission to access for this page.']);

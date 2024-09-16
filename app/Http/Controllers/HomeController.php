@@ -200,8 +200,20 @@ class HomeController extends Controller
         $MessageSender = "Your Email Has Been Received";
         Session::flash('message', "Message Has Been Sent");
         return Redirect::Back();
-     }
+    }
 
+    public function appointment(Request $request){
+        $subject = 'New Appointmet';
+        $Message =
+        "Hello Admin, You Have a appointment from $request->name,
+        Email: $request->email, Phone is $request->phone,
+        Services: $request->service, Date: $request->date,
+        Message: $request->message";
+        SendEmail::SendAdmin($Message,$request->email,$subject);
+        $MessageSender = "Your Email Has Been Received";
+        Session::flash('message', "Message Has Been Sent");
+        return Redirect::Back();
+    }
 
     public function what_single($slung){
         $Services = DB::table('services')->where('slung',$slung)->first();

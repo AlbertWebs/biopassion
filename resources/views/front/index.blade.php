@@ -244,10 +244,11 @@
                      <!-- Appointment Form -->
                      <div class="appointment-form">
                         <!-- Appointment Form -->
-                        <form method="post" action="https://html.themerange.net/merit/merit/blog.html">
+                        <form method="post" action="{{route('make-an-appointment')}}">
+                            @csrf
                            <div class="row clearfix">
                               <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                 <input type="text" name="username" placeholder="Patient Name*" required="">
+                                 <input type="text" name="name" placeholder="Patient Name*" required="">
                               </div>
                               <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                                  <input type="text" name="phone" placeholder="Phone Number*" required="">
@@ -256,7 +257,7 @@
                                  <input type="email" name="email" placeholder="Email Address" required="">
                               </div>
                               <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                 <select class="custom-select-box">
+                                 <select name="service" class="custom-select-box">
                                     <option value="Customer Care">Customer Care</option>
                                     <option value="Billing">Billing</option>
                                     <option value="Sale and marketing">Sale and marketing</option>
