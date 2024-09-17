@@ -109,6 +109,7 @@ Route::group(['prefix'=>'health-systems-and-hospitals'], function(){
 
 
 Auth::routes();
+Route::get('/home', [PatientController::class, 'index'])->name('user-dashboard');
 /*------------------------------------------
 --------------------------------------------
 All Normal Users Routes List
