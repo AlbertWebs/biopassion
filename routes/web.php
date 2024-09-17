@@ -117,6 +117,7 @@ All Normal Users Routes List
 Route::middleware(['auth', 'user-access:user'])->group(function () {
     Route::group(['prefix'=>'dashboard'], function(){
         Route::get('/', [PatientController::class, 'index'])->name('dashboard');
+        Route::get('/home', [PatientController::class, 'index'])->name('dashboard');
         Route::get('/my-results', [PatientController::class, 'results'])->name('my-results');
         Route::get('/my-appointments', [PatientController::class, 'results'])->name('my-appointments');
         Route::get('/my-profile', [PatientController::class, 'profile'])->name('dashboard.profile');
