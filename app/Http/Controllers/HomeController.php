@@ -22,6 +22,11 @@ class HomeController extends Controller
         return view('front.pricelist');
     }
 
+    public function careers()
+    {
+        return view('front.careers');
+    }
+
 
     public function about(){
         return view('front.about');

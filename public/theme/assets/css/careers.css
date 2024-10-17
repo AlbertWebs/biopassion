@@ -1,0 +1,2199 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    padding: 5px;
+    font-family: Source Sans Pro;
+    font-size: 15px;
+    color: #333333;
+
+
+
+    background: #ffffff !important;
+
+
+    }
+    .utm-curated-content {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+    }
+    .utm-curated-content-item {
+    font-size: 15px;
+    }
+    .utm-curated-content-item:not(:last-child) {
+    border-right: 1px solid;
+    margin-right: 5px;
+    }
+    .iCIMS_NoDisplay, .NoDisplay {
+    display: none !important;
+    }
+    .iCIMS_Hidden {
+    visibility: hidden !important;
+    }
+
+    .iCIMS_508_Label {
+    left: -9999px;
+    position: absolute;
+    top: -1px;
+    }
+    .subtext {
+    font-size: 13px;
+    color: #686868;
+    }
+    h1 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333333;
+    }
+    h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
+    }
+    h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333333;
+    }
+    div.title a.iCIMS_Anchor h3 {
+    color: inherit;
+    margin-top: 0px;
+    font-size: 18px;
+    margin-bottom: 0px;
+    line-height: 25px;
+    font-weight: normal
+    }
+    .iCIMS_ListingsPage p.iCIMS_SubHeader.iCIMS_SubHeader_Jobs {
+    color: #333333;
+    font-size: 16px
+    font-weight: 600;
+    margin-top: 18px;
+    margin-bottom: 9px;
+    }
+
+    a:link {
+    color: #ffc20e;
+    text-decoration: underline;
+    }
+    a:visited {
+    color: #ffc20e;
+    }
+    a:hover,
+    a:focus {
+    color: #EBAE00;
+    text-decoration: underline;
+    }
+    /*We want non-interactable items to have not have a focus indicator*/
+    #iCIMS_Header:focus, .iCIMS_Message:focus, .iCIMS_LabelText:focus, .iCIMS_CollectionContainer:focus, label:focus {
+    outline:none;
+    }
+    .iCIMS_MainWrapper {
+    padding-left: 5px;
+    padding-right: 5px;
+    }
+    .glyphicons {
+    color: #686868;
+    }
+    label {
+    font-weight: normal;
+    }
+    select {
+    width: 100%;
+    border: 1px solid #cccccc;
+    border-radius: 3px 3px 3px 3px;
+    padding: 5px;
+    height: 30px;
+    color: #000;
+    }
+    .form-control,
+    input[type="text"],
+    input[type="password"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"],
+    select {
+    height: 40px;
+    border-radius: 3px;
+    border: solid 1px #6a6a6a;
+    font-size: 15px;
+    }
+    input[type="radio"],
+    input[type="checkbox"] {
+    margin-right: 5px;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"] {
+    min-width: 255px;
+    }
+    .form-control-feedback {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    }
+    .Field_RequiredStar {
+    color: #a70000;
+    }
+    .icims_infoinstruction {
+    display: block;
+    }
+    .iCIMS_loadingButtonOverlayImage {
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-image: url('https://cdn02.icims.com/a/images.icims.com/content/platform_162.2.0.241011-40035cae39b-11-2/images/nothemes/default/loading.gif') !important;
+    text-indent: -999em;
+    overflow: hidden;
+    }
+    .iCIMS_loadingImageResume {
+    background-repeat: no-repeat !important;
+    background-image: url('https://cdn02.icims.com/a/images.icims.com/content/platform_162.2.0.241011-40035cae39b-11-2/images/nothemes/default/loading.gif') !important;
+    margin-top: 8px;
+    }
+    .iCIMS_loadingImageResumeText {
+    padding-left: 22px;
+    }
+    .iCIMS_Portal_MobileBrandingHeaderImg {
+    max-width: 100%;
+    }
+    #icims_skipLink2:focus {
+    padding: 7px;
+    }
+
+
+    .iCIMS_Table {
+    display: table;
+
+
+
+    background: #ffffff !important;
+
+
+    }
+    .iCIMS_TableRow {
+    display: table-row;
+    }
+    .iCIMS_TableCell,
+    .iCIMS_TableHeader {
+    display: table-cell;
+    vertical-align: top;
+    }
+    .iCIMS_TableHeader {
+    font-weight: 600;
+    }
+    .iCIMS_InfoData {
+    vertical-align: top;
+    }
+    .iCIMS_InfoField {
+    vertical-align: top;
+    text-align: right;
+    padding: 0 5px 0 0;
+    }
+
+    .iCIMS_PrimaryButton,
+    .iCIMS_SecondaryButton {
+    border-radius: 3px;
+    cursor: pointer;
+    width: auto;
+    min-width: 100px;
+    padding-right: 16px;
+    padding-left: 16px;
+    height: 34px;
+    text-decoration: none !important;
+    }
+
+    .iCIMS_PrimaryButton {
+    color: #000000 !important;
+    background: #ffc20e;
+    border: 1px solid #ffc20e;
+    }
+    .iCIMS_PrimaryButton:hover,
+    .iCIMS_PrimaryButton:focus {
+    background: #EBAE00 !important;
+    }
+
+    .iCIMS_PrimaryButton:focus {
+    outline: none;
+    border: 2px solid black;
+    }
+
+    .iCIMS_SecondaryButton {
+    color: #333333 !important;
+    background: #ffffff;
+    border: 1px solid #6a6a6a;
+    }
+    .iCIMS_SecondaryButton:hover,
+    .iCIMS_SecondaryButton:focus {
+    background: #EBEBEB !important;
+    }
+    .iCIMS_PrimaryButton[disabled],
+    .iCIMS_PrimaryButton[disabled]:hover,
+    .iCIMS_PrimaryButton[disabled]:focus,
+    .iCIMS_SecondaryButton[disabled],
+    .iCIMS_SecondaryButton[disabled]:hover,
+    .iCIMS_SecondaryButton[disabled]:focus {
+    background-color: #e5e5e5 !important;
+    border: 1px solid #bbbbbb;
+    color: #bbbbbb;
+    cursor: default;
+    }
+    .iCIMS_Action_Button {
+    display: block;
+    text-align: center;
+    text-decoration: none !important;
+    border-radius: 3px;
+    width: auto;
+    margin: 0 0 10px 0;
+    padding: 8px 10px;
+    outline: 0;
+    padding-right: 16px;
+    padding-left: 16px;
+    height: 40px;
+    }
+    .iCIMS_Action_ButtonText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: normal;
+    white-space: nowrap;
+    padding: 1px 0;
+    }
+
+    .iCIMS_Logo {
+    text-align: center;
+    margin-top: 50px;
+    }
+    .iCIMS_Logo:empty {
+    display: none;
+    }
+    .iCIMS_Faq_Link {
+    margin: 18px auto 20px;
+    display: inline-block;
+    }
+    .iCIMS_Logo_Link,
+    .iCIMS_Logo_Image {
+    width: 98px;
+    height: 65px;
+    display: block;
+    margin: 10px auto 6px;
+    }
+    .iCIMS_Logo_Image {
+    padding: 0;
+    background-image: url('https://cdn02.icims.com/a/images.icims.com/content/platform_162.2.0.241011-40035cae39b-11-2/images/nothemes/icims-logo.png');
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+    }
+    .iCIMS_Logo_Image_Custom {
+    display: block;
+    width: auto;
+    max-width: 120px;
+    height: auto;
+    margin: 10px auto 6px;
+    }
+    .iCIMS_Logo_Image_Custom > img {
+    width: auto;
+    max-width: 120px;
+    height: auto;
+    border: 0;
+    }
+    .iCIMS_Logo_Text {
+    padding: 0 0 18px;
+    margin: 0;
+    font-size: 80%;
+    }
+
+    .iCIMS_Message {
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    padding: 8px 12px 8px 12px;
+    border-radius: 3px;
+    }
+    .iCIMS_Message .glyphicons {
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    margin-right: 2px;
+    }
+    .iCIMS_SystemMessage {
+    color: #31708f;
+    background-color: #d9edf7;
+    border: solid 1px #bce8f1;
+    }
+    .iCIMS_SystemMessage:before {
+    font-family: 'Glyphicons Halflings';
+    content: '\e086';
+    color: #31708f;
+    margin-right: 5px;
+    vertical-align: bottom;
+    font-weight: 600;
+    }
+    .iCIMS_ErrorMessage {
+    color: #a70000;
+    background-color: #fff0f0;
+    border: solid 1px #a70000;
+    }
+    .iCIMS_ErrorMessage:before {
+    font-family: 'Glyphicons Halflings';
+    content: '\e101';
+    color: #a70000;
+    margin-right: 5px;
+    vertical-align: bottom;
+    font-weight: 600;
+    }
+    .iCIMS_SuccessMessage {
+    color:#418031;
+    background-color: #f4ffeb;
+    border: solid 1px #418031;
+    }
+    .iCIMS_SuccessMessage:before {
+    font-family: 'Glyphicons Halflings';
+    content: '\e084';
+    color: #418031;
+    margin-right: 5px;
+    vertical-align: bottom;
+    font-weight: 600;
+    }
+    .iCIMS_FieldError {
+    background: transparent;
+    border: 0;
+    padding-left: 0;
+    }
+    .iCIMS_ProfileFormTable .iCIMS_ErrorMessage {
+    background: transparent;
+    border: 0;
+    }
+    .iCIMS_ErrorMessage label {
+    margin-left: 5px;
+    }
+    .iCIMS_pageErrorFirst {
+    margin-top: 5px;
+    }
+    .iCIMS_pageError {
+    display: list-item;
+    margin-left: 41px;
+    }
+    li.iCIMS_pageError{
+    margin-left:0px;
+    }
+
+    @media only screen and (max-width: 767px) {
+    .iCIMS_Message:before {
+    position: absolute;
+    left: 12px;
+    top: 8px;
+    }
+    .iCIMS_Message {
+    padding: 8px 19px 8px 37px;
+    position: relative;
+    }
+    }
+
+    .iCIMS_Portal_PopupOverLay {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 5000;
+    opacity: 0.4;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+    height: 100%;
+    width: 100%;
+    visibility: visible;
+    background-color: #000000;
+    }
+    .iCIMS_Portal_Popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -90px;
+    margin-left: -160px;
+    visibility: hidden;
+    z-index: 5001;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 6px 12px #808080;
+    width: 300px;
+    }
+    .iCIMS_Mobile.iCIMS_Portal_Popup {
+    width: 248px;
+    margin-left: -135px;
+    }
+    .iCIMS_Portal_PopupOpen {
+    visibility: visible;
+    }
+    .iCIMS_Portal_Popup .iCIMS_buttonContainer {
+    text-align: center;
+    }
+    .iCIMS_Portal_Popup .iCIMS_PrimaryButton {
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    }
+
+    .iCIMS_TopHeader {
+    border-bottom: 1px solid #6a6a6a;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 40px;
+    }
+    .iCIMS_BackToWelcome {
+    float: left;
+    height: 40px;
+    margin-top: 3px;
+    }
+    .iCIMS_BackToWelcome .iCIMS_NavigationIconContainer a.iCIMS_Anchor_Nav:focus {
+    padding: 7px;
+    }
+    .icims-user-profile {
+    float: right;
+    height: 40px;
+    }
+    .iCIMS_profilePicture {
+    display: inline-block;
+    margin: 0px 0px 10px 0px;
+    background: transparent;
+    }
+    .iCIMS_profilePicture .thumbnail-circle{
+    text-align: center;
+    text-transform: uppercase;
+    float: right;
+    font-size: 16px;
+    }
+    .thumbnail-sm{
+    width: 32px;
+    height: 32px;
+    }
+    .thumbnail-circle{
+    border-radius: 50%;
+    display: inline-block;
+    overflow: hidden;
+    border: 1px solid #6a6a6a;
+    padding-top: 4px;
+    color: #686868;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: 600;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box;
+    }
+
+    .thumbnail-circle-initial{
+
+
+
+    background: #ffffff !important;
+
+
+    }
+    .iCIMS_profilePicture img{
+    display:none;
+    }
+    .iCIMS_userMenu {
+    margin: 5px;
+    line-height: 1.3em;
+    float: right;
+    text-align: left;
+    }
+    .iCIMS_NavigationIconContainer .halflings {
+    top: 3px;
+    margin-right: 2px;
+    }
+    .iCIMS_userMenuName {
+    float: left;
+    margin-right: 5px;
+    }
+    .iCIMS_userMenuLink {
+    float: left;
+    }
+
+
+    @media only screen and (max-width :767px) {
+    body {
+    padding: 5px 0px 5px 0px;
+    overflow-x: hidden;
+    }
+    .iCIMS_MainWrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+    .iCIMS_TopHeader {
+    position: relative;
+    width: 100vw;
+    right: calc(50vw - 50%);
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+    .iCIMS_MobileHeaderLink h1 {
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-left: 5px;
+    text-align: left;
+    }
+    .iCIMS_Mobile .iCIMS_Header {
+    width: 97%;
+    line-height: 1.25;
+    text-align: left;
+    }
+    .iCIMS_Expandable_Text {
+    width: 97%;
+    line-height: 1.38;
+    text-align: left;
+    color: #686868;
+    }
+    .iCIMS_Table {
+    width: 100%;
+    }
+    .iCIMS_Mobile .iCIMS_PrimaryButton,
+    .iCIMS_Mobile .iCIMS_SecondaryButton {
+    width: 100%;
+    height: 40px;
+    min-width: inherit;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"] {
+    width: 100%;
+    min-width: inherit;
+    }
+    }
+
+    @media print {
+    a:link:after,
+    a:visited:after {
+    content: "" !important;
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .iCIMS_FileFieldButton {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    }
+    .iCIMS_FileFieldButton,
+    .iCIMS_FileFieldButton.iCIMS_SecondaryButton {
+    position: relative;
+    margin: 0 0 10px;
+    width: 155px;
+    display: block;
+    overflow: hidden !important;
+    }
+    .iCIMS_FileFieldButton input {
+    position: absolute !important;
+    display: block !important;
+    cursor: pointer !important;
+    border: none !important;
+    opacity: 0.0 !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    font-size: 200px !important;
+    color: transparent !important;
+    width: auto !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    filter: alpha(opacity=0) !important;
+    }
+    .iCIMS_FileFieldButton input:focus {
+    outline: none !important;
+    border: none !important;
+    position: absolute !important;
+    }
+    .iCIMS_FileFieldIcon {
+    float: left;
+    margin-right: 8px;
+    }
+    .iCIMS_FileFieldText {
+    text-align: left;
+    }
+    .icims-file-upload {
+    font-size: 15px;
+    vertical-align: middle;
+    margin-bottom: 6px;
+    }
+    .glyphicons-folder-open {
+    color: #fccd48;
+    }
+    .social-dropbox {
+    color: #007ee5;
+    }
+    .social-windows,
+    .icims-social-icon.brief.social-windows {
+    color: #0078d7;
+    }
+    .social-google-drive {
+    color: #dd4b39;
+    }
+    .iCIMS_FileUploadButtonBlock {
+    display: inline-block;
+    margin-right: 10px;
+    line-height: 30px;
+    }
+    .iCIMS_FileUploadButtonBlock .iCIMS_FileFieldButton, .iCIMS_FileUploadButtonBlock span {
+    text-align: left;
+    height: auto;
+    }
+    .iCIMS_ff52 .upload-buttons,
+    .iCIMS_ff53 .upload-buttons {
+    margin-bottom: 18px;
+    }
+    .iCIMS_FileFieldIcon {
+    line-height: 30px;
+    }
+    .iCIMS_ff52 .upload-buttons .iCIMS_resumeUpload,
+    .iCIMS_ff52 .upload-buttons .iCIMS_googleDriveButton,
+    .iCIMS_ff52 .upload-buttons .iCIMS_dropboxButton,
+    .iCIMS_ff52 .upload-buttons .iCIMS_oneDriveButton,
+    .iCIMS_ff53 .upload-buttons .iCIMS_resumeUpload,
+    .iCIMS_ff53 .upload-buttons .iCIMS_googleDriveButton,
+    .iCIMS_ff53 .upload-buttons .iCIMS_dropboxButton,
+    .iCIMS_ff53 .upload-buttons .iCIMS_oneDriveButton {
+    top: 22px;
+    }
+    .iCIMS_ipad .iCIMS_FileUploadButtonBlock,
+    .iCIMS_safari .iCIMS_FileUploadButtonBlock {
+    margin-top: 5px;
+    }
+    .iCIMS_ipad .iCIMS_resumeUpload {
+    top: 0;
+    }
+    .iCIMS_safari .iCIMS_resumeUpload {
+    top: -2px;
+    }
+    .iCIMS_CurrentFile,
+    .iCIMS_FileUploadDeleteButtonContainer {
+    display: inline-block;
+    margin-right: 10px;
+    }
+    .iCIMS_CurrentFile {
+    font-style: italic;
+    }
+    .iCIMS_CurrentFileIcon {
+    margin-left: 5px;
+    }
+    .iCIMS_TableRow .upload-buttons {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    }
+
+
+    .upload-buttons .iCIMS_SecondaryButton:hover,
+    .upload-buttons .iCIMS_SecondaryButton:focus,
+    .upload-buttons .iCIMS_SecondaryButton.focused {
+    background: #EBEBEB;
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: Highlight;
+    }
+
+    .iCIMS_FileFieldText, .icims-file-upload {
+    font-size: 13px;
+    }
+    @media (-webkit-min-device-pixel-ratio:0) {
+    .upload-buttons .iCIMS_SecondaryButton.focused {
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+    }
+    }
+
+    @media only screen and (max-width: 767px) {
+    .iCIMS_TableRow .upload-buttons {
+    display: block;
+    }
+    .upload-buttons .iCIMS_resumeUpload {
+    top: 0px;
+    }
+    .iCIMS_FileUploadButtonBlock {
+    display: block;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 3px;
+    }
+    .iCIMS_FileUploadButtonBlock:first-child {
+    margin-bottom: 12px;
+    }
+    .iCIMS_resumeUpload {
+    top: 0;
+    }
+    .iCIMS_Mobile .iCIMS_FileFieldButton,
+    .iCIMS_Mobile .iCIMS_FileFieldButton.iCIMS_SecondaryButton {
+    width: 100%;
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .icims-social-login {
+    display: block;
+    width: 100%;
+    padding: 4px 9px;
+    margin-bottom: 4px;
+    border: none;
+    text-align: left;
+    vertical-align: middle;
+    border-radius: 3px;
+    }
+    .icims-social-icon {
+    top: 3px;
+    color: #fff;
+    font-size: 24px;
+    }
+    .icims-social-text {
+    font-size: 14px;
+    line-height: 25px;
+    margin-left: 0.25em;
+    vertical-align: bottom;
+    }
+    .icims-social-facebook {
+    background: #3b5998;
+    color: #fff;
+    }
+    .icims-social-google-plus {
+    background: #FFFFFF;
+    color: #000;
+    border: 1px solid #6a6a6a;
+    }
+    .icims-social-linked-in {
+    background: #0077B5;
+    color: #fff;
+    }
+    .icims-social-login img {
+    margin-bottom: 4px;
+    }
+    #icims-social-button-image-google-plus-disconnect, #icims-social-button-image-linked-in-disconnect,
+    #icims-social-button-image-facebook-disconnect, #icims-social-button-image-windows-disconnect,
+    #icims-social-button-image-apple-disconnect, #icims-social-button-image-indeed-disconnect, {
+    border-radius: 3px;
+    padding: 9px;
+    }
+    #icims-social-button-image-facebook-disconnect{
+    background: #3b5998;
+    }
+    #icims-social-button-image-linked-in-disconnect{
+    background: #0077B5;
+    }
+    #icims-social-button-image-google-plus-disconnect {
+    background: #FFFFFF;
+    border: 1px solid #6a6a6a;
+    }
+    #icims-social-button-image-windows-disconnect {
+    background: #2f2f2f;
+    }
+    #icims-social-button-image-apple-disconnect {
+    background: #000000;
+    }
+    #icims-social-button-image-indeed-disconnect {
+
+    filter: brightness(0) saturate(100%) invert(11%) sepia(88%) saturate(3739%) hue-rotate(212deg) brightness(100%) contrast(102%);
+    margin: 0px 4px 4px 0px;
+    }
+    .brief.social-linked-in {
+    color: #0077B5;
+    }
+    .brief.social-facebook {
+    color: #3b5998;
+    }
+    .brief.social-google-plus {
+    color: #FFFFFF;
+    }
+    .brief.apple {
+    color: #000000;
+    }
+    .brief.indeed {
+    color: #003A9B;
+    }
+    .icims-social-windows {
+    background: #2f2f2f;
+    color: #fff;
+    }
+    .icims-social-apple {
+    background: #000000;
+    color: #fff;
+    }
+    .icims-social-indeed {
+    background: #003A9B;
+    color: #fff;
+    }
+    button.icims-social-login:hover {
+    cursor: pointer;
+    }
+    button.icims-social-login:hover,
+    button.icims-social-login:focus {
+    box-shadow: 1px 2px 2px #333;
+    }
+    button.icims-social-facebook:hover,
+    button.icims-social-facebook:focus {
+    background-color: #274584;
+    }
+    button.icims-social-google-plus:hover,
+    button.icims-social-google-plus:focus {
+    background-color: #EBEBEB;
+    }
+    button.icims-social-linked-in:hover,
+    button.icims-social-linked-in:focus {
+    background-color: #0063A1;
+    }
+    button.icims-social-windows:hover,
+    button.icims-social-windows:focus {
+    background-color: #1B1B1B;
+    }
+    button.icims-social-apple:hover,
+    button.icims-social-apple:focus {
+    background-color: #000000;
+    }
+    button.icims-social-indeed:hover,
+    button.icims-social-indeed:focus {
+    background-color: #002687;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .iCIMS_StepText,
+    .iCIMS_StepNumOnly {
+    display: none;
+    }
+    .iCIMS_PageStepText {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+    clear: both;
+    }
+    .iCIMS_Steps {
+    counter-reset: step;
+    }
+    .iCIMS_Steps li {
+    list-style-type: none;
+    width: 11%;
+    float: left;
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    }
+    .iCIMS_Steps li:before{
+    width: 20px;
+    height: 20px;
+    content: counter(step);
+    counter-increment: step;
+    line-height: 15px;
+    border: 2px solid #767676;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    background-color: #767676;
+    }
+    .iCIMS_Steps li:after {
+    width: 100%;
+    height: 1px;
+    content: '';
+    position: absolute;
+    background-color: #767676;
+    top: 10px;
+    left: -50%;
+    z-index: -1;
+    }
+    @media (-ms-high-contrast:active) {
+    .iCIMS_Steps li:after {
+    background-color: #FFFF00;
+    }
+    }
+    @media (-ms-high-contrast:black-on-white) {
+    .iCIMS_Steps li:after {
+    background-color: #000000;
+    }
+    }
+    @media (-ms-high-contrast:white-on-black) {
+    .iCIMS_Steps li:after {
+    background-color: #FFFFFF;
+    }
+    }
+    .iCIMS_Steps li:first-child:after {
+    content: none;
+    }
+    .iCIMS_Steps li.iCIMS_Steps_Current {
+    color: #ffffff;
+    }
+    .iCIMS_Steps li.iCIMS_Steps_Current:before {
+    border-color: #1c789f;
+    background-color: #1c789f;
+    }
+    .iCIMS_Steps li.iCIMS_Steps_Completed {
+    color: #fff;
+    }
+    .iCIMS_Steps li.iCIMS_Steps_Completed:before {
+    content: '\2714';
+    border-color: #418031;
+    background-color: #418031;
+    padding-right: 2px;
+    font-size: 12px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .iCIMS_InfoData input[type=password] {
+    padding-right: 20px;
+    }
+    .iCIMS_PasswordMsgContainer {
+    font-size: 10px;
+    float: right;
+    clear: both;
+    }
+    .iCIMS_PasswordPassFail .glyphicons {
+    top: -3px;
+    }
+    .iCIMS_PasswordPassFail {
+    font-size: 12px;
+    float: right;
+    line-height: 1.3em;
+    margin-top: -22px;
+    margin-right: 5px;
+    }
+    .iCIMS_PassFailIndicator {
+    color: #e42424;
+    }
+    .iCIMS_PassFailIndicator.pass {
+    color: #418031;
+    }
+    .iCIMS_PasswordRequirements {
+    float: left;
+    }
+    .iCIMS_PasswordRequirementsList {
+    float: left;
+    margin: 0 0 0 15px;
+    padding: 0;
+    }
+    .iCIMS_PasswordMsgContainer > div.iCIMS_ValidatedRequirement,
+    .iCIMS_PasswordRequirementsList > li.iCIMS_ValidatedRequirement {
+    display: none;
+    }
+    .iCIMS_TableRow {
+    clear: both;
+    }
+    .iCIMS_PassInput {
+    border-color: #418031 !important;
+    }
+    .iCIMS_FailInput {
+    border-color: #a70000 !important;
+    }
+    @media only screen and (max-width: 767px) {
+    h1 {
+    padding: 0 10px 0 10px;
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dropdown-container {
+    border: 1px solid #66afe9;
+    border-top: 0;
+    background: white;
+    position: absolute;
+    z-index: 10000;
+    margin-top: -2px;
+    }
+    .dropdown-container.bottom {
+    border-top: 1px solid #cccccc;
+    }
+    input[type="text"].dropdown-search {
+    padding: 0 0 0 25px;
+    height: 2em;
+    margin: 0.5em;
+    background: white 0.5em no-repeat url(https://cdn02.icims.com/a/images.icims.com/content/platform_162.2.0.241011-40035cae39b-11-2/images/cssthemes/rounded/nav/search-go.png);
+    }
+    input[type="text"].dropdown-search::-ms-clear {
+    display: none;
+    }
+    a.dropdown-select {
+    display: block;
+    color: #000;
+    border: 1px solid #6a6a6a;
+    text-decoration: none;
+    cursor: pointer;
+    min-height: 30px;
+    border-radius: 3px;
+    position: relative;
+    padding-left: 4px;
+    padding-right: 16px;
+    background-color: #fff;
+    max-width: 650px;
+    }
+    a.dropdown-select.disabled {
+    background-color: #aaa;
+    cursor: default;
+    }
+    a.dropdown-select:hover, a.dropdown-select:focus, a.dropdown-select.focus {
+    border: 1px solid #66afe9 !important;
+    }
+    .dropdown-arrow-container {
+    width: 16px;
+    height: 100%;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 2px;
+    }
+    .dropdown-arrow {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid black;
+    width: 0;
+    height: 0;
+    content: "";
+    display: block;
+    top: 45%;
+    position: absolute;
+    left: 25%;
+    }
+    .dropdown-text {
+    line-height: 30px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    margin-top: 5px;
+    margin-left: 10px;
+    }
+    .dropdown-placeholder {
+    color: #686868;
+    }
+    .dropdown-placeholder.fake {
+    position: absolute;
+    padding-left: 14px;
+    margin: 1.3em;
+    font-size: 1em;
+    }
+    [class^='dropdown-icon'] {
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    }
+    .dropdown-icon-clear {
+    background: white no-repeat url(https://cdn02.icims.com/a/images.icims.com/content/platform_162.2.0.241011-40035cae39b-11-2/images/iconthemes/default/16/grayx.png);
+    }
+    .dropdown-results {
+    max-height: 24em;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    padding-left: 0;
+    margin-top: 0;
+    color: #000;
+    background-color: #fff;
+    }
+    .dropdown-result {
+    line-height: 2em;
+    list-style: none;
+    display: list-item;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    }
+    ul.result-group {
+    padding-left: 0 !important;
+    }
+    .result-group-label,
+    .result-unselectable {
+    font-weight: bold;
+    padding-left: 0.5em !important;
+    }
+    .result-selectable {
+    cursor: pointer;
+    padding-left: 1em;
+    }
+
+    .result-selectable:hover, .result-focus, .result-selectable:hover .dropdown-placeholder {
+    background: #EBAE00;
+    color: white;
+    }
+    .dropdown-loading {
+    height: 2px;
+    background: #EBAE00;
+    display: block;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    filter: alpha(opacity=100);
+    opacity: 1;
+    }
+    .dropdown-loading.hide{
+    filter: alpha(opacity=0);
+    opacity: 0;
+    }
+    .dropdown-hide {
+    position: fixed;
+    visibility: hidden !important;
+    }
+    .dropdown-invisible {
+    display: none !important;
+    }
+    /* Increase the height of each option if the device screen is smaller than 1024px */
+    @media only screen
+    and (max-device-width: 1024px) {
+    .dropdown-result {
+    line-height: 3em;
+    }
+    }
+    /* Do not set hover styling on iPad */
+    .iCIMS_ipad .result-selectable:hover {
+    background: white;
+    color: #333;
+    }
+    .iCIMS_ipad .dropdown-container.bottom {
+    position: absolute;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .iCIMS_JobsTable {
+    margin: 0 0 10px 0;
+    }
+    .iCIMS_JobsTable .row > [class^="col-"],
+    .iCIMS_JobsTable .row > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+    }
+    .iCIMS_JobsTable .header {
+    font-size: 13px;
+    color: #686868;
+    }
+    .iCIMS_JobsTable .header.right {
+    text-align: right;
+    }
+    .iCIMS_JobsTable .title {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+    .iCIMS_JobsTable .title h1 {
+    margin: 0;
+    }
+    .iCIMS_JobsTable .subtitle {
+    margin-top: 5px;
+    }
+    .iCIMS_JobsTable .subtitle .glyphicons {
+    top: 3px;
+    margin-right: 3px;
+    }
+    .iCIMS_JobsTable .description {
+    color: #686868;
+    }
+    .iCIMS_JobsTable .additionalFields {
+    margin-top: 8px;
+    font-size: 13px;
+    padding-left: 0;
+    }
+    .iCIMS_JobsTable .additionalFields .iCIMS_JobsTableHeader {
+    font-weight: 600;
+    }
+    .iCIMS_JobHeaderGroup .iCIMS_JobHeaderTag {
+    margin: 7px 5px 0px 0px;
+    display: inline-block;
+    padding: 4px 8px;
+    background-color: #e5e5e5;
+    border-radius: 3px;
+    }
+    .iCIMS_JobsTable dt,
+    .iCIMS_JobsTable dd {
+    display: inline-block;
+    }
+    .iCIMS_JobHeaderField {
+    margin-right: 5px;
+    font-weight: bold;
+    }
+    .iCIMS_JobsTable {
+    list-style: none;
+    }
+    .iCIMS_JobHeaderGroup .glyphicons {
+    color: #333333;
+    }
+    p {
+    margin: 0;
+    }
+    .iCIMS_SecondaryButton:hover,
+    .iCIMS_SecondaryButton:focus {
+    outline: 3px solid black;
+    outline-offset: -2px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .form-group .control-label,
+    .btn, .icims-x-btn {
+    font-size: 15px;
+    color: #333333;
+    padding: 0;
+    }
+    h2.iCIMS_SubHeader {
+    margin-bottom: 9px;
+    text-align: left;
+    }
+    input[type="radio"],
+    input[type="checkbox"],
+    .form-control input[type="radio"],
+    .form-control input[type="checkbox"] {
+    width: auto;
+    min-width: auto;
+    height: auto;
+    display: inline;
+    }
+
+    .iCIMS_Table,
+    .iCIMS_TableRow,
+    .iCIMS_TableCell,
+    .iCIMS_TableHeader {
+    display: block; /* Converts a table, table row, table column and table column:before into a block element */
+    }
+    .iCIMS_TableRow {
+    margin: 0 0 10px 0;
+    }
+    .iCIMS_TableRow.iCIMS_SubmitButtonRow {
+    clear: both;
+    margin-bottom: 0; /* I"m not sure if this is needed -BH (Check this later) */
+    text-align: right;
+    }
+    .iCIMS_InfoField,
+    .iCIMS_InfoData {
+    padding: 0;
+    text-align: left;
+    }
+    .iCIMS_InfoData {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    }
+    .iCIMS_InfoField {
+    white-space: normal;
+    }
+    .iCIMS_InfoField label,
+    .iCIMS_InfoField > label.iCIMS_LabelText,
+    .iCIMS_InfoField > span.iCIMS_LabelText {
+    margin: 0;
+    line-height: inherit;
+    display: inline;
+    }
+    .iCIMS_ProfileFormTable {
+    width: 100%;
+    }
+    .iCIMS_ProfileFormTable .iCIMS_InfoField,
+    .iCIMS_ProfileFormTable .iCIMS_InfoData {
+    width: 100%;
+    }
+    .iCIMS_ProfileFormTable > .iCIMS_TableRow.iCIMS_ErrorRow > .iCIMS_TableCell:first-child,
+    .iCIMS_ProfileFormTable > fieldset > .iCIMS_TableRow.iCIMS_ErrorRow > .iCIMS_TableCell:first-child {
+    display: none;
+    }
+    .iCIMS_ProfileFormTable > .iCIMS_TableRow.iCIMS_ErrorRow > .iCIMS_TableCell:last-child,
+    .iCIMS_ProfileFormTable > fieldset > .iCIMS_TableRow.iCIMS_ErrorRow > .iCIMS_TableCell:last-child {
+    width: 100%;
+    margin-left: 0;
+    }
+
+    .iCIMS_InfoMsg {
+    margin-bottom: 10px;
+    }
+    .iCIMS_InfoInstruction {
+    display: block;
+    }
+    .iCIMS_Steps {
+    margin: 0;
+    padding: 0;
+    }
+    hr {
+    margin-top: 0;
+    }
+    .iCIMS_JobsTable {
+    margin-bottom: 0;
+    }
+    .iCIMS_JobsTable .row {
+    padding: 0;
+    margin: 0;
+    border-bottom: 0;
+    }
+    .iCIMS_JobsTable .additionalFields {
+    display: none;
+    }
+    .iCIMS_JobsTable .row {
+    padding: 0;
+    }
+    .iCIMS_JobsTable .iCIMS_Header {
+    margin-top: 10px;
+    }
+    .iCIMS_FieldRow {
+    display: block;
+    clear: both;
+    }
+    .iCIMS_FieldRow_Inline {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: top;
+    }
+    .iCIMS_FieldRow_Inline_LinedUpStdFields {
+    margin-right: 2px;
+    }
+    .iCIMS_Forms_Global,
+    a.dropdown-select {
+    width: 255px;
+    height: 40px;
+    }
+    div.iCIMS_Forms_Global {
+    width: auto;
+    height: auto;
+    }
+    .dropdown-search {
+    min-width: auto !important;
+    }
+    .icims-social-login {
+    width: 180px;
+    }
+    .iCIMS_CollectionGroup {
+    padding: 20px;
+    }
+    .iCIMS_CollectionGroup.iCIMS_OddRow,
+    .iCIMS_CollectionButtons.iCIMS_OddRow,
+    .iCIMS_CollectionGroup.iCIMS_OddRow .iCIMS_TableRow {
+    background-color: #f5f5f5 ;
+    }
+    .iCIMS_CollectionButtons .iCIMS_InfoData {
+    text-align: right;
+    }
+    .iCIMS_CollectionButtons {
+    width: 100%;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    }
+    .iCIMS_CollectionContainer {
+    margin-bottom: 10px;
+    }
+    .iCIMS_CollectionGroup .glyphicons-remove {
+    margin-right: 10px;
+    }
+    .iCIMS_ie .iCIMS_CollectionGroup .glyphicons-remove {
+    line-height: normal;
+    vertical-align: baseline;
+    }
+    .iCIMS_CollectionGroup a:hover .glyphicons-remove,
+    .iCIMS_CollectionGroup a:focus .glyphicons-remove {
+    color: #ffc20e;
+    }
+    .iCIMS_CollectionGroup legend {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333333;
+    border-bottom: 0;
+    float:left;
+    width: auto;
+    }
+    .iCIMS_SocialLoginLabel {
+    margin-bottom: 5px;
+    }
+    textarea.form-control {
+    width: 100%;
+    height: 140px;
+    }
+    .iCIMS_Forms_DateTimeField {
+    display: inline-block;
+    margin-right: 15px;
+    }
+    .iCIMS_FieldRow_Inline .iCIMS_TableRow {
+    margin: 0;
+    }
+    .iCIMS_Resume input[name='uploadResume'] {
+    margin-top: 10px;
+    float: right;
+    }
+    .iCIMS_HasError .iCIMS_InfoData input,
+    .iCIMS_HasError .iCIMS_InfoData select,
+    .iCIMS_HasError .iCIMS_InfoData textarea,
+    .iCIMS_HasError .iCIMS_InfoData .iCIMS_FileFieldButton,
+    .iCIMS_HasError .iCIMS_Forms_Checkbox,
+    .iCIMS_CollectionEntryHasError {
+    border: 1px solid #a70000;
+    }
+    .iCIMS_HasError .iCIMS_InfoData input:focus,
+    .iCIMS_HasError .iCIMS_InfoData select:focus,
+    .iCIMS_HasError .iCIMS_InfoData textarea:focus,
+    .iCIMS_HasError .iCIMS_InfoData .iCIMS_FileFieldButton:focus,
+    .iCIMS_HasError .iCIMS_Forms_Checkbox:focus,
+    .iCIMS_CollectionEntryHasError {
+    border: 1px solid #66afe9;
+    }
+    .iCIMS_CollectionEntryHasError .iCIMS_FieldRow_Inline {
+    margin-right: 4px;
+    }
+    .iCIMS_HasError .iCIMS_LabelText,
+    .iCIMS_CollectionEntryHasError .iCIMS_CollectionLegend .iCIMS_LabelText {
+    color: #a70000;
+    }
+    .iCIMS_HasError .iCIMS_InfoField .glyphicons-exclamation-sign,
+    .iCIMS_CollectionEntryHasError .iCIMS_InfoField .glyphicons-exclamation-sign {
+    color: #a70000;
+    margin-top: 2px;
+    margin-right: 5px;
+    margin-left: 2px;
+    }
+    .iCIMS_Error_OverrideMessage {
+    display: inline;
+    }
+
+    .iCIMS_CreateWithPane .iCIMS_FileUploadButtonBlock {
+    display: block;
+    margin-right: 0;
+    margin-top: 0;
+    }
+    .iCIMS_CreateWithPane .iCIMS_resumeUpload {
+    top: 0;
+    }
+    .iCIMS_ff52 .iCIMS_CreateWithPane .iCIMS_resumeUpload,
+    .iCIMS_ff52 .iCIMS_CreateWithPane .iCIMS_googleDriveButton,
+    .iCIMS_ff52 .iCIMS_CreateWithPane .iCIMS_dropboxButton,
+    .iCIMS_ff52 .iCIMS_CreateWithPane .iCIMS_oneDriveButton,
+    .iCIMS_ff53 .iCIMS_CreateWithPane .iCIMS_resumeUpload,
+    .iCIMS_ff53 .iCIMS_CreateWithPane .iCIMS_googleDriveButton,
+    .iCIMS_ff53 .iCIMS_CreateWithPane .iCIMS_dropboxButton,
+    .iCIMS_ff53 .iCIMS_CreateWithPane .iCIMS_oneDriveButton {
+    top: 0;
+    }
+    .iCIMS_CollectionContainer {
+    margin: 0 -20px 15px -20px;
+    }
+    .iCIMS_Forms_MultiSelect {
+    width: inherit;
+    }
+    .iCIMS_CollectionButtonsRow .iCIMS_CollectionButtons .iCIMS_InfoData {
+    overflow: visible;
+    }
+    .iCIMS_CollectionLegend a.iCIMS_Anchor:focus {
+    padding-top: 5px;
+    padding-left: 8px;
+    }
+    .iCIMS_CollectionGroup .iCIMS_CollectionLegend.iCIMS_InfoField {
+    overflow: visible;
+    }
+    .iCIMS_DateField-Month,
+    .iCIMS_DateField-Day,
+    .iCIMS_DateField-Year,
+    .iCIMS_Hour_Input,
+    .iCIMS_Minute_Input,
+    .iCIMS_AM_PM_Input,
+    .iCIMS_Hour_Minute_Seperator {
+    display: inline-block;
+    }
+    .iCIMS_DateField-Month,
+    .iCIMS_DateField-Day {
+    margin-right: 5px;
+    }
+    .iCIMS_DateField-Month .iCIMS_Forms_Global {
+    width: 80px;
+    }
+    .iCIMS_DateField-Day .iCIMS_Forms_Global {
+    width: 60px;
+    }
+    .iCIMS_DateField-Year .iCIMS_Forms_Global {
+    width: 90px;
+    }
+    .iCIMS_DateField-Month .iCIMS_Forms_Global,
+    .iCIMS_DateField-Day .iCIMS_Forms_Global,
+    .iCIMS_DateField-Year .iCIMS_Forms_Global,
+    .iCIMS_Hour_Input input[type="text"],
+    .iCIMS_Minute_Input input[type="text"] {
+    min-width: auto;
+    }
+    .iCIMS_Hour_Input input[type="text"],
+    .iCIMS_Minute_Input input[type="text"] {
+    width: 40px;
+    }
+    .iCIMS_Hour_Minute_Seperator {
+    line-height: 45px;
+    padding: 0 5px;
+    }
+    .iCIMS_AM_PM_Input select {
+    width: 66px;
+    margin-left: 5px;
+    }
+    @media only screen and (max-width: 767px) {
+    .iCIMS_Time {
+    margin: 10px 0 0 0;
+    }
+    .iCIMS_DateField-Month .iCIMS_Forms_Global {
+    width: 80px;
+    }
+    .iCIMS_DateField-Day .iCIMS_Forms_Global {
+    width: 60px;
+    }
+    .iCIMS_DateField-Year .iCIMS_Forms_Global {
+    width: 90px;
+    }
+    }
+    .customFieldMoneyType,
+    .salary,
+    .customFieldMoneyRate {
+    display: inline-block;
+    }
+    .iCIMS_ProfileFormTable .iCIMS_InfoField, .iCIMS_ProfileFormTable .salary.iCIMS_InfoData {
+    width: auto;
+    }
+    .customFieldMoneyType {
+    margin-right: 5px;
+    }
+    .customFieldMoneyRate {
+    margin-left: 5px;
+    }
+    .salary input[type="text"] {
+    width: 95px;
+    min-width: auto;
+    }
+    .iCIMS_Forms_CurrencyField .salary input[type="text"] {
+    width: 155px;
+    }
+    .customFieldMoneyRate select {
+    width: 70px;
+    }
+    .customFieldMoneyType {
+    width: 90px;
+    }
+    @media only screen and (max-width: 767px) {
+    .iCIMS_Forms_CurrencyField .salary input[type="text"] {
+    width: 160px;
+    }
+    .salary input[type="text"] {
+    width: 70px;
+    }
+    }
+    .iCIMS_SSN1,
+    .iCIMS_SSN2,
+    .iCIMS_SSN3,
+    .iCIMS_SSNSeparator {
+    display: inline-block;
+    }
+    .iCIMS_SSN1 input[type="text"] {
+    width: 70px;
+    min-width: auto;
+    }
+    .iCIMS_SSN2 input[type="text"] {
+    width: 50px;
+    min-width: auto;
+    }
+    .iCIMS_SSN3 input[type="text"] {
+    width: 90px;
+    min-width: auto;
+    }
+    .iCIMS_SSNSeparator {
+    line-height: 40px;
+    padding: 0 5px;
+    }
+    @media only screen and (max-width: 767px) {
+    .iCIMS_SSN1 input[type="text"] {
+    width: 95px;
+    }
+    .iCIMS_SSN2 input[type="text"] {
+    width: 55px;
+    }
+    .iCIMS_SSN3 input[type="text"] {
+    width: 100px;
+    }
+    }
+
+    @media only screen and (max-width: 767px) {
+    .iCIMS_Forms_Global,
+    a.dropdown-select {
+    width: 100%;
+    }
+    .iCIMS_FieldRow_Inline {
+    display: block;
+    margin-right: 0;
+    }
+    textarea.form-control {
+    width: inherit;
+    }
+    .iCIMS_CenteredPageContent {
+    padding: 0 10px 0 10px;
+    }
+    .iCIMS_CollectionContainer {
+    margin: 0 -10px 15px -10px;
+    }
+    .iCIMS_CollectionGroup {
+    padding: 10px;
+    }
+    .iCIMS_CollectionButtons {
+    float: none;
+    margin-left: 0;
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .iCIMS_CenteredPageContent {
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .iCIMS_SubmitButtonRow {
+    margin-top: 15px;
+    }
+    .iCIMS_SubmitButtonRow .iCIMS_PrimaryButton,
+    .iCIMS_SubmitButtonRow .iCIMS_SecondaryButton {
+    min-width: 180px;
+    }
+    .iCIMS_PrimaryButton,
+    .iCIMS_SecondaryButton {
+    width: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+    .iCIMS_SubmitButtonRow .iCIMS_SecondaryButton {
+    margin-right: 5px;
+    }
+    @media only screen and (min-width: 576px) {
+    .iCIMS_SubmitButtonRow .iCIMS_SecondaryButton {
+    margin-right: 5px;
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media only screen and (max-width: 767px) {
+    .iCIMS_MobileButton_1 .iCIMS_PrimaryButton {
+    margin-bottom: 7px;
+    }
+    .iCIMS_SubmitButtonRow.iCIMS_MobileButton_2 input[type="submit"],
+    .iCIMS_SubmitButtonRow.iCIMS_MobileButton_2 button[type="submit"] {
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    }
+    .iCIMS_SubmitButtonRow.iCIMS_MobileButton_2 {
+    margin-top: 0px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    }
+    .iCIMS_MobileButton_2 .iCIMS_PrimaryButton,
+    .iCIMS_MobileButton_2 .iCIMS_SecondaryButton {
+    min-width: initial;
+    width: 50%;
+    margin-right: 0 !important;
+    }
+    .iCIMS_MobileButton_2.icims-x-row {
+    margin-left: 0;
+    margin-right: 0;
+    }
+    .iCIMS_MobileButton_2 .icims-x-col-md-12,
+    .iCIMS_MobileButton_2 .icims-x-col-sm-12 {
+    padding-left: 0;
+    padding-right: 0;
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .modal-content,
+    .modal-body {
+
+
+
+    background: #ffffff !important;
+
+
+    }
+    .modal-content,
+    .modal-dialog,
+    .modal-body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+    }
+    .iCIMS_CreateWithPane {
+    margin-right: 25px;
+    }
+    .iCIMS_BasicProfilePane {
+    margin-left: 25px;
+    width: 100%;
+    }
+    .iCIMS_TableCell .iCIMS_Message {
+    width: auto;
+    }
+    .iCIMS_BasicProfilePane .iCIMS_FieldRow_Inline input,
+    .iCIMS_BasicProfilePane .iCIMS_FieldRow_Inline {
+    min-width: 165px;
+    width: 165px;
+    }
+    .iCIMS_BasicProfilePane .iCIMS_FieldRow,
+    .iCIMS_BasicProfilePane .iCIMS_FieldRow input {
+    width: 510px;
+    }
+    .iCIMS_SocialSelection .icims-social-text {
+    display: none;
+    }
+    .iCIMS_CreateWithPane textarea {
+    width: 100%;
+    }
+
+    .iCIMS_SignUpContainer .row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    }
+    .iCIMS_SignUpContainer .row > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    }
+    .iCIMS_CreateWithPane .iCIMS_SocialLogin .iCIMS_ProfileFormTable {
+    width: 100%;
+    margin: 0;
+    }
+    .iCIMS_SocialSelection .icims-social-login {
+    width: auto;
+    display: inline-block;
+    margin-right: 10px;
+    }
+    .iCIMS_SocialSelection .icims-social-login img{
+    margin-bottom: 2px;
+    margin-left: 3px;
+    }
+    .iCIMS_SocialSelection .icims-social-login {
+    width: 40px;
+    height: 40px;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    }
+    .iCIMS_SocialSelection .icims-social-login .social {
+    top: 2px;
+    right: 1px;
+    }
+    .iCIMS_ResumeSection {
+    margin-top: 15px;
+    }
+    #iCIMS_SocialInfo_Link .glyphicons {
+    color: #1c789f;
+    }
+    #iCIMS_SocialInfo_Link .glyphicons:hover,
+    #iCIMS_SocialInfo_Link .glyphicons:focus {
+    color: #08648B;
+    }
+
+    .iCIMS_Divider {
+    border-bottom: none;
+    border-right: 1px dotted #6a6a6a;
+    padding-bottom: 0;
+    }
+
+    @media only screen and (max-width: 767px) {
+    .iCIMS_BasicProfilePane {
+    margin: 0;
+    }
+    .iCIMS_Divider {
+    border-bottom: 1px dotted #6a6a6a;
+    border-right: none;
+    padding-bottom: 25px;
+    }
+    .iCIMS_CreateWithPane {
+    margin-right: 0;
+    }
+    .iCIMS_BasicProfilePane .iCIMS_FieldRow_Inline input,
+    .iCIMS_BasicProfilePane .iCIMS_FieldRow_Inline,
+    .iCIMS_BasicProfilePane .iCIMS_FieldRow input,
+    .iCIMS_BasicProfilePane .iCIMS_FieldRow {
+    width: 100%;
+    min-width: initial;
+    }
+    .iCIMS_InfoField.iCIMS_Resume {
+    margin-bottom: 6px;
+    }
+    .iCIMS_SubmitButtonCell input {
+    width: 255px;
+    float: left;
+    }
+    }
+    @media only screen and (min-width: 768px) and (max-width : 991px) {
+    .iCIMS_BasicProfilePane {
+    margin: 0;
+    }
+    .iCIMS_Divider {
+    border-bottom: 1px dotted #6a6a6a;
+    border-right: none;
+    padding-bottom: 25px;
+    }
+    .iCIMS_BasicProfilePane .iCIMS_FieldRow input {
+    width: auto;
+    }
+    .iCIMS_ResumeContentDiv {
+    margin-bottom: 25px;
+    }
+    }
+
