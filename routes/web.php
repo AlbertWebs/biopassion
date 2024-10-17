@@ -24,6 +24,8 @@ Route::post('/book-home-sample-collection-post', [App\Http\Controllers\HomeContr
 Route::get('/make-an-appointment', [App\Http\Controllers\HomeController::class, 'contact'])->name('make-an-appointment');
 Route::post('/send-message', [App\Http\Controllers\HomeController::class, 'send_message'])->name('send-message');
 Route::post('/make-an-appointment', [App\Http\Controllers\HomeController::class, 'appointment'])->name('make-an-appointment');
+Route::get('/pricelist', [App\Http\Controllers\HomeController::class, 'pricelist'])->name('pricelist');
+
 
 
 

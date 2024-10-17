@@ -281,6 +281,7 @@
 
                                                     {{-- <li><a href="{{route('estimate')}}">Insuarance</a></li>
                                                     <li><a href="{{route('estimate')}}">Financial Assistance</a></li> --}}
+                                                    <li><a href="{{url('/')}}/pricelist">Downlod Pricelist</a></li>
                                                     <li><a href="{{route('pay-a-bill')}}">Pay a Bill</a></li>
                                                     <li><a href="{{route('estimate')}}">Self Pay Price Estimate</a></li>
                                                     <li><a href="{{route('understanding-the-cost-of-your-care')}}">Understanding the Cost of Your Care</a></li>
@@ -321,7 +322,8 @@
                                         </a>
                                         <ul>
                                             <li>
-                                                <a href="{{url('/')}}/home-sample-collection">Home Sample Collection
+                                                <a href="{{url('/')}}/home-sample-collection">
+                                                    Home Sample Collection
                                                 </a>
                                             </li>
                                             <li >
@@ -339,7 +341,7 @@
                                                    <a href="{{route('test-directory')}}">Test Directory</a>
                                             </li>
                                             <li>
-                                                    <a href="{{url('/')}}/dashboard">Access Patient Results</a>
+                                                <a href="{{url('/')}}/dashboard">Access Patient Results</a>
                                             </li>
                                             <li class="dropdown">
                                                 <a href="#">About our Tests</a>
@@ -358,8 +360,8 @@
                                                 <ul>
                                                     <li><a href="{{route('pay-a-bill')}}">Pay a Bill</a></li>
                                                     <li><a href="{{route('commercial-coverage-and-coding-guidelines')}}">Commercial coverage & coding guidelines</a></li>
-                                                    {{-- <li><a href="{{url('/')}}/what-we-do/">Medicare coverage & coding guides</a></li>
-                                                    <li><a href="{{url('/')}}/what-we-do/">Electronic billing</a></li> --}}
+                                                    <li><a href="{{url('/')}}/pricelist">Downlod Pricelist</a></li>
+                                                    {{-- <li><a href="{{url('/')}}/what-we-do/">Electronic billing</a></li> --}}
                                                 </ul>
                                             </li>
 

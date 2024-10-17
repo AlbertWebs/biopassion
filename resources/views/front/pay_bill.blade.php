@@ -18,7 +18,7 @@
                      <h3>
                         PAYBILL:600 100
                         <br>
-                        ACCOUNT:01000 10 130 225
+                        ACCOUNT:150 555
                      </h3>
                    <p><strong> </strong> </p>
                    <br><br>
