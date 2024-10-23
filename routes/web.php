@@ -59,6 +59,7 @@ Route::group(['prefix'=>'patients'], function(){
     Route::group(['prefix'=>'billing-insurance'], function(){
         Route::get('/understanding-the-cost-of-your-care', [App\Http\Controllers\HomeController::class, 'costing'])->name('understanding-the-cost-of-your-care');
         Route::get('/estimate', [App\Http\Controllers\HomeController::class, 'estimate'])->name('estimate');
+        Route::post('/estimate-bill', [App\Http\Controllers\HomeController::class, 'estimate_bill'])->name('estimate-bill');
     });
 
     Route::group(['prefix'=>'test-results'], function(){

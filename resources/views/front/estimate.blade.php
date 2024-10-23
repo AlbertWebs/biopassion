@@ -22,17 +22,17 @@
 
                     <h3>Request Your Price Estimate</h3>
                     <div class="default-form contact-form">
-                        <form method="post" action="#" id="contact-form">
+                        <form method="post" action="{{route('estimate-bill')}}" id="contact-form">
                             @csrf
                            <div class="row clearfix">
                               <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                 <input type="text" name="username" placeholder="Name" required="">
+                                 <input type="text" name="name" placeholder="Name" required="">
                               </div>
                               <div class="col-lg-12 col-md-12 col-sm-12 form-group">
                                  <input type="text" name="email" placeholder="Email" required="">
                               </div>
                               <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                <input type="text" name="phone" placeholder="Email" required="">
+                                <input type="text" name="phone" placeholder="Phone" required="">
                              </div>
 
                               <div class="col-lg-12 col-md-12 col-sm-12 form-group">
@@ -41,7 +41,7 @@
                               <div class="col-lg-12 col-md-12 col-sm-12 form-group text-center">
                                  <!-- Button Box -->
                                  <div class="button-box">
-                                    <button class="theme-btn btn-style-one">
+                                    <button type="submit" class="theme-btn btn-style-one">
                                     <span class="btn-wrap">
                                     <span class="text-one">Get Estimate</span>
                                     <span class="text-two">Get Estimate</span>

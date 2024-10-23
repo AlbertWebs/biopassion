@@ -180,6 +180,26 @@ class HomeController extends Controller
         return view('front.book');
     }
 
+
+
+    public function estimate_bill(Request $request){
+        $Booking = new Booking;
+        $Booking->name = $request->name;
+        $Booking->email = $request->email;
+        $Booking->phone = $request->phone;
+        $Booking->message = $request->message;
+        $Booking->save();
+
+        $subject = 'Price Estimate Request';
+
+        $Message = "Hello Admin, You Have a new Estimate Request from $request->name, Email: $request->email, Phone is $request->phone, Message: $request->message";
+        SendEmail::SendAdmin($Message,$request->email,$subject);
+        $MessageSender = "Your Email Has Been Received";
+     //    SendEmail::SendSender($request->email, $MessageSender);
+        Session::flash('message', "Message Has Been Sent");
+        return Redirect::Back();
+     }
+
     public function book_post(Request $request){
        $Booking = new Booking;
        $Booking->name = $request->name;
