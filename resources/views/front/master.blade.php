@@ -281,7 +281,7 @@
 
                                                     {{-- <li><a href="{{route('estimate')}}">Insuarance</a></li>
                                                     <li><a href="{{route('estimate')}}">Financial Assistance</a></li> --}}
-                                                    <li><a href="{{url('/')}}/pricelist">Downlod Pricelist</a></li>
+                                                    <li><a href="{{url('/')}}/pricelist">Download Pricelist</a></li>
                                                     <li><a href="{{route('pay-a-bill')}}">Pay a Bill</a></li>
                                                     <li><a href="{{route('estimate')}}">Self Pay Price Estimate</a></li>
                                                     <li><a href="{{route('understanding-the-cost-of-your-care')}}">Understanding the Cost of Your Care</a></li>

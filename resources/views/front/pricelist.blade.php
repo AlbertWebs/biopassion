@@ -96,7 +96,7 @@
     <div id="pdfContainer"></div>
 
     <!-- Footer -->
-    <div class="footer">File Rendering Software Provided by <a href="https://designekta.com">Designekta Studios</a></div>
+    {{-- <div class="footer">File Rendering Software Provided by <a href="https://designekta.com">Designekta Studios</a></div> --}}
 
     <script>
       const url =
