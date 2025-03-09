@@ -221,29 +221,37 @@ class HomeController extends Controller
     }
 
     public function send_message(Request $request){
-        $subject = 'New Message';
-        $Message =
-        "Hello Admin, You Have a message from $request->name,
-        Email: $request->email, Phone is $request->phone,
-        Services: $request->service, Location: $request->location, Apartments: $request->apartment,
-        Message: $request->message";
-        SendEmail::SendAdmin($Message,$request->email,$subject);
-        $MessageSender = "Your Email Has Been Received";
-        Session::flash('message', "Message Has Been Sent");
-        return Redirect::Back();
+        if($request->verify_contact == $request->verify_contact_input){
+            $subject = 'New Message';
+            $Message =
+            "Hello Admin, You Have a message from $request->name,
+            Email: $request->email, Phone is $request->phone,
+            Services: $request->service, Location: $request->location, Apartments: $request->apartment,
+            Message: $request->message";
+            SendEmail::SendAdmin($Message,$request->email,$subject);
+            $MessageSender = "Your Email Has Been Received";
+            Session::flash('message', "Message Has Been Sent");
+            return Redirect::Back();
+        }else{
+            return Redirect::Back();
+        }
     }
 
     public function appointment(Request $request){
-        $subject = 'New Appointmet';
-        $Message =
-        "Hello Admin, You Have a appointment from $request->name,
-        Email: $request->email, Phone is $request->phone,
-        Services: $request->service, Date: $request->date,
-        Message: $request->message";
-        SendEmail::SendAdmin($Message,$request->email,$subject);
-        $MessageSender = "Your Email Has Been Received";
-        Session::flash('message', "Message Has Been Sent");
-        return Redirect::Back();
+        if($request->verify_contact == $request->verify_contact_input){
+            $subject = 'New Appointmet';
+            $Message =
+            "Hello Admin, You Have a appointment from $request->name,
+            Email: $request->email, Phone is $request->phone,
+            Services: $request->service, Date: $request->date,
+            Message: $request->message";
+            SendEmail::SendAdmin($Message,$request->email,$subject);
+            $MessageSender = "Your Email Has Been Received";
+            Session::flash('message', "Message Has Been Sent");
+            return Redirect::Back();
+        }else{
+            return Redirect::Back();
+        }
     }
 
     public function what_single($slung){
