@@ -112,6 +112,10 @@
                         <a href="{{route('admin.results')}}"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/menu-icon-03.svg')}}" alt></span> <span>Posted Results </span> </a>
 
                      </li>
+                     <li >
+                        <a href="{{route('admin.tests.index')}}"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/menu-icon-03.svg')}}" alt></span> <span>Tests Management </span> </a>
+
+                     </li>
                      {{-- <li >
                         <a href="#"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/menu-icon-03.svg')}}" alt></span> <span>Post Results </span> </a>
                      </li> --}}

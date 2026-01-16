@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use DB;
 use App\Models\Booking;
 use App\Models\SendEmail;
+use App\Models\Test;
 use Session;
 use Redirect;
 
@@ -66,8 +67,44 @@ class HomeController extends Controller
         return view('front.abuse');
     }
 
-    public function directory(){
-        return view('front.directory');
+    public function directory(Request $request){
+        $query = Test::query();
+        
+        // Search functionality
+        if ($request->has('search') && $request->search) {
+            $query->where('title', 'like', '%' . $request->search . '%')
+                  ->orWhere('category', 'like', '%' . $request->search . '%');
+        }
+        
+        // Category filter
+        if ($request->has('category') && $request->category) {
+            $query->where('category', $request->category);
+        }
+        
+        $tests = $query->orderBy('title', 'asc')->paginate(200);
+        $categories = Test::select('category')->distinct()->whereNotNull('category')->orderBy('category')->pluck('category');
+        
+        return view('front.directory', compact('tests', 'categories'));
+    }
+
+    public function testLists(Request $request){
+        $query = Test::query();
+        
+        // Search functionality
+        if ($request->has('search') && $request->search) {
+            $query->where('title', 'like', '%' . $request->search . '%')
+                  ->orWhere('category', 'like', '%' . $request->search . '%');
+        }
+        
+        // Category filter
+        if ($request->has('category') && $request->category) {
+            $query->where('category', $request->category);
+        }
+        
+        $tests = $query->orderBy('title', 'asc')->paginate(200);
+        $categories = Test::select('category')->distinct()->whereNotNull('category')->orderBy('category')->pluck('category');
+        
+        return view('front.test-lists', compact('tests', 'categories'));
     }
 
     public function asthma(){

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PatientController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\TestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +27,8 @@ Route::post('/send-message', [App\Http\Controllers\HomeController::class, 'send_
 Route::post('/make-an-appointment', [App\Http\Controllers\HomeController::class, 'appointment'])->name('make-an-appointment');
 Route::get('/pricelist', [App\Http\Controllers\HomeController::class, 'pricelist'])->name('pricelist');
 Route::get('/careers', [App\Http\Controllers\HomeController::class, 'careers'])->name('careers');
+Route::get('/test-lists', [App\Http\Controllers\HomeController::class, 'testLists'])->name('test-lists');
+Route::redirect('/Test-lists', '/test-lists', 301); // Redirect old capital case to lowercase
 
 
 
@@ -160,6 +163,16 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
 
     Route::get('/admin/patients', [AdminController::class, 'patients'])->name('admin.patients');
     Route::get('/admin/deleteResults/{id}', [AdminController::class, 'deleteResults'])->name('admin.deleteResults');
+
+    // Tests Management
+    Route::resource('admin/tests', TestController::class)->names([
+        'index' => 'admin.tests.index',
+        'create' => 'admin.tests.create',
+        'store' => 'admin.tests.store',
+        'edit' => 'admin.tests.edit',
+        'update' => 'admin.tests.update',
+        'destroy' => 'admin.tests.destroy',
+    ]);
 });
 
 
