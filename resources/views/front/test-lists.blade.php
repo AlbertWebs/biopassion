@@ -114,21 +114,49 @@
                                @if($tests->onFirstPage())
                                   <span class="page-btn disabled">Previous</span>
                                @else
-                                  <a href="{{ $tests->previousPageUrl() }}" class="page-btn">Previous</a>
+                                  <a href="{{ $tests->appends(request()->query())->previousPageUrl() }}" class="page-btn">Previous</a>
                                @endif
                                
                                <div class="page-numbers">
-                                  @foreach($tests->getUrlRange(1, $tests->lastPage()) as $page => $url)
-                                     @if($page == $tests->currentPage())
+                                  @php
+                                     $currentPage = $tests->currentPage();
+                                     $lastPage = $tests->lastPage();
+                                     $startPage = max(1, $currentPage - 2);
+                                     $endPage = min($lastPage, $currentPage + 2);
+                                     
+                                     if($startPage > 1) {
+                                        $endPage = min($lastPage, $startPage + 4);
+                                     }
+                                     if($endPage == $lastPage) {
+                                        $startPage = max(1, $endPage - 4);
+                                     }
+                                  @endphp
+                                  
+                                  @if($startPage > 1)
+                                     <a href="{{ $tests->appends(request()->query())->url(1) }}" class="page-number">1</a>
+                                     @if($startPage > 2)
+                                        <span class="page-ellipsis">...</span>
+                                     @endif
+                                  @endif
+                                  
+                                  @for($page = $startPage; $page <= $endPage; $page++)
+                                     @if($page == $currentPage)
                                         <span class="page-number active">{{ $page }}</span>
                                      @else
-                                        <a href="{{ $url }}" class="page-number">{{ $page }}</a>
+                                        <a href="{{ $tests->appends(request()->query())->url($page) }}" class="page-number">{{ $page }}</a>
                                      @endif
-                                  @endforeach
+                                  @endfor
+                                  
+                                  @if($endPage < $lastPage)
+                                     @if($endPage < $lastPage - 1)
+                                        <span class="page-ellipsis">...</span>
+                                     @endif
+                                     <a href="{{ $tests->appends(request()->query())->url($lastPage) }}" class="page-number">{{ $lastPage }}</a>
+                                  @endif
                                </div>
                                
                                @if($tests->hasMorePages())
-                                  <a href="{{ $tests->nextPageUrl() }}" class="page-btn">Next</a>
+                                  <a href="{{ $tests->appends(request()->query())->nextPageUrl() }}" class="page-btn">Next</a>
                                @else
                                   <span class="page-btn disabled">Next</span>
                                @endif
@@ -283,6 +311,17 @@
 .page-number.active:hover {
    transform: none;
    box-shadow: none;
+}
+
+.page-ellipsis {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   min-width: 40px;
+   height: 40px;
+   padding: 0 12px;
+   color: #999;
+   font-weight: 500;
 }
 
 /* Responsive Pagination */
