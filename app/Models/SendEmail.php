@@ -32,4 +32,23 @@ class SendEmail extends Model
             $message->to($toVariable, $toVariableName)->bcc('albertmuhatia@gmail.com')->subject($subject);
         });
     }
+
+    public static function SendTestBooking($Message,$email,$subject){
+        //Send test booking emails to info@biopassiondiagnostics.com
+        $data = array(
+            'content'=>$Message,
+            'subject'=>$subject,
+        );
+
+        $FromVariable = "no-reply@biopassiondiagnostics.com";
+        $FromVariableName = "Biopassion Diagnostics Mailer";
+
+        $toVariable = "info@biopassiondiagnostics.com";
+        $toVariableName = "Biopassion Diagnostics";
+
+        Mail::send('SendEmail', $data, function($message) use ($subject,$FromVariable,$FromVariableName,$toVariable,$toVariableName,$email){
+            $message->from($FromVariable , $FromVariableName);
+            $message->to($toVariable, $toVariableName)->replyTo($email)->subject($subject);
+        });
+    }
 }

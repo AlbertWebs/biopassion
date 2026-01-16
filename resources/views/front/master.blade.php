@@ -3,6 +3,9 @@
    <head>
       <meta charset="utf-8">
       {{-- SEO --}}
+      @hasSection('seo')
+         @yield('seo')
+      @else
       <title>Biopassion Diagnostics - Comprehensive Diagnostic Medical Laboratory Services</title>
       <meta name="title" content="Biopassion Diagnostics - Comprehensive Diagnostic Medical Laboratory Services">
       <meta name="description" content="At Biopassion Diagnostics, we prioritize honesty and integrity, fostering loyalty, enthusiasm, and unity in our interactions with both customers and colleagues. Our commitment revolves around placing patients/clients at the forefront of every action, striving to exceed expectations. This dedication, coupled with our focus on delivering high-quality, accurate, and timely medical laboratory services, is integral to our diagnostic excellence and reliability.">
@@ -28,6 +31,7 @@
       <meta name="twitter:description" content="At Biopassion Diagnostics, we prioritize honesty and integrity, fostering loyalty, enthusiasm, and unity in our interactions with both customers and colleagues. Our commitment revolves around placing patients/clients at the forefront of every action, striving to exceed expectations. This dedication, coupled with our focus on delivering high-quality, accurate, and timely medical laboratory services, is integral to our diagnostic excellence and reliability." />
       <meta name="twitter:creator" content="@biopassiondiag1" />
       <meta name="twitter:image" content="https://biopassiondiagnostics.com/uploads/logo/logo.png" />
+      @endif
 
 		<script type="application/ld+json" class="aioseo-schema">
             {
@@ -147,6 +151,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
       <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js')}}"></script><![endif]-->
       <!--[if lt IE 9]><script src="js/respond.js')}}"></script><![endif]-->
+      
+      @stack('head')
       <!--Floating WhatsApp css-->
      <link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
      <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/5d392d6beb82e88615a2eeb3c/1d603c00fa71af0f58347ff94.js");</script>

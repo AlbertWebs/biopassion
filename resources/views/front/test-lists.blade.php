@@ -1,5 +1,110 @@
 @extends('front.master')
 
+@section('seo')
+@php
+   $seoImage = asset('uploads/testlist/about-5.jpg');
+   $seoUrl = url('/test-lists');
+   $pageTitle = 'Complete Test List - Browse All Diagnostic Tests | Biopassion Diagnostics';
+   $pageDescription = 'Browse our complete catalog of diagnostic tests at Biopassion Diagnostics. Find comprehensive genetic testing, DNA testing, infection testing, and more. Over 6,000+ tests available with detailed information, pricing, and booking options.';
+   $pageKeywords = 'diagnostic tests, genetic testing, DNA testing, laboratory tests, medical tests, health screening, Biopassion Diagnostics, test catalog, test directory';
+@endphp
+
+<title>{{ $pageTitle }}</title>
+<meta name="title" content="{{ $pageTitle }}">
+<meta name="description" content="{{ $pageDescription }}">
+<meta name="keywords" content="{{ $pageKeywords }}">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="{{ $seoUrl }}">
+
+{{-- Open Graph Tags --}}
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ $seoUrl }}">
+<meta property="og:title" content="{{ $pageTitle }}">
+<meta property="og:description" content="{{ $pageDescription }}">
+<meta property="og:image" content="{{ $seoImage }}">
+<meta property="og:image:secure_url" content="{{ $seoImage }}">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Biopassion Diagnostics">
+<meta property="og:locale" content="en_US">
+
+{{-- Twitter Card Tags --}}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="{{ $seoUrl }}">
+<meta name="twitter:title" content="{{ $pageTitle }}">
+<meta name="twitter:description" content="{{ $pageDescription }}">
+<meta name="twitter:image" content="{{ $seoImage }}">
+<meta name="twitter:site" content="@biopassiondiag1">
+<meta name="twitter:creator" content="@biopassiondiag1">
+
+{{-- Additional SEO Tags --}}
+<meta name="author" content="Biopassion Diagnostics">
+<meta name="geo.region" content="KE">
+<meta name="geo.placename" content="Kenya">
+<meta name="language" content="English">
+<meta name="revisit-after" content="7 days">
+
+{{-- Structured Data (JSON-LD) --}}
+<script type="application/ld+json">
+{
+   "@context": "https://schema.org",
+   "@type": "CollectionPage",
+   "name": "{{ $pageTitle }}",
+   "description": "{{ $pageDescription }}",
+   "url": "{{ $seoUrl }}",
+   "image": "{{ $seoImage }}",
+   "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": {{ $tests->total() }},
+      "itemListElement": [
+         @php
+            $sampleTests = $tests->take(10);
+         @endphp
+         @foreach($sampleTests as $index => $test)
+         {
+            "@type": "ListItem",
+            "position": {{ $index + 1 }},
+            "item": {
+               "@type": "MedicalTest",
+               "name": {!! json_encode($test->title, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!},
+               "description": {!! json_encode($test->title . ' - ' . ($test->category ?? 'Diagnostic Test'), JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!},
+               "url": {!! json_encode($test->url ?? $seoUrl, JSON_UNESCAPED_SLASHES) !!},
+               "image": {!! json_encode(str_starts_with($test->image_url, 'http') ? $test->image_url : asset($test->image_url), JSON_UNESCAPED_SLASHES) !!}
+            }
+         }@if(!$loop->last),@endif
+         @endforeach
+      ]
+   },
+   "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+         {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "{{ url('/') }}"
+         },
+         {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Test Lists",
+            "item": "{{ $seoUrl }}"
+         }
+      ]
+   },
+   "publisher": {
+      "@type": "Organization",
+      "name": "Biopassion Diagnostics",
+      "logo": {
+         "@type": "ImageObject",
+         "url": "{{ asset('uploads/logo/logo.png') }}"
+      }
+   }
+}
+</script>
+@endsection
+
 @section('content')
 
 <!-- Sidebar Page Container -->
@@ -92,13 +197,11 @@
                                         @endif
                                      </div>
                                      
-                                     @if($test->url)
-                                        <div style="margin-top: 15px;">
-                                           <a href="{{ $test->url }}" target="_blank" class="btn btn-sm theme-btn" style="width: 100%;">
-                                              View Details & Book
-                                           </a>
-                                        </div>
-                                     @endif
+                                     <div style="margin-top: 15px;">
+                                        <a href="{{ route('book-test', $test->slug) }}" class="btn btn-sm theme-btn" style="width: 100%;">
+                                           View Details & Book
+                                        </a>
+                                     </div>
                                   </div>
                                </div>
                             @endforeach

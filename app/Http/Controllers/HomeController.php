@@ -107,6 +107,63 @@ class HomeController extends Controller
         return view('front.test-lists', compact('tests', 'categories'));
     }
 
+    public function bookTest($slug){
+        $test = Test::where('slug', $slug)->firstOrFail();
+        return view('front.book-test', compact('test'));
+    }
+
+    public function bookTestPost(Request $request, $slug){
+        $test = Test::where('slug', $slug)->firstOrFail();
+        
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'phone' => 'required|string|max:20',
+            'location' => 'nullable|string|max:255',
+            'apartment' => 'nullable|string|max:255',
+            'message' => 'nullable|string|max:1000',
+        ]);
+
+        $booking = new Booking;
+        $booking->name = $request->name;
+        $booking->email = $request->email;
+        $booking->phone = $request->phone;
+        $booking->location = $request->location;
+        $booking->apartment = $request->apartment;
+        $booking->message = $request->message;
+        $booking->test_slug = $test->slug;
+        $booking->test_title = $test->title;
+        $booking->test_category = $test->category;
+        $booking->save();
+
+        // Send email
+        $subject = 'New Test Booking - ' . $test->title;
+        $emailMessage = "Hello Admin,\n\nYou have received a new test booking:\n\n";
+        $emailMessage .= "Test: {$test->title}\n";
+        $emailMessage .= "Category: {$test->category}\n";
+        $emailMessage .= "Customer Name: {$request->name}\n";
+        $emailMessage .= "Email: {$request->email}\n";
+        $emailMessage .= "Phone: {$request->phone}\n";
+        if($request->location) {
+            $emailMessage .= "Location: {$request->location}\n";
+        }
+        if($request->apartment) {
+            $emailMessage .= "Apartment: {$request->apartment}\n";
+        }
+        if($request->message) {
+            $emailMessage .= "Message: {$request->message}\n";
+        }
+        $emailMessage .= "\nTest Price: KSh " . number_format($test->current_price ?? 0, 2) . "\n";
+        if($test->original_price && $test->original_price > $test->current_price) {
+            $emailMessage .= "Original Price: KSh " . number_format($test->original_price, 2) . "\n";
+        }
+
+        SendEmail::SendTestBooking($emailMessage, $request->email, $subject);
+
+        Session::flash('message', 'Your booking has been submitted successfully! We will contact you soon.');
+        return redirect()->route('book-test', $test->slug);
+    }
+
     public function asthma(){
         return view('front.asthma');
     }

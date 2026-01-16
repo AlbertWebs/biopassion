@@ -30,6 +30,10 @@ Route::get('/careers', [App\Http\Controllers\HomeController::class, 'careers'])-
 Route::get('/test-lists', [App\Http\Controllers\HomeController::class, 'testLists'])->name('test-lists');
 Route::redirect('/Test-lists', '/test-lists', 301); // Redirect old capital case to lowercase
 
+// Test Booking Routes
+Route::get('/book-test/{slug}', [App\Http\Controllers\HomeController::class, 'bookTest'])->name('book-test');
+Route::post('/book-test/{slug}', [App\Http\Controllers\HomeController::class, 'bookTestPost'])->name('book-test.post');
+
 
 
 Route::get('/wp', [App\Http\Controllers\HomeController::class, 'index'])->name('fix');
