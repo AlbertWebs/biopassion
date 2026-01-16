@@ -13,6 +13,102 @@
       <link rel="stylesheet" href="{{asset('portal/assets/plugins/datatables/datatables.min.css')}}">
       <link rel="stylesheet" href="{{asset('portal/assets/css/feather.css')}}">
       <link rel="stylesheet" type="text/css" href="{{asset('portal/assets/css/style.css')}}">
+      <style>
+         /* Enhanced Sidebar Link Styling */
+         .sidebar-menu ul li a.sidebar-link {
+            position: relative;
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+            padding-left: 15px !important;
+            margin-left: 5px;
+            border-radius: 0 8px 8px 0;
+         }
+         
+         .sidebar-menu ul li a.sidebar-link:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+         }
+         
+         .sidebar-menu ul li a.sidebar-link.border-primary {
+            border-left-color: #007bff;
+         }
+         
+         .sidebar-menu ul li a.sidebar-link.border-primary:hover {
+            background: linear-gradient(90deg, rgba(0, 123, 255, 0.1) 0%, rgba(0, 123, 255, 0.05) 100%);
+         }
+         
+         .sidebar-menu ul li a.sidebar-link.border-info {
+            border-left-color: #17a2b8;
+         }
+         
+         .sidebar-menu ul li a.sidebar-link.border-info:hover {
+            background: linear-gradient(90deg, rgba(23, 162, 184, 0.1) 0%, rgba(23, 162, 184, 0.05) 100%);
+         }
+         
+         .sidebar-menu ul li a.sidebar-link.border-success {
+            border-left-color: #28a745;
+         }
+         
+         .sidebar-menu ul li a.sidebar-link.border-success:hover {
+            background: linear-gradient(90deg, rgba(40, 167, 69, 0.1) 0%, rgba(40, 167, 69, 0.05) 100%);
+         }
+         
+         .sidebar-menu ul li a.sidebar-link.border-warning {
+            border-left-color: #ffc107;
+         }
+         
+         .sidebar-menu ul li a.sidebar-link.border-warning:hover {
+            background: linear-gradient(90deg, rgba(255, 193, 7, 0.1) 0%, rgba(255, 193, 7, 0.05) 100%);
+         }
+         
+         .sidebar-menu ul li a.sidebar-link.border-danger {
+            border-left-color: #dc3545;
+         }
+         
+         .sidebar-menu ul li a.sidebar-link.border-danger:hover {
+            background: linear-gradient(90deg, rgba(220, 53, 69, 0.1) 0%, rgba(220, 53, 69, 0.05) 100%);
+         }
+         
+         .sidebar-menu ul li a.sidebar-link.border-purple {
+            border-left-color: #6f42c1;
+         }
+         
+         .sidebar-menu ul li a.sidebar-link.border-purple:hover {
+            background: linear-gradient(90deg, rgba(111, 66, 193, 0.1) 0%, rgba(111, 66, 193, 0.05) 100%);
+         }
+         
+         .sidebar-menu ul li a.sidebar-link.border-teal {
+            border-left-color: #20c997;
+         }
+         
+         .sidebar-menu ul li a.sidebar-link.border-teal:hover {
+            background: linear-gradient(90deg, rgba(32, 201, 151, 0.1) 0%, rgba(32, 201, 151, 0.05) 100%);
+         }
+         
+         .sidebar-menu ul li a.sidebar-link.border-orange {
+            border-left-color: #fd7e14;
+         }
+         
+         .sidebar-menu ul li a.sidebar-link.border-orange:hover {
+            background: linear-gradient(90deg, rgba(253, 126, 20, 0.1) 0%, rgba(253, 126, 20, 0.05) 100%);
+         }
+         
+         .sidebar-menu ul li a.sidebar-link.border-red {
+            border-left-color: #e74c3c;
+         }
+         
+         .sidebar-menu ul li a.sidebar-link.border-red:hover {
+            background: linear-gradient(90deg, rgba(231, 76, 60, 0.1) 0%, rgba(231, 76, 60, 0.05) 100%);
+         }
+         
+         /* Active state for sidebar links */
+         .sidebar-menu ul li.active > a.sidebar-link,
+         .sidebar-menu ul li a.sidebar-link.active {
+            background: linear-gradient(90deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.1) 100%);
+            font-weight: 600;
+         }
+      </style>
+      @stack('styles')
    </head>
    <body>
       <div class="main-wrapper">
@@ -98,45 +194,40 @@
                <div id="sidebar-menu" class="sidebar-menu">
                   <ul>
                      <li class="menu-title">Main</li>
-                     <li >
-                        <a href="{{url('/')}}/dashboard"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/menu-icon-01.svg')}}" alt></span> <span> Dashboard </span> </a>
+                     <li>
+                        <a href="{{url('/')}}/dashboard" class="sidebar-link border-primary"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/menu-icon-01.svg')}}" alt></span> <span> Dashboard </span> </a>
                      </li>
-                     <li >
-                        <a href="{{url('/')}}/"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/clock.svg')}}" alt></span> <span> Main Website </span> </a>
+                     <li>
+                        <a href="{{url('/')}}/" class="sidebar-link border-info"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/clock.svg')}}" alt></span> <span> Main Website </span> </a>
                      </li>
-                     <li >
-                        <a href="{{route('admin.patients')}}"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/menu-icon-02.svg')}}" alt></span> <span> My Patients </span> </a>
-
+                     <li>
+                        <a href="{{route('admin.patients')}}" class="sidebar-link border-success"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/menu-icon-02.svg')}}" alt></span> <span> My Patients </span> </a>
                      </li>
-                     <li >
-                        <a href="{{route('admin.results')}}"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/menu-icon-03.svg')}}" alt></span> <span>Posted Results </span> </a>
-
+                     <li>
+                        <a href="{{route('admin.results')}}" class="sidebar-link border-warning"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/menu-icon-03.svg')}}" alt></span> <span>Posted Results </span> </a>
                      </li>
-                     <li >
-                        <a href="{{route('admin.tests.index')}}"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/menu-icon-03.svg')}}" alt></span> <span>Tests Management </span> </a>
-
+                     <li>
+                        <a href="{{route('admin.tests.index')}}" class="sidebar-link border-danger"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/menu-icon-03.svg')}}" alt></span> <span>Tests Management </span> </a>
                      </li>
                      {{-- <li >
                         <a href="#"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/menu-icon-03.svg')}}" alt></span> <span>Post Results </span> </a>
                      </li> --}}
-                     <li >
-
-                     </li>
-                     <li >
-                        <a href="#"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/menu-icon-04.svg')}}" alt></span> <span> Appoinments </span> </a>
+                     <li>
 
                      </li>
                      <li>
-                        <a target="new" href="{{route('privacy-policy')}}"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/edit.svg')}}" alt></span> <span> Privacy Policy </span> </a>
-
+                        <a href="#" class="sidebar-link border-purple"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/menu-icon-04.svg')}}" alt></span> <span> Appoinments </span> </a>
                      </li>
                      <li>
-                        <a target="new" href="{{route('terms-and-conditions')}}"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/edit.svg')}}" alt></span> <span> Terms and Conditions </span> </a>
+                        <a target="new" href="{{route('privacy-policy')}}" class="sidebar-link border-teal"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/edit.svg')}}" alt></span> <span> Privacy Policy </span> </a>
+                     </li>
+                     <li>
+                        <a target="new" href="{{route('terms-and-conditions')}}" class="sidebar-link border-orange"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/edit.svg')}}" alt></span> <span> Terms and Conditions </span> </a>
                      </li>
 
                   </ul>
                   <div class="logout-btn">
-                     <a href="#" onclick="document.getElementById('logout-form').submit();"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/logout.svg')}}" alt></span> <span>Logout</span></a>
+                     <a href="#" onclick="document.getElementById('logout-form').submit();" class="sidebar-link border-red"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/logout.svg')}}" alt></span> <span>Logout</span></a>
                   </div>
                   <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                     @csrf
