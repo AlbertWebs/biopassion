@@ -255,20 +255,38 @@ class HomeController extends Controller
         
         // Verify token
         if($token !== $secretToken) {
-            abort(404);
+            return response()->json([
+                'status' => 'error',
+                'message' => 'Invalid token',
+                'received_token' => $token,
+                'expected_token' => $secretToken
+            ], 403);
         }
         
         try {
+            // Check if maintenance mode is active
+            $maintenanceFile = storage_path('framework/down');
+            $isActive = file_exists($maintenanceFile);
+            
+            if(!$isActive) {
+                return response()->json([
+                    'status' => 'info',
+                    'message' => 'Maintenance mode is not currently active'
+                ]);
+            }
+            
             \Artisan::call('up');
             
             return response()->json([
                 'status' => 'success',
-                'message' => 'Maintenance mode disabled successfully'
+                'message' => 'Maintenance mode disabled successfully',
+                'maintenance_was_active' => $isActive
             ]);
         } catch (\Exception $e) {
             return response()->json([
                 'status' => 'error',
-                'message' => 'Failed to disable maintenance mode: ' . $e->getMessage()
+                'message' => 'Failed to disable maintenance mode: ' . $e->getMessage(),
+                'trace' => config('app.debug') ? $e->getTraceAsString() : null
             ], 500);
         }
     }
