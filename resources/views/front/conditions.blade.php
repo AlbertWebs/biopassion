@@ -152,6 +152,7 @@
                      <div class="col-lg-12 col-md-12 col-sm-12 form-group">
                         <textarea class="" name="message" placeholder="how can i help you? Feel free to get in touch"></textarea>
                      </div>
+                     @include('components.arithmetic-challenge')
                      <div class="col-lg-12 col-md-12 col-sm-12 form-group">
                         <!-- Button Box -->
                         <div class="button-box align-items-center flex-wrap d-flex">
@@ -196,6 +197,7 @@
                <form method="post" action="#">
                   <div class="form-group">
                      <input type="email" name="email" value="" placeholder="Your Email Address" required>
+                     @include('components.arithmetic-challenge')
                      <button type="submit" class="theme-btn fa-solid fa-paper-plane fa-fw"></button>
                   </div>
                </form>

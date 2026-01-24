@@ -334,6 +334,7 @@
                        <form method="post" action="https://html.themerange.net/merit/merit/contact.html">
                           <div class="form-group">
                              <input type="email" name="email" value="" placeholder="Your Email Address" required>
+                             @include('components.arithmetic-challenge')
                              <button type="submit" class="theme-btn fa-solid fa-paper-plane fa-fw"></button>
                           </div>
                        </form>

@@ -191,6 +191,8 @@
                                     @enderror
                                  </div>
 
+                                 @include('components.arithmetic-challenge')
+
                                  <div class="input-block login-btn">
                                     <button class="btn btn-primary btn-block" type="submit">Submit Booking</button>
                                  </div>

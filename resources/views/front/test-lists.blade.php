@@ -69,7 +69,7 @@
                "@type": "MedicalTest",
                "name": {!! json_encode($test->title, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!},
                "description": {!! json_encode($test->title . ' - ' . ($test->category ?? 'Diagnostic Test'), JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!},
-               "url": {!! json_encode($test->url ?? $seoUrl, JSON_UNESCAPED_SLASHES) !!},
+               "url": {!! json_encode(route('test-detail', $test->slug), JSON_UNESCAPED_SLASHES) !!},
                "image": {!! json_encode(str_starts_with($test->image_url, 'http') ? $test->image_url : asset($test->image_url), JSON_UNESCAPED_SLASHES) !!}
             }
          }@if(!$loop->last),@endif
@@ -135,6 +135,9 @@
                                @endforeach
                             </select>
                          </div>
+                         <div class="col-md-12">
+                            @include('components.arithmetic-challenge')
+                         </div>
                          <div class="col-md-2">
                             <button type="submit" class="btn btn-primary w-100">Search</button>
                          </div>
@@ -165,7 +168,7 @@
                                      @endif
                                      
                                      <h5 style="font-size: 16px; margin-bottom: 10px; color: #333; min-height: 48px;">
-                                        <a href="{{ $test->url ?? '#' }}" target="_blank" style="color: #0066cc; text-decoration: none;">
+                                        <a href="{{ route('test-detail', $test->slug) }}" style="color: #0066cc; text-decoration: none;">
                                            {{ $test->title }}
                                         </a>
                                      </h5>
@@ -198,8 +201,8 @@
                                      </div>
                                      
                                      <div style="margin-top: 15px;">
-                                        <a href="{{ route('book-test', $test->slug) }}" class="btn btn-sm theme-btn" style="width: 100%;">
-                                           View Details & Book
+                                        <a href="{{ route('test-detail', $test->slug) }}" class="btn btn-sm theme-btn" style="width: 100%;">
+                                           View Details
                                         </a>
                                      </div>
                                   </div>

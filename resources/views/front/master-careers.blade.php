@@ -620,6 +620,7 @@
             <form method="post" action="#">
                <div class="form-group">
                   <input type="search" name="search-field" value="" placeholder="Search Here" required="">
+                  @include('components.arithmetic-challenge')
                   <button class="fa fa-solid fa-magnifying-glass fa-fw" type="submit"></button>
                </div>
             </form>

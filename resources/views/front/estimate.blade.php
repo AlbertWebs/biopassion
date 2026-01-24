@@ -38,6 +38,7 @@
                               <div class="col-lg-12 col-md-12 col-sm-12 form-group">
                                  <textarea class="" name="message" placeholder="how can i help you? Feel free to get in touch"></textarea>
                               </div>
+                              @include('components.arithmetic-challenge')
                               <div class="col-lg-12 col-md-12 col-sm-12 form-group text-center">
                                  <!-- Button Box -->
                                  <div class="button-box">

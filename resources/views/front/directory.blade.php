@@ -7,13 +7,32 @@
     <div class="auto-container">
        <div class="row clearfix">
 
-          <div class="content-side col-lg-10 col-md-12 col-sm-12" style="margin:0 auto">
+          <div class="content-side col-lg-12 col-md-12 col-sm-12" style="margin:0 auto">
              <div class="department-detail">
                 <div class="inner-box">
 
                    <h3>Test Directory</h3>
                    <div class="bold-text">
-                    Welcome to the Biopassion Diagnostics Test Directory, your comprehensive resource for information on the wide array of diagnostic tests we offer. Our goal is to provide you with accurate, timely, and reliable testing services to support your health and well-being. Browse through our extensive list of tests to find detailed information about each one, including purpose, preparation, and what to expect.
+                     Welcome to the Biopassion Diagnostics Test Directory — your trusted partner in accurate and dependable medical testing. We offer a comprehensive range of laboratory services designed to support early detection, monitoring, and preventive care.
+                     <br><br>
+
+                     Each test comes with clear explanations, preparation guidelines, expected turnaround times, and professional interpretation to help you make confident health decisions. Backed by modern technology and expert laboratory professionals, we ensure quality, safety, and efficiency at every step.<br>
+                     <br>
+                     <strong>🌿 Reliable Results. Professional Care. Better Life.               YOUR HEALTH, OUR PASSION.</strong><br> 
+                   </div>
+
+                   <!-- Call or WhatsApp CTA -->
+                   <div class="cta-section" style="margin: 30px 0; padding: 25px; background: linear-gradient(135deg, #0066cc 0%, #004499 100%); border-radius: 10px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                      <h4 style="color: #fff; margin-bottom: 15px; font-size: 24px; font-weight: 600;">Need Help? Call or WhatsApp Now</h4>
+                      <p style="color: #fff; margin-bottom: 20px; font-size: 16px;">Our team is ready to assist you with any questions about our tests and services.</p>
+                      <div class="cta-buttons" style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                         <a href="tel:+254704150555" class="btn btn-light" style="padding: 12px 30px; font-size: 16px; font-weight: 600; border-radius: 5px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.3s ease;">
+                            <i class="fa fa-phone" style="font-size: 18px;"></i> Call Now: +254 704 150555
+                         </a>
+                         <a href="https://wa.me/254704150555?text=Hello%2C%20I%20need%20information%20about%20your%20test%20services" target="_blank" class="btn btn-success" style="padding: 12px 30px; font-size: 16px; font-weight: 600; border-radius: 5px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; background-color: #25D366; color: #fff; border: none; transition: all 0.3s ease;">
+                            <i class="fab fa-whatsapp" style="font-size: 18px;"></i> WhatsApp Now
+                         </a>
+                      </div>
                    </div>
 
                    <!-- Search and Filter Section -->
@@ -42,16 +61,16 @@
                          <div class="row">
                             @foreach($tests as $test)
                                <div class="col-md-6 col-lg-4 mb-4">
-                                  <div class="test-card" style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; height: 100%; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); overflow: hidden;">
+                                  <div class="test-card" style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; height: 100%; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: transform 0.2s; overflow: hidden;">
                                      @if($test->image_url)
                                         <div class="test-image mb-3" style="width: calc(100% + 40px); margin: -20px -20px 15px -20px; overflow: hidden; border-radius: 8px 8px 0 0;">
                                            <img src="{{ str_starts_with($test->image_url, 'http') ? $test->image_url : asset($test->image_url) }}" alt="{{ $test->title }}" style="width: 100%; height: 200px; object-fit: cover; display: block;">
                                         </div>
                                      @endif
                                      
-                                     <h5 style="font-size: 16px; margin-bottom: 10px; color: #333;">
-                                        <a href="{{ $test->url ?? '#' }}" target="_blank" style="color: #0066cc; text-decoration: none;">
-                                           {{ Str::limit($test->title, 60) }}
+                                     <h5 style="font-size: 16px; margin-bottom: 10px; color: #333; min-height: 48px;">
+                                        <a href="{{ route('test-detail', $test->slug) }}" style="color: #0066cc; text-decoration: none;">
+                                           {{ $test->title }}
                                         </a>
                                      </h5>
                                      
@@ -62,9 +81,9 @@
                                         </p>
                                      @endif
                                      
-                                     <div class="test-pricing" style="margin-top: 15px;">
+                                     <div class="test-pricing" style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee;">
                                         @if($test->current_price)
-                                           <p style="margin: 0; font-size: 18px; font-weight: bold; color: #28a745; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                                           <p style="margin: 0; font-size: 20px; font-weight: bold; color: #28a745; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
                                               <span>
                                                  KSh {{ number_format($test->current_price, 2) }}
                                                  @if($test->original_price && $test->original_price > $test->current_price)
@@ -77,25 +96,27 @@
                                                  <span class="badge bg-danger" style="font-size: 12px;">Save {{ $test->discount_percentage }}%</span>
                                               @endif
                                            </p>
+                                        @else
+                                           <p style="margin: 0; color: #666;">Price on request</p>
                                         @endif
                                      </div>
                                      
-                                     @if($test->url)
-                                        <div style="margin-top: 15px;">
-                                           <a href="{{ $test->url }}" target="_blank" class="btn btn-sm theme-btn" style="width: 100%;">
-                                              View Details
-                                           </a>
-                                        </div>
-                                     @endif
+                                     <div style="margin-top: 15px;">
+                                        <a href="{{ route('test-detail', $test->slug) }}" class="btn btn-sm theme-btn" style="width: 100%;">
+                                           View Details
+                                        </a>
+                                     </div>
                                   </div>
                                </div>
                             @endforeach
                          </div>
 
                          <!-- Pagination -->
-                         <div class="pagination-wrapper" style="margin-top: 40px; text-align: center;">
-                            {{ $tests->appends(request()->query())->links() }}
+                         @if($tests->hasPages())
+                         <div class="test-directory-pagination">
+                            {{ $tests->appends(request()->query())->links('pagination.custom') }}
                          </div>
+                         @endif
                       @else
                          <div class="alert alert-info" style="margin-top: 20px;">
                             <p>No tests found. Try adjusting your search criteria.</p>
@@ -165,153 +186,177 @@
    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* Pagination Styling */
-.pagination-wrapper {
-   margin-top: 40px;
-   padding: 30px 0;
-   width: 100%;
-   overflow-x: auto;
-}
-
-.pagination-wrapper nav {
-   display: flex;
-   justify-content: center;
+/* New Pagination Styles - Fresh Design */
+.test-directory-pagination {
+   margin: 50px 0;
+   padding: 0;
    width: 100%;
 }
 
-.pagination-wrapper .pagination {
+.custom-pagination-nav {
    display: flex;
-   justify-content: center;
+   flex-direction: column;
    align-items: center;
-   flex-wrap: nowrap;
-   gap: 6px;
+   gap: 20px;
+}
+
+.custom-pagination-list {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 8px;
    list-style: none;
    padding: 0;
-   margin: 0 auto;
-   max-width: 100%;
-}
-
-.pagination-wrapper .pagination li {
-   display: inline-flex;
    margin: 0;
-   flex-shrink: 0;
+   flex-wrap: wrap;
 }
 
-.pagination-wrapper .pagination li a,
-.pagination-wrapper .pagination li span {
+.custom-pagination-item {
+   margin: 0;
+   padding: 0;
+}
+
+.custom-pagination-link {
    display: inline-flex;
    align-items: center;
    justify-content: center;
-   padding: 10px 14px;
-   min-width: 42px;
-   height: 42px;
-   text-align: center;
+   gap: 6px;
+   padding: 12px 18px;
+   min-width: 44px;
+   height: 44px;
+   background: #ffffff;
+   border: 2px solid #e0e0e0;
+   border-radius: 8px;
+   color: #333333;
    text-decoration: none;
-   color: #333;
-   background-color: #fff;
-   border: 1px solid #ddd;
-   border-radius: 4px;
-   transition: all 0.3s ease;
+   font-size: 15px;
    font-weight: 500;
-   font-size: 14px;
-   white-space: nowrap;
-   box-sizing: border-box;
+   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+   cursor: pointer;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.pagination-wrapper .pagination li a:hover {
-   background-color: var(--main-color);
-   color: #fff;
-   border-color: var(--main-color);
+.custom-pagination-link:hover:not(.disabled-link):not(.active-link):not(.dots) {
+   background: #0066cc;
+   border-color: #0066cc;
+   color: #ffffff;
    transform: translateY(-2px);
-   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+   box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
 }
 
-.pagination-wrapper .pagination li.active span {
-   background-color: var(--main-color);
-   color: #fff;
-   border-color: var(--main-color);
+.custom-pagination-link.active-link {
+   background: linear-gradient(135deg, #0066cc 0%, #004499 100%);
+   border-color: #0066cc;
+   color: #ffffff;
    font-weight: 600;
+   box-shadow: 0 4px 12px rgba(0, 102, 204, 0.4);
+   transform: scale(1.05);
 }
 
-.pagination-wrapper .pagination li.disabled {
+.custom-pagination-link.disabled-link {
+   background: #f5f5f5;
+   border-color: #e0e0e0;
+   color: #999999;
+   cursor: not-allowed;
+   opacity: 0.6;
    pointer-events: none;
 }
 
-.pagination-wrapper .pagination li.disabled span {
-   color: #999;
-   background-color: #f5f5f5;
-   border-color: #ddd;
-   cursor: not-allowed;
-   opacity: 0.6;
+.custom-pagination-link.dots {
+   background: transparent;
+   border: none;
+   color: #666666;
+   cursor: default;
+   box-shadow: none;
+   min-width: auto;
+   padding: 12px 8px;
 }
 
-.pagination-wrapper .pagination li.disabled span:hover {
+.custom-pagination-link.dots:hover {
    transform: none;
    box-shadow: none;
-   background-color: #f5f5f5;
-   color: #999;
-   border-color: #ddd;
+   background: transparent;
+   border: none;
+   color: #666666;
 }
 
-/* Pagination SVG Icons Styling */
-.pagination-wrapper .pagination li svg {
-   width: 14px !important;
-   height: 14px !important;
-   vertical-align: middle;
+.pagination-text {
+   font-size: 15px;
+   font-weight: 500;
 }
 
-.pagination-wrapper .pagination li a svg,
-.pagination-wrapper .pagination li span svg {
-   width: 14px !important;
-   height: 14px !important;
+.custom-pagination-link svg {
+   width: 16px;
+   height: 16px;
+   flex-shrink: 0;
 }
 
-/* Ellipsis styling */
-.pagination-wrapper .pagination li.disabled span:not([aria-hidden]) {
-   padding: 10px 8px;
-   min-width: auto;
+.pagination-info {
+   margin-top: 15px;
+   text-align: center;
 }
 
-/* Responsive Pagination */
+.pagination-info p {
+   margin: 0;
+   color: #666666;
+   font-size: 14px;
+   font-weight: 400;
+}
+
+.pagination-info strong {
+   color: #333333;
+   font-weight: 600;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-   .pagination-wrapper {
-      padding: 20px 0;
+   .custom-pagination-list {
+      gap: 6px;
    }
    
-   .pagination-wrapper .pagination {
-      gap: 4px;
-      flex-wrap: wrap;
+   .custom-pagination-link {
+      padding: 10px 14px;
+      min-width: 40px;
+      height: 40px;
+      font-size: 14px;
    }
    
-   .pagination-wrapper .pagination li a,
-   .pagination-wrapper .pagination li span {
-      padding: 8px 10px;
-      min-width: 36px;
-      height: 36px;
-      font-size: 13px;
+   .pagination-text {
+      display: none;
+   }
+   
+   .custom-pagination-link svg {
+      width: 18px;
+      height: 18px;
    }
 }
 
 @media (max-width: 480px) {
-   .pagination-wrapper .pagination {
-      gap: 3px;
+   .custom-pagination-list {
+      gap: 4px;
    }
    
-   .pagination-wrapper .pagination li a,
-   .pagination-wrapper .pagination li span {
-      padding: 6px 8px;
-      min-width: 32px;
-      height: 32px;
-      font-size: 12px;
+   .custom-pagination-link {
+      padding: 8px 12px;
+      min-width: 36px;
+      height: 36px;
+      font-size: 13px;
    }
    
-   /* Hide some page numbers on very small screens, keep prev/next and current */
-   .pagination-wrapper .pagination li:not(.active):not(:first-child):not(:last-child):not(.disabled) {
+   .custom-pagination-item:not(.active):not(:first-child):not(:last-child):not(.disabled) {
       display: none;
    }
    
-   .pagination-wrapper .pagination li.disabled:not(:first-child):not(:last-child) {
+   .custom-pagination-link.dots {
       display: none;
+   }
+   
+   .pagination-info {
+      margin-top: 10px;
+   }
+   
+   .pagination-info p {
+      font-size: 13px;
    }
 }
 </style>

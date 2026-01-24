@@ -107,6 +107,19 @@ class HomeController extends Controller
         return view('front.test-lists', compact('tests', 'categories'));
     }
 
+    public function testDetail($slug){
+        $test = Test::where('slug', $slug)->firstOrFail();
+        
+        // Get related tests from the same category
+        $relatedTests = Test::where('category', $test->category)
+            ->where('id', '!=', $test->id)
+            ->inRandomOrder()
+            ->limit(4)
+            ->get();
+        
+        return view('front.test-detail', compact('test', 'relatedTests'));
+    }
+
     public function bookTest($slug){
         $test = Test::where('slug', $slug)->firstOrFail();
         return view('front.book-test', compact('test'));
