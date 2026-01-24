@@ -149,29 +149,40 @@ class HomeController extends Controller
         $booking->test_category = $test->category;
         $booking->save();
 
-        // Send email
+        // Send email with better formatted content to reduce spam score
         $subject = 'New Test Booking - ' . $test->title;
-        $emailMessage = "Hello Admin,\n\nYou have received a new test booking:\n\n";
-        $emailMessage .= "Test: {$test->title}\n";
-        $emailMessage .= "Category: {$test->category}\n";
-        $emailMessage .= "Customer Name: {$request->name}\n";
-        $emailMessage .= "Email: {$request->email}\n";
-        $emailMessage .= "Phone: {$request->phone}\n";
+        $emailMessage = "<h3>New Test Booking Received</h3>";
+        $emailMessage .= "<p>Hello Admin,</p>";
+        $emailMessage .= "<p>You have received a new test booking request:</p>";
+        $emailMessage .= "<table style='width:100%; border-collapse: collapse; margin: 20px 0;'>";
+        $emailMessage .= "<tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>Test:</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>{$test->title}</td></tr>";
+        $emailMessage .= "<tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>Category:</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>{$test->category}</td></tr>";
+        $emailMessage .= "<tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>Customer Name:</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>{$request->name}</td></tr>";
+        $emailMessage .= "<tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>Email:</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>{$request->email}</td></tr>";
+        $emailMessage .= "<tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>Phone:</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>{$request->phone}</td></tr>";
         if($request->location) {
-            $emailMessage .= "Location: {$request->location}\n";
+            $emailMessage .= "<tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>Location:</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>{$request->location}</td></tr>";
         }
         if($request->apartment) {
-            $emailMessage .= "Apartment: {$request->apartment}\n";
+            $emailMessage .= "<tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>Apartment:</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>{$request->apartment}</td></tr>";
         }
         if($request->message) {
-            $emailMessage .= "Message: {$request->message}\n";
+            $emailMessage .= "<tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>Message:</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>{$request->message}</td></tr>";
         }
-        $emailMessage .= "\nTest Price: KSh " . number_format($test->current_price ?? 0, 2) . "\n";
+        $emailMessage .= "<tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>Test Price:</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>KSh " . number_format($test->current_price ?? 0, 2) . "</td></tr>";
         if($test->original_price && $test->original_price > $test->current_price) {
-            $emailMessage .= "Original Price: KSh " . number_format($test->original_price, 2) . "\n";
+            $emailMessage .= "<tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>Original Price:</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>KSh " . number_format($test->original_price, 2) . "</td></tr>";
         }
+        $emailMessage .= "</table>";
+        $emailMessage .= "<p>Please contact the customer to confirm the booking.</p>";
+        $emailMessage .= "<p>Best regards,<br>Biopassion Diagnostics System</p>";
 
-        SendEmail::SendTestBooking($emailMessage, $request->email, $subject);
+        try {
+            SendEmail::SendTestBooking($emailMessage, $request->email, $subject);
+        } catch (\Exception $e) {
+            // Log error but don't break the booking process
+            \Log::error('Email sending failed: ' . $e->getMessage());
+        }
 
         Session::flash('message', 'Your booking has been submitted successfully! We will contact you soon.');
         return redirect()->route('book-test', $test->slug);
