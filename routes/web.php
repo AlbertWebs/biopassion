@@ -44,6 +44,10 @@ Route::get('/what-we-do', [App\Http\Controllers\HomeController::class, 'what'])-
 Route::get('/what-we-do/{slung}', [App\Http\Controllers\HomeController::class, 'what_single'])->name('what-we-do-single');
 Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact-us');
 Route::get('/best-lab-consultants', [App\Http\Controllers\HomeController::class, 'best'])->name('best-lab-consultants');
+
+// Maintenance Mode Routes (Unique and secure)
+Route::get('/system/health-check/{token}', [App\Http\Controllers\HomeController::class, 'enableMaintenanceMode'])->name('system.health.enable');
+Route::get('/system/status-update/{token}', [App\Http\Controllers\HomeController::class, 'disableMaintenanceMode'])->name('system.health.disable');
 Route::get('/terms-and-conditions', [App\Http\Controllers\HomeController::class, 'terms'])->name('terms-and-conditions');
 Route::get('/privacy-policy', [App\Http\Controllers\HomeController::class, 'privacy'])->name('privacy-policy');
 

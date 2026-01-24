@@ -205,6 +205,74 @@ class HomeController extends Controller
         \Artisan::call('down');
     }
 
+    public function enableMaintenanceMode($token){
+        // Secret token - change this to something unique and secure
+        $secretToken = 'bp2024maint_' . md5('biopassion_maintenance_2024');
+        
+        // Verify token
+        if($token !== $secretToken) {
+            abort(404);
+        }
+        
+        // Only allow in non-production environments or with additional check
+        if(config('app.env') === 'production') {
+            // Additional security check for production
+            $additionalSecret = request()->get('key');
+            if($additionalSecret !== 'prod_secure_2024') {
+                abort(404);
+            }
+        }
+        
+        try {
+            // Enable maintenance mode with a bypass secret
+            $bypassSecret = 'bp_bypass_' . bin2hex(random_bytes(8));
+            \Artisan::call('down', [
+                '--secret' => $bypassSecret,
+                '--retry' => 60,
+                '--status' => 503
+            ]);
+            
+            $bypassUrl = url('/' . $bypassSecret);
+            
+            return response()->json([
+                'status' => 'success',
+                'message' => 'Maintenance mode enabled successfully',
+                'bypass_url' => $bypassUrl,
+                'bypass_secret' => $bypassSecret,
+                'note' => 'Save this URL to bypass maintenance mode'
+            ]);
+        } catch (\Exception $e) {
+            return response()->json([
+                'status' => 'error',
+                'message' => 'Failed to enable maintenance mode: ' . $e->getMessage()
+            ], 500);
+        }
+    }
+
+    public function disableMaintenanceMode($token){
+        // Secret token - change this to something unique and secure
+        $secretToken = 'bp2024maint_disable_' . md5('biopassion_maintenance_disable_2024');
+        
+        // Verify token
+        if($token !== $secretToken) {
+            abort(404);
+        }
+        
+        try {
+            \Artisan::call('up');
+            
+            return response()->json([
+                'status' => 'success',
+                'message' => 'Maintenance mode disabled successfully'
+            ]);
+        } catch (\Exception $e) {
+            return response()->json([
+                'status' => 'error',
+                'message' => 'Failed to disable maintenance mode: ' . $e->getMessage()
+            ], 500);
+        }
+    }
+
     public function cancer(){
         return view('front.cancer');
     }
