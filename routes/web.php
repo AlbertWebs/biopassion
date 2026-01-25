@@ -182,6 +182,10 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
         'update' => 'admin.tests.update',
         'destroy' => 'admin.tests.destroy',
     ]);
+
+    // Danger Zone - Data Purge
+    Route::get('/admin/danger-zone', [AdminController::class, 'dangerZone'])->name('admin.danger-zone');
+    Route::post('/admin/danger-zone/purge', [AdminController::class, 'purgeData'])->name('admin.purge-data');
 });
 
 

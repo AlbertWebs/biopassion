@@ -224,6 +224,12 @@
                      <li>
                         <a target="new" href="{{route('terms-and-conditions')}}" class="sidebar-link border-orange"><span class="menu-side"><img src="{{asset('portal/assets/img/icons/edit.svg')}}" alt></span> <span> Terms and Conditions </span> </a>
                      </li>
+                     <li>
+                        <a href="{{route('admin.danger-zone')}}" class="sidebar-link border-red" style="background-color: rgba(220, 53, 69, 0.1); border-left: 4px solid #dc3545 !important;">
+                           <span class="menu-side"><i class="fas fa-exclamation-triangle" style="color: #dc3545;"></i></span> 
+                           <span style="color: #dc3545; font-weight: bold;">⚠️ Danger Zone</span>
+                        </a>
+                     </li>
 
                   </ul>
                   <div class="logout-btn">

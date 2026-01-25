@@ -68,5 +68,71 @@ class AdminController extends Controller
         return $image_path;
     }
 
+    public function dangerZone(){
+        // Get record counts for each table
+        $tables = [
+            'users' => ['name' => 'Users', 'count' => DB::table('users')->count(), 'description' => 'All user accounts (patients, admins, etc.)'],
+            'bookings' => ['name' => 'Bookings', 'count' => DB::table('bookings')->count(), 'description' => 'All test bookings and appointments'],
+            'tests' => ['name' => 'Tests', 'count' => DB::table('tests')->count(), 'description' => 'All diagnostic tests'],
+            'results' => ['name' => 'Results', 'count' => DB::table('results')->count(), 'description' => 'All test results'],
+            'services' => ['name' => 'Services', 'count' => DB::table('services')->count(), 'description' => 'All services'],
+            'blogs' => ['name' => 'Blogs', 'count' => DB::table('blogs')->count(), 'description' => 'All blog posts'],
+            'extras' => ['name' => 'Extras', 'count' => DB::table('extras')->count(), 'description' => 'Extra content'],
+            'failed_jobs' => ['name' => 'Failed Jobs', 'count' => DB::table('failed_jobs')->count(), 'description' => 'Failed queue jobs'],
+            'personal_access_tokens' => ['name' => 'Personal Access Tokens', 'count' => DB::table('personal_access_tokens')->count(), 'description' => 'API access tokens'],
+        ];
+        
+        return view('admin.danger-zone', compact('tables'));
+    }
+
+    public function purgeData(Request $request){
+        // Double confirmation
+        if($request->confirm !== 'DELETE') {
+            Session::flash('error', 'Confirmation text does not match. Type "DELETE" to confirm.');
+            return Redirect::back();
+        }
+
+        $tablesToPurge = $request->tables ?? [];
+        $purgedTables = [];
+        $errors = [];
+
+        foreach($tablesToPurge as $table) {
+            try {
+                // Skip system tables
+                if(in_array($table, ['migrations', 'password_resets', 'password_reset_tokens'])) {
+                    continue;
+                }
+
+                // Get count before deletion
+                $count = DB::table($table)->count();
+                
+                // Truncate table (faster than delete and resets auto-increment)
+                DB::table($table)->truncate();
+                
+                $purgedTables[] = [
+                    'table' => $table,
+                    'count' => $count
+                ];
+            } catch (\Exception $e) {
+                $errors[] = [
+                    'table' => $table,
+                    'error' => $e->getMessage()
+                ];
+            }
+        }
+
+        if(count($purgedTables) > 0) {
+            Session::flash('success', 'Successfully purged ' . count($purgedTables) . ' table(s).');
+            Session::flash('purged_tables', $purgedTables);
+        }
+
+        if(count($errors) > 0) {
+            Session::flash('error', 'Some tables could not be purged. Check errors below.');
+            Session::flash('errors', $errors);
+        }
+
+        return Redirect::back();
+    }
+
 }
 
