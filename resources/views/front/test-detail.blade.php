@@ -394,6 +394,43 @@
                             </p>
                         </div>
                     @endif
+
+                    <!-- Payment Methods -->
+                    <div style="margin-bottom: 30px; padding: 20px; background: #ffffff; border: 1px solid #e0e0e0; border-radius: 8px;">
+                        <p style="margin: 0 0 15px 0; color: #666; font-size: 14px; font-weight: 600;">
+                            <i class="fa fa-credit-card"></i> Accepted Payment Methods
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+                            <!-- Visa -->
+                            <div style="display: flex; align-items: center; justify-content: center; min-width: 70px; height: 45px; background: #1a1f71; border-radius: 6px; padding: 8px 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: transform 0.2s;">
+                                <span style="color: white; font-weight: bold; font-size: 16px; letter-spacing: 1px; font-family: Arial, sans-serif;">VISA</span>
+                            </div>
+                            <!-- Mastercard -->
+                            <div style="display: flex; align-items: center; justify-content: center; min-width: 70px; height: 45px; background: #ffffff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 8px 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); position: relative; overflow: hidden;">
+                                <div style="position: absolute; left: 0; top: 0; width: 50%; height: 100%; background: #eb001b;"></div>
+                                <div style="position: absolute; right: 0; top: 0; width: 50%; height: 100%; background: #f79e1b;"></div>
+                                <div style="position: relative; z-index: 1; display: flex; align-items: center; gap: 2px;">
+                                    <div style="width: 18px; height: 18px; background: #eb001b; border-radius: 50%;"></div>
+                                    <div style="width: 18px; height: 18px; background: #f79e1b; border-radius: 50%; margin-left: -9px;"></div>
+                                </div>
+                            </div>
+                            <!-- Maestro -->
+                            <div style="display: flex; align-items: center; justify-content: center; min-width: 70px; height: 45px; background: #0c0c0c; border-radius: 6px; padding: 8px 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                <span style="color: white; font-weight: bold; font-size: 11px; letter-spacing: 0.8px; font-family: Arial, sans-serif;">MAESTRO</span>
+                            </div>
+                            <!-- PayPal -->
+                            <div style="display: flex; align-items: center; justify-content: center; min-width: 70px; height: 45px; background: #003087; border-radius: 6px; padding: 8px 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                <span style="color: white; font-weight: bold; font-size: 14px; letter-spacing: 0.3px; font-family: Arial, sans-serif;">PayPal</span>
+                            </div>
+                            <!-- Discover -->
+                            <div style="display: flex; align-items: center; justify-content: center; min-width: 70px; height: 45px; background: #ff6000; border-radius: 6px; padding: 8px 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                <span style="color: white; font-weight: bold; font-size: 10px; letter-spacing: 0.5px; font-family: Arial, sans-serif;">DISCOVER</span>
+                            </div>
+                        </div>
+                        <p style="margin: 15px 0 0 0; color: #999; font-size: 12px;">
+                            <i class="fa fa-lock"></i> Secure payment processing
+                        </p>
+                    </div>
                 </div>
             </div>
 
