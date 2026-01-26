@@ -93,7 +93,7 @@
                                                  @endif
                                               </span>
                                               @if($test->discount_percentage)
-                                                 <span class="badge bg-danger" style="font-size: 12px;">Save {{ $test->discount_percentage }}%</span>
+                                                 <span class="badge bg-danger" style="font-size: 12px; color:yellow;">Save {{ $test->discount_percentage }}%</span>
                                               @endif
                                            </p>
                                         @else
