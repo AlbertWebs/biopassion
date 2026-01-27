@@ -70,6 +70,14 @@
                             At Biopassion Diagnostics, we are loyal, enthusiastic and integral in all our dealings with our customers and with each other; therefore we uphold honesty and integrity above all else.
                             <br><br>
                             We believe our passion for surpassing expectations by putting the patient/clients first in everything we do and commitment to providing high quality, utmost accurate and timely medical laboratory services is one of the key reasons in our diagnostic excellence and reliability.
+                            <br><br>
+                            <strong>Your Health, Our Passion! ❤️🩺</strong>
+                            <br>
+                            Biopassion Diagnostics brings accurate, reliable, and convenient lab services right to you.
+                            <br><br>
+                            At Home/ Office Sample Pickups to advanced testing.
+                            <br><br>
+                            We’re here to make healthcare simple and affordable!
                            </div>
                         </div>
                         <div class="modern-one_block">

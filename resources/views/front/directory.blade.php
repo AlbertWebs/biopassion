@@ -22,7 +22,7 @@
                    </div>
 
                    <!-- Call or WhatsApp CTA -->
-                   <div class="cta-section" style="margin: 30px 0; padding: 25px; background: linear-gradient(135deg, #0066cc 0%, #004499 100%); border-radius: 10px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                   <div class="cta-section" style="margin: 30px 0; padding: 25px; background: linear-gradient(135deg, #045B38 0%, #03472B 100%); border-radius: 10px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
                       <h4 style="color: #fff; margin-bottom: 15px; font-size: 24px; font-weight: 600;">Need Help? Call or WhatsApp Now</h4>
                       <p style="color: #fff; margin-bottom: 20px; font-size: 16px;">Our team is ready to assist you with any questions about our tests and services.</p>
                       <div class="cta-buttons" style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
@@ -69,7 +69,7 @@
                                      @endif
                                      
                                      <h5 style="font-size: 16px; margin-bottom: 10px; color: #333; min-height: 48px;">
-                                        <a href="{{ route('test-detail', $test->slug) }}" style="color: #0066cc; text-decoration: none;">
+                                       <a href="{{ route('test-detail', $test->slug) }}" style="color: #045B38; text-decoration: none;">
                                            {{ $test->title }}
                                         </a>
                                      </h5>
@@ -237,20 +237,20 @@
 }
 
 .custom-pagination-link:hover:not(.disabled-link):not(.active-link):not(.dots) {
-   background: #0066cc;
-   border-color: #0066cc;
-   color: #ffffff;
-   transform: translateY(-2px);
-   box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+  background: #045B38;
+  border-color: #045B38;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(4, 91, 56, 0.3);
 }
 
 .custom-pagination-link.active-link {
-   background: linear-gradient(135deg, #0066cc 0%, #004499 100%);
-   border-color: #0066cc;
-   color: #ffffff;
-   font-weight: 600;
-   box-shadow: 0 4px 12px rgba(0, 102, 204, 0.4);
-   transform: scale(1.05);
+  background: linear-gradient(135deg, #045B38 0%, #03472B 100%);
+  border-color: #045B38;
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(4, 91, 56, 0.4);
+  transform: scale(1.05);
 }
 
 .custom-pagination-link.disabled-link {
