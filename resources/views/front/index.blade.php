@@ -1,5 +1,33 @@
 @extends('front.master')
 
+@section('seo')
+    <title>DNA Testing Lab in Kenya | Biopassion Diagnostics Nairobi</title>
+    <meta name="title" content="DNA Testing Lab in Kenya | Biopassion Diagnostics Nairobi">
+    <meta name="description" content="Biopassion Diagnostics is a trusted, ISO certified medical laboratory in Kenya offering genetic testing, paternity DNA tests, and affordable lab services in Nairobi with fast results and home sample collection.">
+    <meta name="keywords" content="DNA testing lab in Kenya,Genetic testing laboratory Kenya,Medical laboratory in Kenya,ISO certified laboratory Kenya,Best DNA testing lab in Kenya,Paternity DNA test Kenya,Affordable DNA test Kenya,General laboratory services Kenya,Diagnostic laboratory Kenya,Private laboratory Kenya,Paternity DNA testing in Nairobi,Prenatal DNA testing Kenya,Sickle cell screening Kenya,Relationship DNA test Kenya,Forensic DNA testing Kenya,Blood test laboratory Kenya,Hormone testing lab Kenya,Biochemistry laboratory Kenya,Full blood count test Kenya,Infection screening lab Kenya,DNA testing lab Nairobi,Genetic testing lab Nairobi,Medical lab near me,Diagnostic lab near me,DNA test near me,Private lab Nairobi,Laboratory services Kenya,Home sample collection Kenya,Affordable lab tests Nairobi,Book DNA test Kenya,Cost of DNA test in Kenya,Fast DNA test results Kenya,Same day lab results Nairobi,Reliable DNA lab Kenya,Trusted laboratory Kenya,Call DNA testing lab Kenya,WhatsApp lab testing Kenya,DNA testing Kenya,genetic lab Kenya,medical laboratory Nairobi,ISO lab Kenya,paternity test Kenya,affordable lab tests Kenya,diagnostic testing Kenya,private laboratory Kenya,sickle cell screening Kenya,home sample collection Kenya">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="DNA Testing Lab in Kenya | Biopassion Diagnostics Nairobi">
+    <meta property="og:site_name" content="Biopassion Diagnostics Medical Laboratory Center">
+    <meta property="og:url" content="https://biopassiondiagnostics.com"/>
+    <meta property="og:description" content="Trusted medical and genetic testing lab in Nairobi, Kenya for paternity DNA tests, sickle cell screening, and affordable diagnostics with fast results and home sample collection.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://biopassiondiagnostics.com/uploads/logo/logo.png">
+    <meta property="og:image:secure_url" content="https://biopassiondiagnostics.com/uploads/logo/logo.png" />
+    <meta property="og:image:width" content="1000" />
+    <meta property="og:image:height" content="194" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@biopassiondiag1" />
+    <meta name="twitter:title" content="DNA Testing Lab in Kenya | Biopassion Diagnostics Nairobi" />
+    <meta name="twitter:description" content="ISO certified laboratory in Kenya for DNA testing, genetic screening, blood tests, and same day lab results in Nairobi. Book DNA test with Biopassion Diagnostics." />
+    <meta name="twitter:creator" content="@biopassiondiag1" />
+    <meta name="twitter:image" content="https://biopassiondiagnostics.com/uploads/logo/logo.png" />
+@endsection
+
 @section('content')
          <!-- Slider One -->
          <section class="slider-two">
